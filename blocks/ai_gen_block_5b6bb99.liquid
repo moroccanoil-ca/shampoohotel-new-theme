@@ -1,0 +1,1280 @@
+{% doc %}
+  @prompt
+    Create a “Before & After Testimonials Slider” section (manual content, matches reference layout)
+    
+    Build a horizontal card slider of testimonial tiles, visually matching the provided example.
+    
+    Cards
+    Each slide/card is fully manual (no product/CMS pulling). Each card includes:
+    
+    Optional pill label at top (e.g. “Thicker & fuller”)
+    
+    Pill text is editable per card
+    
+    Pill background color, text color, and border radius are editable (per card or global)
+    
+    A two-image before/after block (manual image upload)
+    
+    Two images side-by-side with rounded corners
+    
+    Under each image, editable captions (e.g. “Month 0”, “Month 3”)
+    
+    A testimonial quote (rich text or textarea)
+    
+    Customer name line (e.g. “Danielle K.”)
+    
+    Optional small “Verified review” row with a small icon toggle (on/off)
+    
+    Layout + behavior
+    
+    Desktop: show 4 cards visible across, horizontal scroll/slider with arrows
+    
+    Mobile: show 1 card per swipe, smooth scrolling
+    
+    Cards have a light background, rounded corners, consistent padding, and match the spacing/feel of the reference
+    
+    Header row
+    
+    Left: big heading (editable) e.g. “See fuller hair in your future”
+    
+    Right: optional CTA button (editable label + link) e.g. “Take the hair quiz”
+    
+    Footer note
+    
+    Optional disclaimer text under slider (editable), small and subtle
+    
+    Section settings
+    
+    Heading text
+    
+    CTA button label + URL + show/hide
+    
+    Card background color
+    
+    Card border radius
+    
+    Slider controls on/off
+    
+    Spacing (top/bottom padding)
+    
+    Content management
+    Use blocks so I can add/reorder cards easily. Each block includes:
+    
+    Pill text + pill colors
+    
+    Before image upload + caption
+    
+    After image upload + caption
+    
+    Quote text
+    
+    Name text
+    
+    Verified toggle
+    
+    No automatic content sources.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-testimonials-slider-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+  }
+
+  .ai-testimonials-slider__container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-testimonials-slider__header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .ai-testimonials-slider__heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    margin: 0;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-testimonials-slider__cta-{{ ai_gen_id }} {
+    padding: 12px 24px;
+    background-color: {{ block.settings.cta_background }};
+    color: {{ block.settings.cta_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.cta_border_radius }}px;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-testimonials-slider__cta-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+
+  .ai-testimonials-slider__wrapper-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-testimonials-slider__track-{{ ai_gen_id }} {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 10px;
+  }
+
+  .ai-testimonials-slider__track-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-testimonials-slider__card-{{ ai_gen_id }} {
+    flex: 0 0 calc(25% - 15px);
+    min-width: 280px;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-testimonials-slider__pill-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: var(--pill-border-radius);
+    background-color: var(--pill-background);
+    color: var(--pill-text-color);
+    font-size: 12px;
+    font-weight: 500;
+    width: fit-content;
+  }
+
+  .ai-testimonials-slider__images-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+  }
+
+  .ai-testimonials-slider__image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ai-testimonials-slider__image-container-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+
+  .ai-testimonials-slider__image-container-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-testimonials-slider__image-container-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-testimonials-slider__caption-{{ ai_gen_id }} {
+    font-size: 12px;
+    color: {{ block.settings.caption_color }};
+    text-align: center;
+  }
+
+  .ai-testimonials-slider__quote-{{ ai_gen_id }} {
+    font-size: 14px;
+    line-height: 1.5;
+    color: {{ block.settings.quote_color }};
+    flex-grow: 1;
+  }
+
+  .ai-testimonials-slider__footer-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ai-testimonials-slider__name-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.name_color }};
+  }
+
+  .ai-testimonials-slider__verified-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: {{ block.settings.verified_color }};
+  }
+
+  .ai-testimonials-slider__verified-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    fill: {{ block.settings.verified_color }};
+  }
+
+  .ai-testimonials-slider__controls-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .ai-testimonials-slider__arrow-{{ ai_gen_id }} {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: {{ block.settings.arrow_background }};
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-testimonials-slider__arrow-{{ ai_gen_id }}:hover {
+    opacity: 0.7;
+  }
+
+  .ai-testimonials-slider__arrow-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    stroke: {{ block.settings.arrow_color }};
+  }
+
+  .ai-testimonials-slider__disclaimer-{{ ai_gen_id }} {
+    margin-top: 30px;
+    font-size: 12px;
+    color: {{ block.settings.disclaimer_color }};
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .ai-testimonials-slider__card-{{ ai_gen_id }} {
+      flex: 0 0 calc(33.333% - 14px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-testimonials-slider__card-{{ ai_gen_id }} {
+      flex: 0 0 calc(50% - 10px);
+    }
+
+    .ai-testimonials-slider__heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-testimonials-slider__card-{{ ai_gen_id }} {
+      flex: 0 0 calc(100% - 20px);
+    }
+
+    .ai-testimonials-slider__header-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+{% endstyle %}
+
+<testimonials-slider-{{ ai_gen_id }} class="ai-testimonials-slider-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-testimonials-slider__container-{{ ai_gen_id }}">
+    <div class="ai-testimonials-slider__header-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-testimonials-slider__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      
+      {% if block.settings.show_cta and block.settings.cta_text != blank %}
+        <a href="{{ block.settings.cta_url }}" class="ai-testimonials-slider__cta-{{ ai_gen_id }}">
+          {{ block.settings.cta_text }}
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="ai-testimonials-slider__wrapper-{{ ai_gen_id }}">
+      <div class="ai-testimonials-slider__track-{{ ai_gen_id }}" data-slider-track>
+        {% for i in (1..8) %}
+          {% liquid
+            assign pill_text_key = 'card_' | append: i | append: '_pill_text'
+            assign pill_bg_key = 'card_' | append: i | append: '_pill_bg'
+            assign pill_color_key = 'card_' | append: i | append: '_pill_color'
+            assign pill_radius_key = 'card_' | append: i | append: '_pill_radius'
+            assign before_img_key = 'card_' | append: i | append: '_before_img'
+            assign before_cap_key = 'card_' | append: i | append: '_before_cap'
+            assign after_img_key = 'card_' | append: i | append: '_after_img'
+            assign after_cap_key = 'card_' | append: i | append: '_after_cap'
+            assign quote_key = 'card_' | append: i | append: '_quote'
+            assign name_key = 'card_' | append: i | append: '_name'
+            assign verified_key = 'card_' | append: i | append: '_verified'
+            assign show_key = 'card_' | append: i | append: '_show'
+
+            assign show_card = block.settings[show_key]
+            assign pill_text = block.settings[pill_text_key]
+            assign pill_bg = block.settings[pill_bg_key]
+            assign pill_color = block.settings[pill_color_key]
+            assign pill_radius = block.settings[pill_radius_key]
+            assign before_img = block.settings[before_img_key]
+            assign before_cap = block.settings[before_cap_key]
+            assign after_img = block.settings[after_img_key]
+            assign after_cap = block.settings[after_cap_key]
+            assign quote = block.settings[quote_key]
+            assign name = block.settings[name_key]
+            assign verified = block.settings[verified_key]
+          %}
+
+          {% if show_card %}
+            <div class="ai-testimonials-slider__card-{{ ai_gen_id }}">
+              {% if pill_text != blank %}
+                <div 
+                  class="ai-testimonials-slider__pill-{{ ai_gen_id }}"
+                  style="
+                    --pill-background: {{ pill_bg }};
+                    --pill-text-color: {{ pill_color }};
+                    --pill-border-radius: {{ pill_radius }}px;
+                  "
+                >
+                  {{ pill_text }}
+                </div>
+              {% endif %}
+
+              <div class="ai-testimonials-slider__images-{{ ai_gen_id }}">
+                <div class="ai-testimonials-slider__image-wrapper-{{ ai_gen_id }}">
+                  <div class="ai-testimonials-slider__image-container-{{ ai_gen_id }}">
+                    {% if before_img %}
+                      <img 
+                        src="{{ before_img | image_url: width: 400 }}" 
+                        alt="{{ before_cap | escape }}"
+                        loading="lazy"
+                        width="400"
+                        height="400"
+                      >
+                    {% else %}
+                      {{ 'image' | placeholder_svg_tag }}
+                    {% endif %}
+                  </div>
+                  {% if before_cap != blank %}
+                    <div class="ai-testimonials-slider__caption-{{ ai_gen_id }}">
+                      {{ before_cap }}
+                    </div>
+                  {% endif %}
+                </div>
+
+                <div class="ai-testimonials-slider__image-wrapper-{{ ai_gen_id }}">
+                  <div class="ai-testimonials-slider__image-container-{{ ai_gen_id }}">
+                    {% if after_img %}
+                      <img 
+                        src="{{ after_img | image_url: width: 400 }}" 
+                        alt="{{ after_cap | escape }}"
+                        loading="lazy"
+                        width="400"
+                        height="400"
+                      >
+                    {% else %}
+                      {{ 'image' | placeholder_svg_tag }}
+                    {% endif %}
+                  </div>
+                  {% if after_cap != blank %}
+                    <div class="ai-testimonials-slider__caption-{{ ai_gen_id }}">
+                      {{ after_cap }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+              {% if quote != blank %}
+                <div class="ai-testimonials-slider__quote-{{ ai_gen_id }}">
+                  {{ quote }}
+                </div>
+              {% endif %}
+
+              <div class="ai-testimonials-slider__footer-{{ ai_gen_id }}">
+                {% if name != blank %}
+                  <div class="ai-testimonials-slider__name-{{ ai_gen_id }}">
+                    {{ name }}
+                  </div>
+                {% endif %}
+
+                {% if verified %}
+                  <div class="ai-testimonials-slider__verified-{{ ai_gen_id }}">
+                    <svg class="ai-testimonials-slider__verified-icon-{{ ai_gen_id }}" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 0L9.79611 2.33688L12.7023 2.47023L12.4743 5.36612L14.6085 7.20389L12.4743 9.04166L12.7023 11.9376L9.79611 12.0709L8 14.4078L6.20389 12.0709L3.29772 11.9376L3.52574 9.04166L1.39155 7.20389L3.52574 5.36612L3.29772 2.47023L6.20389 2.33688L8 0Z" />
+                      <path d="M5.5 7.5L7 9L10.5 5.5" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Verified review</span>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if block.settings.show_controls %}
+        <div class="ai-testimonials-slider__controls-{{ ai_gen_id }}">
+          <button class="ai-testimonials-slider__arrow-{{ ai_gen_id }}" data-slider-prev aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="ai-testimonials-slider__arrow-{{ ai_gen_id }}" data-slider-next aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if block.settings.disclaimer != blank %}
+      <div class="ai-testimonials-slider__disclaimer-{{ ai_gen_id }}">
+        {{ block.settings.disclaimer }}
+      </div>
+    {% endif %}
+  </div>
+</testimonials-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TestimonialsSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('[data-slider-track]');
+        this.prevButton = this.querySelector('[data-slider-prev]');
+        this.nextButton = this.querySelector('[data-slider-next]');
+        
+        if (this.prevButton && this.nextButton) {
+          this.setupControls();
+        }
+      }
+
+      setupControls() {
+        this.prevButton.addEventListener('click', () => {
+          const scrollAmount = this.track.offsetWidth * 0.8;
+          this.track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        this.nextButton.addEventListener('click', () => {
+          const scrollAmount = this.track.offsetWidth * 0.8;
+          this.track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+      }
+    }
+
+    customElements.define('testimonials-slider-{{ ai_gen_id }}', TestimonialsSlider{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Before & After slider",
+  "tag": null,
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "See fuller hair in your future"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "Show CTA button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button text",
+      "default": "Take the hair quiz"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "cta_background",
+      "label": "Button background",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "cta_border_radius",
+      "label": "Button border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "quote_color",
+      "label": "Quote text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "name_color",
+      "label": "Name color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "verified_color",
+      "label": "Verified badge color",
+      "default": "#52572e"
+    },
+    {
+      "type": "header",
+      "content": "Slider controls"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_controls",
+      "label": "Show navigation arrows",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "arrow_background",
+      "label": "Arrow background",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Footer"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer",
+      "label": "Disclaimer text",
+      "placeholder": "Results may vary"
+    },
+    {
+      "type": "color",
+      "id": "disclaimer_color",
+      "label": "Disclaimer color",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Card 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_1_show",
+      "label": "Show card 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_1_pill_text",
+      "label": "Pill text",
+      "default": "Thicker & fuller"
+    },
+    {
+      "type": "color",
+      "id": "card_1_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_1_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_1_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_1_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_1_before_cap",
+      "label": "Before caption",
+      "default": "Month 0"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_1_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_1_after_cap",
+      "label": "After caption",
+      "default": "Month 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_quote",
+      "label": "Quote",
+      "default": "I've noticed such a difference in my hair thickness and volume!"
+    },
+    {
+      "type": "text",
+      "id": "card_1_name",
+      "label": "Customer name",
+      "default": "Danielle K."
+    },
+    {
+      "type": "checkbox",
+      "id": "card_1_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_2_show",
+      "label": "Show card 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_2_pill_text",
+      "label": "Pill text",
+      "default": "Healthier scalp"
+    },
+    {
+      "type": "color",
+      "id": "card_2_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_2_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_2_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_2_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_2_before_cap",
+      "label": "Before caption",
+      "default": "Month 0"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_2_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_2_after_cap",
+      "label": "After caption",
+      "default": "Month 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_2_quote",
+      "label": "Quote",
+      "default": "My scalp feels so much healthier and my hair looks amazing!"
+    },
+    {
+      "type": "text",
+      "id": "card_2_name",
+      "label": "Customer name",
+      "default": "Sarah M."
+    },
+    {
+      "type": "checkbox",
+      "id": "card_2_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_3_show",
+      "label": "Show card 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_3_pill_text",
+      "label": "Pill text",
+      "default": "Less shedding"
+    },
+    {
+      "type": "color",
+      "id": "card_3_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_3_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_3_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_3_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_3_before_cap",
+      "label": "Before caption",
+      "default": "Month 0"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_3_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_3_after_cap",
+      "label": "After caption",
+      "default": "Month 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_quote",
+      "label": "Quote",
+      "default": "I'm shedding so much less hair now. This really works!"
+    },
+    {
+      "type": "text",
+      "id": "card_3_name",
+      "label": "Customer name",
+      "default": "Jessica L."
+    },
+    {
+      "type": "checkbox",
+      "id": "card_3_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_4_show",
+      "label": "Show card 4",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_4_pill_text",
+      "label": "Pill text",
+      "default": "More volume"
+    },
+    {
+      "type": "color",
+      "id": "card_4_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_4_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_4_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_4_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_4_before_cap",
+      "label": "Before caption",
+      "default": "Month 0"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_4_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_4_after_cap",
+      "label": "After caption",
+      "default": "Month 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_quote",
+      "label": "Quote",
+      "default": "The volume is incredible! My hair has never looked better."
+    },
+    {
+      "type": "text",
+      "id": "card_4_name",
+      "label": "Customer name",
+      "default": "Emily R."
+    },
+    {
+      "type": "checkbox",
+      "id": "card_4_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_5_show",
+      "label": "Show card 5",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "card_5_pill_text",
+      "label": "Pill text"
+    },
+    {
+      "type": "color",
+      "id": "card_5_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_5_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_5_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_5_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_5_before_cap",
+      "label": "Before caption"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_5_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_5_after_cap",
+      "label": "After caption"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "card_5_name",
+      "label": "Customer name"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_5_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_6_show",
+      "label": "Show card 6",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "card_6_pill_text",
+      "label": "Pill text"
+    },
+    {
+      "type": "color",
+      "id": "card_6_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_6_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_6_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_6_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_6_before_cap",
+      "label": "Before caption"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_6_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_6_after_cap",
+      "label": "After caption"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "card_6_name",
+      "label": "Customer name"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_6_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 7"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_7_show",
+      "label": "Show card 7",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "card_7_pill_text",
+      "label": "Pill text"
+    },
+    {
+      "type": "color",
+      "id": "card_7_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_7_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_7_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_7_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_7_before_cap",
+      "label": "Before caption"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_7_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_7_after_cap",
+      "label": "After caption"
+    },
+    {
+      "type": "textarea",
+      "id": "card_7_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "card_7_name",
+      "label": "Customer name"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_7_verified",
+      "label": "Show verified badge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Card 8"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_8_show",
+      "label": "Show card 8",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "card_8_pill_text",
+      "label": "Pill text"
+    },
+    {
+      "type": "color",
+      "id": "card_8_pill_bg",
+      "label": "Pill background",
+      "default": "#f7f5e9"
+    },
+    {
+      "type": "color",
+      "id": "card_8_pill_color",
+      "label": "Pill text color",
+      "default": "#321e1e"
+    },
+    {
+      "type": "range",
+      "id": "card_8_pill_radius",
+      "label": "Pill border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "image_picker",
+      "id": "card_8_before_img",
+      "label": "Before image"
+    },
+    {
+      "type": "text",
+      "id": "card_8_before_cap",
+      "label": "Before caption"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_8_after_img",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "card_8_after_cap",
+      "label": "After caption"
+    },
+    {
+      "type": "textarea",
+      "id": "card_8_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "card_8_name",
+      "label": "Customer name"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_8_verified",
+      "label": "Show verified badge",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before & After slider"
+    }
+  ]
+}
+{% endschema %}

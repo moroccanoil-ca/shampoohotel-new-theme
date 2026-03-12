@@ -1,0 +1,406 @@
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+.ai-ugc-carousel-{{ ai_gen_id }} {
+  display: block;
+  width: {{ block.settings.desktop_width_percent }}%;
+  max-width: 100%;
+  padding: 40px 20px;
+  background-color: {{ block.settings.background_color }};
+}
+
+.ai-ugc-carousel__header-{{ ai_gen_id }} {
+  text-align: {{ block.settings.text_alignment }};
+  margin-bottom: 30px;
+}
+
+.ai-ugc-carousel__heading-{{ ai_gen_id }} {
+  font-size: {{ block.settings.heading_size }}px;
+  color: {{ block.settings.heading_color }};
+  margin: 0 0 10px;
+}
+
+.ai-ugc-carousel__subheading-{{ ai_gen_id }} {
+  font-size: {{ block.settings.subheading_size }}px;
+  color: {{ block.settings.text_color }};
+  margin: 0;
+}
+
+.ai-ugc-carousel__wrapper-{{ ai_gen_id }} {
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-ugc-carousel__track-{{ ai_gen_id }} {
+  display: flex;
+  gap: {{ block.settings.slide_gap }}px;
+  transition: transform 0.5s ease;
+  align-items: flex-start;
+}
+
+.ai-ugc-carousel__slide-{{ ai_gen_id }} {
+  flex: 0 0 calc(100% / {{ block.settings.slides_desktop }} - {{ block.settings.slide_gap }}px * ({{ block.settings.slides_desktop }} - 1) / {{ block.settings.slides_desktop }});
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 749px) {
+  .ai-ugc-carousel__slide-{{ ai_gen_id }} {
+    flex: 0 0 calc(100% / {{ block.settings.slides_mobile }} - {{ block.settings.slide_gap }}px * ({{ block.settings.slides_mobile }} - 1) / {{ block.settings.slides_mobile }});
+  }
+}
+
+.ai-ugc-carousel__video-container-{{ ai_gen_id }} {
+  position: relative;
+  width: 100%;
+  height: {{ block.settings.video_height }}px;
+  background-color: #000;
+  border-radius: {{ block.settings.video_border_radius }}px;
+  overflow: hidden;
+}
+
+.ai-ugc-carousel__video-{{ ai_gen_id }} {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ai-ugc-carousel__play-button-{{ ai_gen_id }} {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ai-ugc-carousel__play-button-{{ ai_gen_id }}:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: rgba(255,255,255,1);
+}
+
+.ai-ugc-carousel__play-button-{{ ai_gen_id }}.hidden {
+  display: none;
+}
+
+.ai-ugc-carousel__influencer-{{ ai_gen_id }} {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  z-index: 1;
+}
+
+.ai-ugc-carousel__product-card-{{ ai_gen_id }} {
+  background-color: {{ block.settings.product_card_bg }};
+  border-radius: {{ block.settings.product_border_radius }}px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.ai-ugc-carousel__product-image-{{ ai_gen_id }} {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ai-ugc-carousel__product-image-{{ ai_gen_id }} img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ai-ugc-carousel__product-info-{{ ai_gen_id }} {
+  flex: 1;
+  min-width: 0;
+}
+
+.ai-ugc-carousel__product-title-{{ ai_gen_id }} {
+  font-size: 14px;
+  font-weight: 600;
+  color: {{ block.settings.text_color }};
+  margin: 0 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ai-ugc-carousel__product-price-{{ ai_gen_id }} {
+  font-size: 14px;
+  color: {{ block.settings.text_color }};
+  margin: 0 0 8px;
+}
+
+.ai-ugc-carousel__product-link-{{ ai_gen_id }} {
+  font-size: 12px;
+  color: {{ block.settings.link_color }};
+  text-decoration: underline;
+}
+
+.ai-ugc-carousel__product-link-{{ ai_gen_id }}:hover {
+  color: {{ block.settings.link_hover_color }};
+}
+
+.ai-ugc-carousel__controls-{{ ai_gen_id }} {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.ai-ugc-carousel__arrow-{{ ai_gen_id }} {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: {{ block.settings.arrow_bg_color }};
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ai-ugc-carousel__arrow-{{ ai_gen_id }}:hover {
+  background-color: {{ block.settings.arrow_hover_bg_color }};
+  transform: scale(1.1);
+}
+
+.ai-ugc-carousel__arrow-{{ ai_gen_id }}:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.ai-ugc-carousel__dots-{{ ai_gen_id }} {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.ai-ugc-carousel__dot-{{ ai_gen_id }} {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: {{ block.settings.dot_color }};
+  border: none;
+  cursor: pointer;
+}
+
+.ai-ugc-carousel__dot-{{ ai_gen_id }}.active {
+  background-color: {{ block.settings.dot_active_color }};
+  transform: scale(1.3);
+}
+{% endstyle %}
+
+<ugc-video-carousel-{{ ai_gen_id }} class="ai-ugc-carousel-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.heading != blank or block.settings.subheading != blank %}
+    <div class="ai-ugc-carousel__header-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-ugc-carousel__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      {% if block.settings.subheading != blank %}
+        <p class="ai-ugc-carousel__subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="ai-ugc-carousel__wrapper-{{ ai_gen_id }}">
+    <div class="ai-ugc-carousel__track-{{ ai_gen_id }}" data-track>
+      {% for i in (1..6) %}
+        {% assign video_key = 'video_' | append: i %}
+        {% assign influencer_key = 'influencer_' | append: i %}
+        {% assign product_key = 'product_' | append: i %}
+        {% assign video = block.settings[video_key] %}
+        {% assign influencer_name = block.settings[influencer_key] %}
+        {% assign product = block.settings[product_key] %}
+
+        <div class="ai-ugc-carousel__slide-{{ ai_gen_id }}">
+          <div class="ai-ugc-carousel__video-container-{{ ai_gen_id }}">
+            {% if video %}
+{% assign video_class_name = 'ai-ugc-carousel__video-' | append: ai_gen_id %}
+
+<video 
+  class="{{ video_class_name }}" 
+  autoplay 
+  loop 
+  muted 
+  playsinline 
+  controls="false" 
+  data-video="true"
+  src="{{ video | file_url }}"
+></video>
+              <button class="ai-ugc-carousel__play-button-{{ ai_gen_id }}" data-play-button aria-label="Play video">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+              {% if influencer_name != blank %}
+                <div class="ai-ugc-carousel__influencer-{{ ai_gen_id }}">{{ influencer_name }}</div>
+              {% endif %}
+            {% else %}
+              <div class="ai-ugc-carousel__video-placeholder-{{ ai_gen_id }}">Add video {{ i }}</div>
+            {% endif %}
+          </div>
+
+          <div class="ai-ugc-carousel__product-card-{{ ai_gen_id }}">
+            {% if product != blank %}
+              <div class="ai-ugc-carousel__product-image-{{ ai_gen_id }}">
+                {% if product.featured_image %}
+                  <img src="{{ product.featured_image | image_url: width: 160 }}" alt="{{ product.featured_image.alt | escape }}">
+                {% else %}
+                  <div class="ai-ugc-carousel__product-placeholder-{{ ai_gen_id }}">Placeholder</div>
+                {% endif %}
+              </div>
+              <div class="ai-ugc-carousel__product-info-{{ ai_gen_id }}">
+                <h3 class="ai-ugc-carousel__product-title-{{ ai_gen_id }}">{{ product.title }}</h3>
+                <div class="ai-ugc-carousel__product-price-{{ ai_gen_id }}">{{ product.price | money }}</div>
+                <a href="{{ product.url }}" class="ai-ugc-carousel__product-link-{{ ai_gen_id }}">View product</a>
+              </div>
+            {% else %}
+              <div class="ai-ugc-carousel__empty-product-{{ ai_gen_id }}">Add featured product</div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% if block.settings.show_arrows %}
+    <div class="ai-ugc-carousel__controls-{{ ai_gen_id }}">
+      <button class="ai-ugc-carousel__arrow-{{ ai_gen_id }}" data-prev aria-label="Previous slide">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button class="ai-ugc-carousel__arrow-{{ ai_gen_id }}" data-next aria-label="Next slide">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  {% endif %}
+
+  {% if block.settings.show_dots %}
+    <div class="ai-ugc-carousel__dots-{{ ai_gen_id }}" data-dots></div>
+  {% endif %}
+</ugc-video-carousel-{{ ai_gen_id }}>
+
+<script>
+(function() {
+  class UgcVideoCarousel{{ ai_gen_id }} extends HTMLElement {
+    constructor() {
+      super();
+      this.currentIndex = 0;
+      this.slidesPerView = {{ block.settings.slides_desktop }};
+      this.slidesPerViewMobile = {{ block.settings.slides_mobile }};
+    }
+    connectedCallback() {
+      this.track = this.querySelector('[data-track]');
+      this.slides = Array.from(this.querySelectorAll('.ai-ugc-carousel__slide-{{ ai_gen_id }}'));
+      this.prevButton = this.querySelector('[data-prev]');
+      this.nextButton = this.querySelector('[data-next]');
+      this.dotsContainer = this.querySelector('[data-dots]');
+      this.videos = Array.from(this.querySelectorAll('.ai-ugc-carousel__video-{{ ai_gen_id }}'));
+      this.playButtons = Array.from(this.querySelectorAll('[data-play-button]'));
+      this.updateSlidesPerView();
+      this.setupEventListeners();
+      this.createDots();
+      this.updateCarousel();
+      this.setupVideoControls();
+    }
+    updateSlidesPerView() {
+      this.slidesPerView = window.innerWidth <= 749 ? this.slidesPerViewMobile : {{ block.settings.slides_desktop }};
+    }
+    setupEventListeners() {
+      if(this.prevButton){this.prevButton.addEventListener('click',()=>this.prev());}
+      if(this.nextButton){this.nextButton.addEventListener('click',()=>this.next());}
+      window.addEventListener('resize',()=>{
+        this.updateSlidesPerView();
+        this.updateCarousel();
+        this.createDots();
+      });
+    }
+    setupVideoControls() {
+      this.playButtons.forEach((button,index)=>{
+        const video=this.videos[index];
+        if(!video)return;
+        button.addEventListener('click',()=>{
+          video.play();
+          button.classList.add('hidden');
+        });
+        video.addEventListener('click',()=>{
+          if(!video.paused){video.pause();button.classList.remove('hidden');}
+        });
+        video.addEventListener('ended',()=>{button.classList.remove('hidden');});
+      });
+    }
+    createDots() {
+      if(!this.dotsContainer)return;
+      this.dotsContainer.innerHTML='';
+      const totalDots=Math.ceil(this.slides.length/this.slidesPerView);
+      for(let i=0;i<totalDots;i++){
+        const dot=document.createElement('button');
+        dot.className='ai-ugc-carousel__dot-{{ ai_gen_id }}';
+        dot.setAttribute('aria-label',`Go to slide ${i+1}`);
+        dot.addEventListener('click',()=>this.goToSlide(i));
+        this.dotsContainer.appendChild(dot);
+      }
+      this.updateDots();
+    }
+    updateDots() {
+      if(!this.dotsContainer)return;
+      const dots=this.dotsContainer.querySelectorAll('.ai-ugc-carousel__dot-{{ ai_gen_id }}');
+      const activeIndex=Math.floor(this.currentIndex/this.slidesPerView);
+      dots.forEach((dot,index)=>{
+        if(index===activeIndex){dot.classList.add('active');}else{dot.classList.remove('active');}
+      });
+    }
+    updateCarousel() {
+      const slideWidth=this.slides[0].offsetWidth;
+      const gap={{ block.settings.slide_gap }};
+      const offset=-(this.currentIndex*(slideWidth+gap));
+      this.track.style.transform=`translateX(${offset}px)`;
+      if(this.prevButton){this.prevButton.disabled=this.currentIndex===0;}
+      if(this.nextButton){const maxIndex=this.slides.length-this.slidesPerView;this.nextButton.disabled=this.currentIndex>=maxIndex;}
+      this.updateDots();
+    }
+    prev(){if(this.currentIndex>0){this.currentIndex=Math.max(0,this.currentIndex-this.slidesPerView);this.updateCarousel();}}
+    next(){const maxIndex=this.slides.length-this.slidesPerView;if(this.currentIndex<maxIndex){this.currentIndex=Math.min(maxIndex,this.currentIndex+this.slidesPerView);this.updateCarousel();}}
+    goToSlide(index){this.currentIndex=index*this.slidesPerView;this.updateCarousel();}
+  }
+  customElements.define('ugc-video-carousel-{{ ai_gen_id }}',UgcVideoCarousel{{ ai_gen_id }});
+})();
+</script>
+
+{% schema %}
+{
+  "name": "UGC Video Carousel",
+  "settings":[
+    {"type":"inline_richtext","id":"heading","label":"Heading","default":"Featured by influencers"},
+    {"type":"inline_richtext","id":"subheading","label":"Subheading","default":"See what our community loves"},
+    {"type":"select","id":"text_alignment","label":"Text alignment","options":[{"value":"left","label":"Left"},{"value":"center","label":"Center"},{"value":"right","label":"Right"}],"default":"center"},
+    {"type":"range","id":"desktop_width_percent","label":"Desktop width","min":50,"max":100,"step":5,"unit":"%","default":100},
+    {"type":"range","id":"slides_desktop","label":"Slides per view desktop","min":2,"max":4,"step":1,"default":3},
+    {"type":"select","id":"slides_mobile","label":"Slides per view mobile","options":[{"value":"1","label":"1"},{"value":"2","label":"2"}],"default":"1"},
+    {"type":"range","id":"slide_gap","label":"Gap between slides","min":8,"max":40,"step":4,"unit":"px","default":16},
+    {"type":"range","id":"video_height","label":"Video height","min":300,"max":700,"step":50,"unit":"px","default":500},
+    {"type":"checkbox","id":"show_arrows","label":"Show navigation arrows","default":true},
+    {"type":"checkbox","id":"show_dots","label":"Show dots","default":true}
+  ],
+  "presets":[{"name":"UGC Video Carousel"}]
+}
+{% endschema %}

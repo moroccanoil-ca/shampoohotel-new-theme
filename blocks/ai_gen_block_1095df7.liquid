@@ -1,0 +1,1047 @@
+{% doc %}
+  @prompt
+    Before and after testimonials, i need them smaller and in carousel format
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-before-after-carousel-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-before-after-wrapper-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-before-after-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-before-after-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 12px;
+  }
+
+  .ai-before-after-subheading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-before-after-carousel-container-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-before-after-carousel-track-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.card_gap }}px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 0;
+  }
+
+  .ai-before-after-carousel-track-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-before-after-card-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.card_width }}px;
+    scroll-snap-align: start;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-before-after-comparison-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+  }
+
+  .ai-before-after-image-container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-before-after-image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-before-after-after-image-{{ ai_gen_id }} {
+    clip-path: inset(0 0 0 50%);
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background-color: {{ block.settings.slider_color }};
+    cursor: ew-resize;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .ai-before-after-slider-button-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    background-color: {{ block.settings.slider_color }};
+    border: 2px solid {{ block.settings.card_background }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: ew-resize;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-before-after-slider-button-{{ ai_gen_id }} svg {
+    width: 18px;
+    height: 18px;
+    color: {{ block.settings.card_background }};
+  }
+
+  .ai-before-after-label-{{ ai_gen_id }} {
+    position: absolute;
+    top: 12px;
+    padding: 6px 12px;
+    background-color: {{ block.settings.label_background }};
+    color: {{ block.settings.label_text_color }};
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+  }
+
+  .ai-before-after-label-before-{{ ai_gen_id }} {
+    left: 12px;
+  }
+
+  .ai-before-after-label-after-{{ ai_gen_id }} {
+    right: 12px;
+  }
+
+  .ai-before-after-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-before-after-quote-{{ ai_gen_id }} {
+    font-size: {{ block.settings.quote_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .ai-before-after-author-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ai-before-after-author-image-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .ai-before-after-author-image-placeholder-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: {{ block.settings.label_background }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ai-before-after-author-image-placeholder-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: {{ block.settings.label_text_color }};
+  }
+
+  .ai-before-after-author-info-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ai-before-after-author-name-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+  }
+
+  .ai-before-after-author-title-{{ ai_gen_id }} {
+    font-size: 12px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  .ai-before-after-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-before-after-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .ai-before-after-nav-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }} {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: {{ block.settings.card_background }};
+    border: 2px solid {{ block.settings.heading_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.heading_color }};
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }}:hover svg {
+    color: {{ block.settings.card_background }};
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: {{ block.settings.heading_color }};
+    transition: color 0.3s ease;
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }}:disabled:hover {
+    background-color: {{ block.settings.card_background }};
+  }
+
+  .ai-before-after-nav-button-{{ ai_gen_id }}:disabled:hover svg {
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-before-after-dots-{{ ai_gen_id }} {
+    display: flex;
+    gap: 8px;
+  }
+
+  .ai-before-after-dot-{{ ai_gen_id }} {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: {{ block.settings.heading_color }};
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-before-after-dot-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-before-after-card-{{ ai_gen_id }} {
+      flex: 0 0 calc(100% - 40px);
+    }
+
+    .ai-before-after-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+
+    .ai-before-after-quote-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.quote_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<before-after-carousel-{{ ai_gen_id }} class="ai-before-after-carousel-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-before-after-wrapper-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank or block.settings.subheading != blank %}
+      <div class="ai-before-after-header-{{ ai_gen_id }}">
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-before-after-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        {% endif %}
+        {% if block.settings.subheading != blank %}
+          <div class="ai-before-after-subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-before-after-carousel-container-{{ ai_gen_id }}">
+      <div class="ai-before-after-carousel-track-{{ ai_gen_id }}">
+        {% for i in (1..6) %}
+          {% liquid
+            assign testimonial_enabled_key = 'testimonial_' | append: i | append: '_enabled'
+            assign before_image_key = 'testimonial_' | append: i | append: '_before_image'
+            assign after_image_key = 'testimonial_' | append: i | append: '_after_image'
+            assign quote_key = 'testimonial_' | append: i | append: '_quote'
+            assign author_name_key = 'testimonial_' | append: i | append: '_author_name'
+            assign author_title_key = 'testimonial_' | append: i | append: '_author_title'
+            assign author_image_key = 'testimonial_' | append: i | append: '_author_image'
+
+            assign testimonial_enabled = block.settings[testimonial_enabled_key]
+            assign before_image = block.settings[before_image_key]
+            assign after_image = block.settings[after_image_key]
+            assign quote = block.settings[quote_key]
+            assign author_name = block.settings[author_name_key]
+            assign author_title = block.settings[author_title_key]
+            assign author_image = block.settings[author_image_key]
+          %}
+
+          {% if testimonial_enabled %}
+            <div class="ai-before-after-card-{{ ai_gen_id }}" data-index="{{ forloop.index0 }}">
+              <div class="ai-before-after-comparison-{{ ai_gen_id }}" data-comparison="{{ i }}">
+                <div class="ai-before-after-image-container-{{ ai_gen_id }}">
+                  {% if before_image %}
+                    <img
+                      src="{{ before_image | image_url: width: 800 }}"
+                      alt="Before"
+                      class="ai-before-after-image-{{ ai_gen_id }}"
+                      loading="lazy"
+                      width="{{ before_image.width }}"
+                      height="{{ before_image.height }}"
+                    >
+                  {% else %}
+                    <div class="ai-before-after-placeholder-{{ ai_gen_id }}">
+                      {{ 'image' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+
+                  {% if after_image %}
+                    <img
+                      src="{{ after_image | image_url: width: 800 }}"
+                      alt="After"
+                      class="ai-before-after-image-{{ ai_gen_id }} ai-before-after-after-image-{{ ai_gen_id }}"
+                      loading="lazy"
+                      width="{{ after_image.width }}"
+                      height="{{ after_image.height }}"
+                    >
+                  {% endif %}
+
+                  <div class="ai-before-after-label-{{ ai_gen_id }} ai-before-after-label-before-{{ ai_gen_id }}">
+                    {{ block.settings.before_label }}
+                  </div>
+                  <div class="ai-before-after-label-{{ ai_gen_id }} ai-before-after-label-after-{{ ai_gen_id }}">
+                    {{ block.settings.after_label }}
+                  </div>
+
+                  <div class="ai-before-after-slider-{{ ai_gen_id }}">
+                    <div class="ai-before-after-slider-button-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ai-before-after-content-{{ ai_gen_id }}">
+                {% if quote != blank %}
+                  <div class="ai-before-after-quote-{{ ai_gen_id }}">
+                    "{{ quote }}"
+                  </div>
+                {% endif %}
+
+                {% if author_name != blank or author_title != blank %}
+                  <div class="ai-before-after-author-{{ ai_gen_id }}">
+                    {% if author_image %}
+                      <img
+                        src="{{ author_image | image_url: width: 80 }}"
+                        alt="{{ author_name }}"
+                        class="ai-before-after-author-image-{{ ai_gen_id }}"
+                        loading="lazy"
+                        width="40"
+                        height="40"
+                      >
+                    {% else %}
+                      <div class="ai-before-after-author-image-placeholder-{{ ai_gen_id }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      </div>
+                    {% endif %}
+                    <div class="ai-before-after-author-info-{{ ai_gen_id }}">
+                      {% if author_name != blank %}
+                        <div class="ai-before-after-author-name-{{ ai_gen_id }}">{{ author_name }}</div>
+                      {% endif %}
+                      {% if author_title != blank %}
+                        <div class="ai-before-after-author-title-{{ ai_gen_id }}">{{ author_title }}</div>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="ai-before-after-nav-{{ ai_gen_id }}">
+        <button class="ai-before-after-nav-button-{{ ai_gen_id }} ai-before-after-prev-{{ ai_gen_id }}" aria-label="Previous">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <div class="ai-before-after-dots-{{ ai_gen_id }}"></div>
+        <button class="ai-before-after-nav-button-{{ ai_gen_id }} ai-before-after-next-{{ ai_gen_id }}" aria-label="Next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</before-after-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BeforeAfterCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('.ai-before-after-carousel-track-{{ ai_gen_id }}');
+        this.cards = this.querySelectorAll('.ai-before-after-card-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-before-after-prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-before-after-next-{{ ai_gen_id }}');
+        this.dotsContainer = this.querySelector('.ai-before-after-dots-{{ ai_gen_id }}');
+        
+        this.setupComparisons();
+        this.setupCarousel();
+        this.createDots();
+        this.updateNavigation();
+      }
+
+      setupComparisons() {
+        const comparisons = this.querySelectorAll('.ai-before-after-comparison-{{ ai_gen_id }}');
+        
+        comparisons.forEach((comparison) => {
+          const slider = comparison.querySelector('.ai-before-after-slider-{{ ai_gen_id }}');
+          const afterImage = comparison.querySelector('.ai-before-after-after-image-{{ ai_gen_id }}');
+          
+          if (!slider || !afterImage) return;
+
+          let isDragging = false;
+
+          const updateSlider = (x) => {
+            const rect = comparison.getBoundingClientRect();
+            const position = Math.max(0, Math.min(x - rect.left, rect.width));
+            const percentage = (position / rect.width) * 100;
+
+            slider.style.left = percentage + '%';
+            afterImage.style.clipPath = 'inset(0 0 0 ' + percentage + '%)';
+          };
+
+          const handleMove = (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+            updateSlider(x);
+          };
+
+          const startDrag = (e) => {
+            isDragging = true;
+            const x = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+            updateSlider(x);
+          };
+
+          const stopDrag = () => {
+            isDragging = false;
+          };
+
+          slider.addEventListener('mousedown', startDrag);
+          slider.addEventListener('touchstart', startDrag);
+          
+          document.addEventListener('mousemove', handleMove);
+          document.addEventListener('touchmove', handleMove, { passive: false });
+          
+          document.addEventListener('mouseup', stopDrag);
+          document.addEventListener('touchend', stopDrag);
+        });
+      }
+
+      setupCarousel() {
+        this.prevButton.addEventListener('click', () => this.navigate(-1));
+        this.nextButton.addEventListener('click', () => this.navigate(1));
+
+        this.track.addEventListener('scroll', () => {
+          const scrollLeft = this.track.scrollLeft;
+          const cardWidth = this.cards[0].offsetWidth;
+          const gap = parseInt(getComputedStyle(this.track).gap);
+          this.currentIndex = Math.round(scrollLeft / (cardWidth + gap));
+          this.updateNavigation();
+        });
+      }
+
+      createDots() {
+        this.cards.forEach((card, index) => {
+          const dot = document.createElement('div');
+          dot.classList.add('ai-before-after-dot-{{ ai_gen_id }}');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => this.goToSlide(index));
+          this.dotsContainer.appendChild(dot);
+        });
+      }
+
+      navigate(direction) {
+        const newIndex = this.currentIndex + direction;
+        if (newIndex >= 0 && newIndex < this.cards.length) {
+          this.goToSlide(newIndex);
+        }
+      }
+
+      goToSlide(index) {
+        const cardWidth = this.cards[0].offsetWidth;
+        const gap = parseInt(getComputedStyle(this.track).gap);
+        this.track.scrollLeft = index * (cardWidth + gap);
+        this.currentIndex = index;
+        this.updateNavigation();
+      }
+
+      updateNavigation() {
+        this.prevButton.disabled = this.currentIndex === 0;
+        this.nextButton.disabled = this.currentIndex === this.cards.length - 1;
+
+        const dots = this.dotsContainer.querySelectorAll('.ai-before-after-dot-{{ ai_gen_id }}');
+        dots.forEach((dot, index) => {
+          if (index === this.currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+    }
+
+    customElements.define('before-after-carousel-{{ ai_gen_id }}', BeforeAfterCarousel{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Before after carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Real results</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>See the transformations</p>"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Carousel"
+    },
+    {
+      "type": "range",
+      "id": "card_width",
+      "label": "Card width",
+      "min": 200,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Card gap",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "4 / 3",
+          "label": "4:3"
+        },
+        {
+          "value": "1 / 1",
+          "label": "Square"
+        },
+        {
+          "value": "3 / 4",
+          "label": "3:4"
+        }
+      ],
+      "default": "1 / 1"
+    },
+    {
+      "type": "header",
+      "content": "Labels"
+    },
+    {
+      "type": "text",
+      "id": "before_label",
+      "label": "Before label",
+      "default": "Before"
+    },
+    {
+      "type": "text",
+      "id": "after_label",
+      "label": "After label",
+      "default": "After"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "slider_color",
+      "label": "Slider",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "label_background",
+      "label": "Label background",
+      "default": "#321e1e"
+    },
+    {
+      "type": "color",
+      "id": "label_text_color",
+      "label": "Label text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "label": "Subheading size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "quote_size",
+      "label": "Quote size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Card padding",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_1_enabled",
+      "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_1_before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_1_after_image",
+      "label": "After image"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_1_quote",
+      "label": "Quote",
+      "default": "Amazing results in just 4 weeks!"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_author_name",
+      "label": "Name",
+      "default": "Sarah J."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_author_title",
+      "label": "Title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_1_author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_2_enabled",
+      "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_2_before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_2_after_image",
+      "label": "After image"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_2_quote",
+      "label": "Quote",
+      "default": "I can't believe the difference!"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_author_name",
+      "label": "Name",
+      "default": "Michael C."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_author_title",
+      "label": "Title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_2_author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_3_enabled",
+      "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_3_before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_3_after_image",
+      "label": "After image"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_3_quote",
+      "label": "Quote",
+      "default": "Truly life-changing results!"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_author_name",
+      "label": "Name",
+      "default": "Emily R."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_author_title",
+      "label": "Title",
+      "default": "Verified Customer"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_3_author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_4_enabled",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_4_before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_4_after_image",
+      "label": "After image"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_4_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_4_author_name",
+      "label": "Name"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_4_author_title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_4_author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_5_enabled",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_5_before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_5_after_image",
+      "label": "After image"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_5_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_5_author_name",
+      "label": "Name"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_5_author_title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_5_author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonial_6_enabled",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_6_before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_6_after_image",
+      "label": "After image"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_6_quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_6_author_name",
+      "label": "Name"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_6_author_title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_6_author_image",
+      "label": "Author image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before after carousel"
+    }
+  ]
+}
+{% endschema %}
