@@ -119,7 +119,7 @@
     "volume_pricing": {
       "title": "Kiekybinė kainodara",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "po {{ price }}/vnt."
+      "price_at_each": "po {{ price }}\/vnt."
     },
     "rating_count": {
       "zero": "{{ count }} peržiūrų",
@@ -359,7 +359,7 @@
       "taxes_included_and_shipping_policy_html": "Į kainą įtrauktas mokestis. <a href=\"{{ link }}\" class=\"link\">Siuntimo išlaidos<\/a> apskaičiuojamos pateikiant užsakymą.",
       "taxes_and_shipping_at_checkout": "Mokesčiai ir siuntimo išlaidos apskaičiuojami pateikiant užsakymą",
       "terms_of_services_checkbox": "Sutinku su paslaugų teikimo sąlygomis",
-      "terms_of_services_checkbox_with_link_html": "Sutinku su <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">paslaugų teikimo sąlygomis</a>",
+      "terms_of_services_checkbox_with_link_html": "Sutinku su <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">paslaugų teikimo sąlygomis<\/a>",
       "offers": "Pasiūlymai"
     },
     "order": {
@@ -370,7 +370,7 @@
       "remove_with_title": "Pašalinti {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Išleiskite dar <span class='bold'>{{ remaining_amount }}</span>, kad siuntimas būtų nemokamas!",
+      "limit_unreached_html": "Išleiskite dar <span class='bold'>{{ remaining_amount }}<\/span>, kad siuntimas būtų nemokamas!",
       "limit_reached_html": "Jums prieinamas nemokamas siuntimas."
     },
     "shipping_estimator": {

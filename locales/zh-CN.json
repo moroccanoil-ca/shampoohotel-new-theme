@@ -117,7 +117,7 @@
     "volume_pricing": {
       "title": "批量定价",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/件"
+      "price_at_each": "{{ price }}\/件"
     },
     "rating_count": {
       "zero": "无评价",
@@ -346,7 +346,7 @@
       "taxes_included_and_shipping_policy_html": "含税。在结账时计算<a href=\"{{ link }}\" class=\"link\">运费<\/a>。",
       "taxes_and_shipping_at_checkout": "结账时计算税费和运费",
       "terms_of_services_checkbox": "我同意服务条款",
-      "terms_of_services_checkbox_with_link_html": "我同意<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">服务条款</a>",
+      "terms_of_services_checkbox_with_link_html": "我同意<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">服务条款<\/a>",
       "offers": "优惠"
     },
     "order": {
@@ -357,7 +357,7 @@
       "remove_with_title": "移除{{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "再消费 <span class='bold'>{{ remaining_amount }}</span> 可包邮！",
+      "limit_unreached_html": "再消费 <span class='bold'>{{ remaining_amount }}<\/span> 可包邮！",
       "limit_reached_html": "已符合包邮条件。"
     },
     "shipping_estimator": {
@@ -445,7 +445,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "若要显示之前/之后的比较，请在该版块中添加更多内容。",
+      "not_enough_blocks": "若要显示之前\/之后的比较，请在该版块中添加更多内容。",
       "percentage_shown": "显示的之后照片的百分比",
       "cursor_accessibility_text": "使用左右箭头键在 before 和 after 图片之间导航。"
     },

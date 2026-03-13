@@ -122,7 +122,7 @@
     "volume_pricing": {
       "title": "Volume pricing",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/ea"
+      "price_at_each": "{{ price }}\/ea"
     },
     "rating_count": {
       "zero": "No reviews",
@@ -348,12 +348,12 @@
       "weight": "Weight",
       "subtotal": "Subtotal",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" class=\"link\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" class=\"link\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" class=\"link\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" class=\"link\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "terms_of_services_checkbox": "I agree with terms of services",
-      "terms_of_services_checkbox_with_link_html": "I agree with <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">terms of services</a>",
+      "terms_of_services_checkbox_with_link_html": "I agree with <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">terms of services<\/a>",
       "add_order_note": "Add order note",
       "edit_order_note": "Edit order note",
       "order_note": "Order note",
@@ -371,7 +371,7 @@
       "remove_with_title": "Remove {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Spend <span class='bold'>{{ remaining_amount }}</span> more and get free shipping!",
+      "limit_unreached_html": "Spend <span class='bold'>{{ remaining_amount }}<\/span> more and get free shipping!",
       "limit_reached_html": "You are eligible for free shipping."
     },
     "shipping_estimator": {
@@ -461,7 +461,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "To show before/after comparison, please add more blocks in the section.",
+      "not_enough_blocks": "To show before\/after comparison, please add more blocks in the section.",
       "percentage_shown": "Percentage of after photo shown",
       "cursor_accessibility_text": "Use the left and right arrow keys to navigate between before and after photos."
     },

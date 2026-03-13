@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Volyymihinnoittelu",
       "minimum": "Yli {{ quantity }}",
-      "price_at_each": "{{ price }}/kpl"
+      "price_at_each": "{{ price }}\/kpl"
     },
     "rating_count": {
       "zero": "Ei arvosteluja",
@@ -353,7 +353,7 @@
       "taxes_included_and_shipping_policy_html": "Verot sisältyvät hintaan. <a href=\"{{ link }}\" class=\"link\">Toimituskulut<\/a> lasketaan maksun yhteydessä.",
       "taxes_and_shipping_at_checkout": "Verot ja toimituskululut lasketaan maksun yhteydessä",
       "terms_of_services_checkbox": "Hyväksyn palveluehdot",
-      "terms_of_services_checkbox_with_link_html": "Hyväksyn <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">palveluehdot</a>",
+      "terms_of_services_checkbox_with_link_html": "Hyväksyn <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">palveluehdot<\/a>",
       "offers": "Tarjoukset"
     },
     "order": {
@@ -364,7 +364,7 @@
       "remove_with_title": "Poista {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Käytä vielä <span class='bold'>{{ remaining_amount }}</span>, niin saat ilmaisen toimituksen!",
+      "limit_unreached_html": "Käytä vielä <span class='bold'>{{ remaining_amount }}<\/span>, niin saat ilmaisen toimituksen!",
       "limit_reached_html": "Saat ilmaisen toimituksen."
     },
     "shipping_estimator": {
@@ -456,7 +456,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Lisää enemmän lohkoja osioon ennen/jälkeen-vertailun näyttämiseksi.",
+      "not_enough_blocks": "Lisää enemmän lohkoja osioon ennen\/jälkeen-vertailun näyttämiseksi.",
       "percentage_shown": "Näytetyn jälkeen-kuvan prosenttiosuus",
       "cursor_accessibility_text": "Käytä vasenta ja oikeaa nuolinäppäintä siirtyäksesi ennen ja jälkeen -valokuvien välillä."
     },

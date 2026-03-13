@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Mængderabat",
       "minimum": "Mere end {{ quantity }}",
-      "price_at_each": "til {{ price }}/stk"
+      "price_at_each": "til {{ price }}\/stk"
     },
     "rating_count": {
       "zero": "Ingen anmeldelser",
@@ -353,7 +353,7 @@
       "taxes_included_and_shipping_policy_html": "Moms inkluderet. <a href=\"{{ link }}\" class=\"link\">Levering<\/a> beregnes ved kassen.",
       "taxes_and_shipping_at_checkout": "Moms og levering beregnes ved kassen",
       "terms_of_services_checkbox": "Jeg accepterer vilkårene for tjenesten",
-      "terms_of_services_checkbox_with_link_html": "Jeg accepterer <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">vilkårene for tjenesten</a>",
+      "terms_of_services_checkbox_with_link_html": "Jeg accepterer <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">vilkårene for tjenesten<\/a>",
       "offers": "Tilbud"
     },
     "order": {
@@ -364,7 +364,7 @@
       "remove_with_title": "Fjern {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Brug <span class='bold'>{{ remaining_amount }}</span> mere og få gratis levering!",
+      "limit_unreached_html": "Brug <span class='bold'>{{ remaining_amount }}<\/span> mere og få gratis levering!",
       "limit_reached_html": "Du er berettiget til gratis levering."
     },
     "shipping_estimator": {
@@ -456,7 +456,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Tilføj flere blokke i området for at vise en før/efter-sammenligning.",
+      "not_enough_blocks": "Tilføj flere blokke i området for at vise en før\/efter-sammenligning.",
       "percentage_shown": "Procentdel efter viste foto",
       "cursor_accessibility_text": "Brug venstre- og højrepilene til at navigere mellem før og efter billeder."
     },

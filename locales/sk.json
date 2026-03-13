@@ -121,7 +121,7 @@
     "volume_pricing": {
       "title": "Objemové ceny",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/kus"
+      "price_at_each": "{{ price }}\/kus"
     },
     "rating_count": {
       "zero": "Zatiaľ žiadne hodnotenia",
@@ -365,7 +365,7 @@
       "taxes_included_and_shipping_policy_html": "Vrátane dane. <a href=\"{{ link }}\" class=\"link\">Doprava<\/a> sa vypočíta pri pokladni.",
       "taxes_and_shipping_at_checkout": "Dane a doprava sa vypočítajú pri pokladni",
       "terms_of_services_checkbox": "Súhlasím s podmienkami služby",
-      "terms_of_services_checkbox_with_link_html": "Súhlasím s <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">podmienkami služby</a>",
+      "terms_of_services_checkbox_with_link_html": "Súhlasím s <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">podmienkami služby<\/a>",
       "offers": "Ponuky"
     },
     "order": {
@@ -376,7 +376,7 @@
       "remove_with_title": "Odstrániť {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Nakúpte ešte za <span class='bold'>{{ remaining_amount }}</span> a získajte dopravu zdarma!",
+      "limit_unreached_html": "Nakúpte ešte za <span class='bold'>{{ remaining_amount }}<\/span> a získajte dopravu zdarma!",
       "limit_reached_html": "Máte nárok na bezplatnú dopravu."
     },
     "shipping_estimator": {
@@ -472,7 +472,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Ak chcete zobraziť porovnanie pred/po, pridajte do sekcie ďalšie bloky.",
+      "not_enough_blocks": "Ak chcete zobraziť porovnanie pred\/po, pridajte do sekcie ďalšie bloky.",
       "percentage_shown": "Percento zobrazenej fotografie po",
       "cursor_accessibility_text": "Použite ľavé a pravé šípky na navigáciu medzi pred a po fotografiách."
     },

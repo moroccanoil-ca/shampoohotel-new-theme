@@ -1,0 +1,333 @@
+{%- comment -%}
+  Bathtime Bundle Promotion Logic
+  Checks if cart qualifies for the bundle and triggers discount/GWP auto-add
+{%- endcomment -%}
+
+{%- liquid
+  assign shampoo_count = 0
+  assign conditioner_count = 0
+  assign body_wash_count = 0
+  assign has_lotion = false
+  assign has_gwp = false
+  
+  for item in cart.items
+    assign item_shampoo = false
+    assign item_conditioner = false
+    assign item_body_wash = false
+    
+    for collection in item.product.collections
+      if collection.handle == 'shampoo'
+        assign item_shampoo = true
+      elsif collection.handle == 'conditioner'
+        assign item_conditioner = true
+      elsif collection.handle == 'bodywash'
+        assign item_body_wash = true
+      elsif collection.handle == 'body-lotion'
+        assign has_lotion = true
+      elsif collection.handle == 'guasha-gwp'
+        assign has_gwp = true
+      endif
+    endfor
+    
+
+    if item_shampoo
+      assign shampoo_count = shampoo_count | plus: item.quantity
+    endif
+    if item_conditioner
+      assign conditioner_count = conditioner_count | plus: item.quantity
+    endif
+    if item_body_wash
+      assign body_wash_count = body_wash_count | plus: item.quantity
+    endif
+  endfor
+  
+assign num_complete_bundles = 0
+if shampoo_count >= 1 and conditioner_count >= 1 and body_wash_count >= 1
+  assign num_complete_bundles = shampoo_count
+  if conditioner_count < num_complete_bundles
+    assign num_complete_bundles = conditioner_count
+  endif
+  if body_wash_count < num_complete_bundles
+    assign num_complete_bundles = body_wash_count
+  endif
+endif
+
+assign qualifies_for_bathtime = false
+if num_complete_bundles >= 1
+  assign qualifies_for_bathtime = true
+endif
+  
+  assign lotion_collection = collections['body-lotion']
+  assign gwp_collection = collections['guasha-gwp']
+-%}
+
+
+{%- if qualifies_for_bathtime -%}
+<div class="bathtime-bundle-trigger" 
+     data-discount-code="BATHTIME-BUNDLE"
+     data-has-lotion="{{ has_lotion }}"
+     data-has-gwp="{{ has_gwp }}"
+     data-target-gwp-quantity="{{ num_complete_bundles }}"
+     {% if gwp_collection.products.size > 0 %}data-gwp-variant-id="{{ gwp_collection.products.first.selected_or_first_available_variant.id }}"{% endif %}
+     hidden>
+</div>
+
+  {%- comment -%} Show lotion selector if not in cart {%- endcomment -%}
+  {%- unless has_lotion -%}
+    <div class="bathtime-bundle-offer v-stack gap-4" style="padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+      <div class="v-stack gap-2">
+        <p class="h6">🎉 You qualify for the Bathtime Bundle!</p>
+        <p class="text-sm">Choose your free lotion + get a free Gua Sha:</p>
+      </div>
+
+      {%- if lotion_collection.products.size > 0 -%}
+        <scroll-carousel id="bathtime-lotion-carousel" class="scroll-area bleed">
+          <div class="h-stack gap-3" style="overflow-x: auto; padding: 0.5rem 0;">
+            {%- for product in lotion_collection.products -%}
+              {%- if product.metafields.seo.hidden != 1 -%}
+                <div class="bathtime-lotion-option" style="min-width: 150px; text-align: center;">
+                  <a href="{{ product.url }}" class="block">
+                    {%- if product.featured_image -%}
+                        <img src="{{ product.featured_image | img_url: '200x200' }}" alt="{{ product.title }}" width="200" height="200" loading="lazy" style="width: 100%; height: auto; border-radius: 4px;">
+                        {%- endif -%}
+                    <p class="text-xs bold" style="margin-top: 0.5rem;">{{ product.title }}</p>
+                    <p class="text-xxs text-subdued" style="text-decoration: line-through;">{{ product.price | money }}</p>
+                  </a>
+                  <button type="button" 
+                          class="button button--sm bathtime-add-lotion" 
+                          data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                          style="margin-top: 0.5rem; width: 100%;">
+                    Add Free
+                  </button>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </scroll-carousel>
+      {%- endif -%}
+    </div>
+  {%- endunless -%}
+
+  <script>
+    (function() {
+      const trigger = document.querySelector('.bathtime-bundle-trigger');
+      
+      if (!trigger) return;
+      
+      const discountCode = trigger.dataset.discountCode;
+      const hasLotion = trigger.dataset.hasLotion === 'true';
+      const hasGwp = trigger.dataset.hasGwp === 'true';
+      const gwpVariantId = trigger.dataset.gwpVariantId;
+      const targetGwpQuantity = parseInt(trigger.dataset.targetGwpQuantity);
+
+      // Auto-add GWP immediately if qualified and not in cart
+      if (!hasGwp && gwpVariantId) {
+        addGWPToCart(gwpVariantId);
+      }
+      
+      // Auto-apply discount if lotion already in cart
+      if (hasLotion && !hasDiscountApplied()) {
+        applyBathtimeDiscount(discountCode);
+      }
+      
+      // Handle lotion add buttons
+      const addLotionButtons = document.querySelectorAll('.bathtime-add-lotion');
+      addLotionButtons.forEach(button => {
+        button.addEventListener('click', async function() {
+          const variantId = this.dataset.variantId;
+          button.disabled = true;
+          button.textContent = 'Adding...';
+          
+          try {
+            await fetch('/cart/add.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                items: [{ id: variantId, quantity: 1 }]
+              })
+            });
+            
+            // Apply discount after lotion is added
+            await applyBathtimeDiscount(discountCode);
+            
+            // Reload to show updated cart
+            window.location.reload();
+          } catch (error) {
+            console.error('Error adding lotion:', error);
+            button.disabled = false;
+            button.textContent = 'Add Free';
+          }
+        });
+      });
+      
+      function hasDiscountApplied() {
+        const discountBadges = document.querySelectorAll('.discount-badge');
+        for (let badge of discountBadges) {
+          if (badge.textContent.includes(discountCode)) {
+            return true;
+          }
+        }
+        return false;
+      }
+      
+      async function applyBathtimeDiscount(code) {
+        try {
+          const cartResponse = await fetch('/cart.js');
+          const cart = await cartResponse.json();
+          
+          const hasDiscount = cart.discount_codes.some(d => d.code === code);
+          if (hasDiscount) return;
+          
+          await fetch('/cart/update.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ discount: code })
+          });
+        } catch (error) {
+          console.error('Error applying Bathtime Bundle discount:', error);
+        }
+      }
+      
+      async function addGWPToCart(variantId) {
+        try {
+          // Check if already in cart first
+          const cartResponse = await fetch('/cart.js');
+          const cart = await cartResponse.json();
+          const gwpInCart = cart.items.some(item => item.variant_id == variantId);
+          
+          if (gwpInCart) return;
+          
+          await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              items: [{ id: variantId, quantity: 1 }]
+            })
+          });
+          
+          // Reload to show GWP in cart
+          window.location.reload();
+        } catch (error) {
+          console.error('Error adding GWP to cart:', error);
+        }
+      }
+
+      // Check current GWP quantity and adjust if needed
+      if (gwpVariantId) {
+        adjustGWPQuantity(gwpVariantId, targetGwpQuantity);
+      }
+
+      async function adjustGWPQuantity(variantId, targetQuantity) {
+        try {
+          const cartResponse = await fetch('/cart.js');
+          const cart = await cartResponse.json();
+          const gwpItem = cart.items.find(item => item.variant_id == variantId);
+          
+          if (!gwpItem && targetQuantity > 0) {
+            // Add GWP with correct quantity
+            await fetch('/cart/add.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                items: [{ id: variantId, quantity: targetQuantity }]
+              })
+            });
+            window.location.reload();
+          } else if (gwpItem && gwpItem.quantity !== targetQuantity) {
+            // Update GWP quantity to match target
+            await fetch('/cart/change.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                id: gwpItem.key,
+                quantity: targetQuantity
+              })
+            });
+            window.location.reload();
+          }
+        } catch (error) {
+          console.error('Error adjusting GWP quantity:', error);
+        }
+      }
+    })();
+
+     async function removeGWPFromCart(variantId) {
+        try {
+          // Get current cart to find the GWP line item
+          const cartResponse = await fetch('/cart.js');
+          const cart = await cartResponse.json();
+          const gwpItem = cart.items.find(item => item.variant_id == variantId);
+          
+          if (!gwpItem) return;
+          
+          // Remove the GWP
+          await fetch('/cart/change.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              id: gwpItem.key,
+              quantity: 0
+            })
+          });
+          
+          // Reload to show updated cart
+          window.location.reload();
+        } catch (error) {
+          console.error('Error removing GWP from cart:', error);
+        }
+      }
+
+  </script>
+{%- endif -%}
+
+{%- comment -%} Remove GWP if conditions no longer met {%- endcomment -%}
+{%- liquid
+  assign gwp_collection_check = collections['guasha-gwp']
+-%}
+
+{%- if has_gwp and qualifies_for_bathtime == false -%}
+  {%- if gwp_collection_check.products.size > 0 -%}
+    <div class="bathtime-bundle-remove-gwp" 
+         data-gwp-variant-id="{{ gwp_collection_check.products.first.selected_or_first_available_variant.id }}"
+         hidden>
+    </div>
+
+    <script>
+      (function() {
+        const removeGwpTrigger = document.querySelector('.bathtime-bundle-remove-gwp');
+        
+        if (!removeGwpTrigger) return;
+        
+        const gwpVariantId = removeGwpTrigger.dataset.gwpVariantId;
+        
+        // Auto-remove GWP when conditions not met
+        if (gwpVariantId) {
+          removeGWPFromCart(gwpVariantId);
+        }
+        
+        async function removeGWPFromCart(variantId) {
+          try {
+            const cartResponse = await fetch('/cart.js');
+            const cart = await cartResponse.json();
+            const gwpItem = cart.items.find(item => item.variant_id == variantId);
+            
+            if (!gwpItem) return;
+            
+            await fetch('/cart/change.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                id: gwpItem.key,
+                quantity: 0
+              })
+            });
+            
+            window.location.reload();
+          } catch (error) {
+            console.error('Error removing GWP from cart:', error);
+          }
+        }
+      })();
+    </script>
+  {%- endif -%}
+{%- endif -%}

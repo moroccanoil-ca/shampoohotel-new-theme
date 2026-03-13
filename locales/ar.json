@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "تسعير بالجملة",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/ea"
+      "price_at_each": "{{ price }}\/ea"
     },
     "rating_count": {
       "zero": "لا توجد مراجعات",
@@ -357,7 +357,7 @@
       "taxes_included_and_shipping_policy_html": "السعر شامل الضرائب. ويتم حساب رسوم <a href=\"{{ link }}\" class=\"link\">الشحن<\/a> عند إتمام الطلب.",
       "taxes_and_shipping_at_checkout": "يتم حساب الضرائب ورسوم الشحن عند إتمام الطلب",
       "terms_of_services_checkbox": "أوافق على شروط الخدمة",
-      "terms_of_services_checkbox_with_link_html": "أوافق على <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">شروط الخدمة</a>",
+      "terms_of_services_checkbox_with_link_html": "أوافق على <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">شروط الخدمة<\/a>",
       "offers": "عروض"
     },
     "order": {
@@ -368,7 +368,7 @@
       "remove_with_title": "إزالة {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "أنفق <span class='bold'>{{ remaining_amount }}</span> إضافية واحصل على شحن مجاني!",
+      "limit_unreached_html": "أنفق <span class='bold'>{{ remaining_amount }}<\/span> إضافية واحصل على شحن مجاني!",
       "limit_reached_html": "أنت مؤهل للشحن المجاني."
     },
     "shipping_estimator": {

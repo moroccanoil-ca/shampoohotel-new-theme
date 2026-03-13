@@ -8,7 +8,7 @@
       "go_to_page": "עבור לעמוד {{ index }}",
       "go_to_item": "עבור לפריט {{ index }}",
       "item_nth_of_count": "פריט {{ index }} מתוך {{ count }}",
-      "toggle_autoplay": "הפעל/כבה הפעלה אוטומטית",
+      "toggle_autoplay": "הפעל\/כבה הפעלה אוטומטית",
       "drag": "גרור",
       "close": "סגור",
       "next": "הבא",
@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "תמחור לפי כמות",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/ליחידה"
+      "price_at_each": "{{ price }}\/ליחידה"
     },
     "rating_count": {
       "zero": "אין ביקורות",
@@ -353,7 +353,7 @@
       "taxes_included_and_shipping_policy_html": "המס כלול. <a href=\"{{ link }}\" class=\"link\">דמי משלוח<\/a> יחושבו בעת התשלום.",
       "taxes_and_shipping_at_checkout": "המסים ודמי משלוח יחושבו בעת התשלום",
       "terms_of_services_checkbox": "אני מסכים לתנאי השירות",
-      "terms_of_services_checkbox_with_link_html": "אני מסכים ל<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">תנאי השירות</a>",
+      "terms_of_services_checkbox_with_link_html": "אני מסכים ל<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">תנאי השירות<\/a>",
       "offers": "הצעות"
     },
     "order": {
@@ -364,7 +364,7 @@
       "remove_with_title": "הסר {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "קנה בעוד <span class='bold'>{{ remaining_amount }}</span> ותיהנה ממשלוח חינם!",
+      "limit_unreached_html": "קנה בעוד <span class='bold'>{{ remaining_amount }}<\/span> ותיהנה ממשלוח חינם!",
       "limit_reached_html": "את\/ה זכאי\/ת לקבל משלוח חינם."
     },
     "shipping_estimator": {
@@ -456,7 +456,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "להצגה לפני/אחרי ההשוואה, נא להוסיף בלוקים נוספים בסעיף.",
+      "not_enough_blocks": "להצגה לפני\/אחרי ההשוואה, נא להוסיף בלוקים נוספים בסעיף.",
       "percentage_shown": "אחוז המוצג מהתמונה שאחרי",
       "cursor_accessibility_text": " השתמש במקשי החץ שמאלה וימינה כדי לנווט בין התמונות לפני ואחר"
     },

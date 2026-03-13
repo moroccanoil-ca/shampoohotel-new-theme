@@ -8,7 +8,7 @@
       "go_to_page": "{{ index }}. sayfaya git",
       "go_to_item": "{{ index }} ögesine git",
       "item_nth_of_count": "{{ index }}\/{{ count }}. öge",
-      "toggle_autoplay": "Otomatik oynatmayı aç/kapat",
+      "toggle_autoplay": "Otomatik oynatmayı aç\/kapat",
       "drag": "Sürükle",
       "close": "Kapat",
       "next": "İleri",
@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Toplu Alım Bazlı Fiyatlandırma",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/adet"
+      "price_at_each": "{{ price }}\/adet"
     },
     "rating_count": {
       "zero": "Değerlendirme yok",
@@ -352,7 +352,7 @@
       "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\" class=\"link\">Gönderi ücreti<\/a> ödeme sırasında hesaplanır.",
       "taxes_and_shipping_at_checkout": "Vergiler ve gönderi ücreti ödeme sırasında hesaplanır",
       "terms_of_services_checkbox": "Hizmet koşullarını kabul ediyorum",
-      "terms_of_services_checkbox_with_link_html": "Hizmet koşullarını <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">kabul ediyorum</a>",
+      "terms_of_services_checkbox_with_link_html": "Hizmet koşullarını <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">kabul ediyorum<\/a>",
       "offers": "Teklifler"
     },
     "order": {
@@ -363,7 +363,7 @@
       "remove_with_title": "{{ title }} kaldır"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "<span class='bold'>{{ remaining_amount }}</span> daha harcayın ve ücretsiz gönderi kazanın!",
+      "limit_unreached_html": "<span class='bold'>{{ remaining_amount }}<\/span> daha harcayın ve ücretsiz gönderi kazanın!",
       "limit_reached_html": "Ücretsiz gönderi için uygunsunuz."
     },
     "shipping_estimator": {
@@ -455,7 +455,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Önce/sonra karşılaştırmasını göstermek için lütfen bölüme daha fazla blok ekleyin.",
+      "not_enough_blocks": "Önce\/sonra karşılaştırmasını göstermek için lütfen bölüme daha fazla blok ekleyin.",
       "percentage_shown": "Gösterilen sonra fotoğrafının yüzdesi",
       "cursor_accessibility_text": "Önce ve sonra fotoğrafları arasında gezinmek için sol ve sağ ok tuşlarını kullanın."
     },

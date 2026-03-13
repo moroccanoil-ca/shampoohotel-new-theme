@@ -1,1 +1,480 @@
-{"sections":{"banner":{"type":"collection-banner","custom_css":[],"settings":{"color_scheme":"scheme-1","allow_transparent_header":false,"layout":"plain","show_description":true,"collection_title_size":"h2","content_position":"place-self-center","background_color_scheme":"scheme-1","image":"shopify:\/\/shop_images\/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png","image_size":"auto","quick_navigation_menu":"collections"}},"video_gezAmt":{"type":"video","blocks":{"play_button_kmMPJh":{"type":"play_button","disabled":true,"settings":{"position":"middle_center","inherit_alignment_on_mobile":true,"mobile_position":"middle_center","show_play_cursor":false}},"heading_hcxGEY":{"type":"heading","disabled":true,"settings":{"text":"Video","mobile_heading_tag":"h1","desktop_heading_tag":"sm:h3","position":"middle_center","inherit_alignment_on_mobile":true,"mobile_position":"middle_center","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}}},"block_order":["play_button_kmMPJh","heading_hcxGEY"],"name":"t:sections.video.name","settings":{"color_scheme":"","allow_transparent_header":false,"autoplay":true,"show_controls":false,"video_size":"auto","mobile_video_size":"auto","video":"{{ collection.metafields.custom.collectionvideo.value }}","external_video_url":""}},"image_with_text_overlay_P7q9nR":{"type":"image-with-text-overlay","blocks":{"subheading_KidTNQ":{"type":"subheading","disabled":true,"settings":{"text":"Subheading"},"blocks":{}},"heading_bqEkKD":{"type":"heading","disabled":true,"settings":{"text":"Image with text overlay","heading_size":"h3","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_q6fUMU":{"type":"rich-text","disabled":true,"settings":{"text":"<p>Write some text about your products or your brand.<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["subheading_KidTNQ","heading_bqEkKD","rich_text_q6fUMU"],"disabled":true,"name":"t:sections.image_with_text_overlay.name","settings":{"color_scheme":"","allow_transparent_header":true,"image_size":"auto","image":"shopify:\/\/shop_images\/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png","overlay_color":"#000000","overlay_opacity":0,"enable_sticky_content":false,"content_width":"md","desktop_text_position":"sm:place-self-center","mobile_text_position":"place-self-center"}},"image_with_text_overlay_KAdLgf":{"type":"image-with-text-overlay","blocks":{"subheading_nBepVz":{"type":"subheading","settings":{"text":"Welcome to"},"blocks":{}},"heading_Me3Hpd":{"type":"heading","settings":{"text":"MIAMI","heading_size":"h3","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_rbNX7T":{"type":"rich-text","settings":{"text":"<p>Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["subheading_nBepVz","heading_Me3Hpd","rich_text_rbNX7T"],"disabled":true,"name":"t:sections.image_with_text_overlay.name","settings":{"color_scheme":"","allow_transparent_header":true,"image_size":"auto","image":"shopify:\/\/shop_images\/2025_01_13_SH_1880.jpg","overlay_color":"#000000","overlay_opacity":20,"enable_sticky_content":false,"content_width":"md","desktop_text_position":"sm:place-self-center","mobile_text_position":"place-self-center"}},"main":{"type":"main-collection","blocks":{"video_BQ7KUn":{"type":"video","disabled":true,"settings":{"color_scheme":"scheme-3","position":1,"size":"2_1","video":"shopify:\/\/files\/videos\/HotelCamp_MIAMI_HighRes.mp4","overlay_color":"#000000","overlay_opacity":0,"content_position":"place-self-center","subheading":"<strong>Scent Notes <\/strong> Lemon Peel, Patchouli and Sea Salt. A zesty citrus blend with earthy patchouli, hydrating like a dip in the ocean.","heading":"","heading_size":"h2","content":"","button_text":"","url":"","open_in_new_tab":false,"style":"solid"}}},"block_order":["video_BQ7KUn"],"settings":{"color_scheme":"scheme-1","products_per_page":36,"products_per_row_mobile":2,"products_per_row_desktop":4,"show_product_card_size_selector":false,"quick_links_menu":"","filter_layout":"drawer","show_sort_by":true,"show_filters":true,"show_filter_group_name":false,"show_filter_values_count":true,"open_filters_by_default":false,"swatch_selector_size":"sm"}},"scrolling_content_QUPqGf":{"type":"scrolling-content","blocks":{"text_B8HhCY":{"type":"text","settings":{"text":"PARABEN-FREE","custom_icon":"shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_aHyj84":{"type":"text","settings":{"text":"MINERAL OIL-FREE","custom_icon":"shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_x6yV6L":{"type":"text","settings":{"text":"NO HARMFUL SULFATES","custom_icon":"shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_YyPTRM":{"type":"text","settings":{"text":"VEGAN","custom_icon":"shopify:\/\/shop_images\/Asset_43_RENDER.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_hnrfrU":{"type":"text","settings":{"text":"CRUELTY-FREE","custom_icon":"shopify:\/\/shop_images\/Asset_44_RENDER.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}}},"block_order":["text_B8HhCY","text_aHyj84","text_x6yV6L","text_YyPTRM","text_hnrfrU"],"name":"t:sections.scrolling_content.name","settings":{"color_scheme":"scheme-5","scrolling_speed":0.1,"scroll_direction":"end-to-start","section_rotation":0,"pause_on_hover":false,"text_font":"heading","text_font_size_mobile":4,"text_font_size_desktop":2,"section_vertical_spacing_mobile":16,"section_vertical_spacing_desktop":20,"item_horizontal_spacing_mobile":40,"item_horizontal_spacing_desktop":80}},"multi_column_JjLQbq":{"type":"multi-column","blocks":{"multi_column_column_HGKYWz":{"type":"_multi-column-column","settings":{"color_scheme":"","text_alignment":"left"},"blocks":{"image_8ia8DV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/ScentCallout_67d5f8d3-43d9-4362-88c3-0a00ba3836a9.png","max_width":100,"mobile_max_width":100},"blocks":{}},"heading_Krzdz9":{"type":"heading","settings":{"text":"Scent Notes","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_BHiDND":{"type":"rich-text","settings":{"text":"<p>Vanilla Orchid, Coconut and Sandalwood—a tropical trio that lifts your hair with a burst of sweetness and soft, woodsy notes for Rio-level volume.<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["image_8ia8DV","heading_Krzdz9","rich_text_BHiDND"]},"multi_column_column_Rk44gF":{"type":"_multi-column-column","settings":{"color_scheme":"","text_alignment":"left"},"blocks":{"image_HRN9CW":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/rio-block-middle.jpg","max_width":100,"mobile_max_width":100},"blocks":{}},"heading_LTgy9F":{"type":"heading","settings":{"text":"Who is it for?","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_NKJtdh":{"type":"rich-text","settings":{"text":"<p>For the “more is more” crowd. Welcome to your stay at the Rio resort.<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["image_HRN9CW","heading_LTgy9F","rich_text_NKJtdh"]},"multi_column_column_3wcRYV":{"type":"_multi-column-column","settings":{"color_scheme":"","text_alignment":"left"},"blocks":{"image_4kyBgD":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Shampoo.png","max_width":100,"mobile_max_width":100},"blocks":{}},"heading_kLXKPp":{"type":"heading","settings":{"text":"How to use","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_L6yRmU":{"type":"rich-text","settings":{"text":"<p>Work into wet hair, focusing on the roots to give your strands a tropical cleanse. Rinse thoroughly, then follow up with SHAMPOOHOTEL™ Rio volume conditioner for a full getaway.<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["image_4kyBgD","heading_kLXKPp","rich_text_L6yRmU"]},"section-header":{"type":"_section-header","disabled":true,"static":true,"settings":{"subheading":"","title":"Multi-column","content":"<p>Use this content to share information about your store and products.<\/p>","button_text":"","button_link":"","button_style":"outline","text_alignment":"left","heading_size":"h3","title_icon":"none","show_scrolling_title":false},"blocks":{}}},"block_order":["multi_column_column_HGKYWz","multi_column_column_Rk44gF","multi_column_column_3wcRYV"],"name":"t:sections.multi_column.name","settings":{"color_scheme":"","show_internal_borders":false,"add_horizontal_spacing":true,"add_top_spacing":true,"add_bottom_spacing":true,"items_per_row":3,"stack_on_mobile":true,"stack_on_desktop":true,"column_spacing":"md","row_spacing":"md"}}},"order":["banner","video_gezAmt","image_with_text_overlay_P7q9nR","image_with_text_overlay_KAdLgf","main","scrolling_content_QUPqGf","multi_column_JjLQbq"]}
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "allow_transparent_header": false,
+        "layout": "plain",
+        "show_description": true,
+        "collection_title_size": "h2",
+        "content_position": "place-self-center",
+        "background_color_scheme": "scheme-1",
+        "image": "shopify:\/\/shop_images\/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png",
+        "image_size": "auto",
+        "quick_navigation_menu": "collections"
+      }
+    },
+    "video_gezAmt": {
+      "type": "video",
+      "blocks": {
+        "play_button_kmMPJh": {
+          "type": "play_button",
+          "disabled": true,
+          "settings": {
+            "position": "middle_center",
+            "inherit_alignment_on_mobile": true,
+            "mobile_position": "middle_center",
+            "show_play_cursor": false
+          }
+        },
+        "heading_hcxGEY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "mobile_heading_tag": "h1",
+            "desktop_heading_tag": "sm:h3",
+            "position": "middle_center",
+            "inherit_alignment_on_mobile": true,
+            "mobile_position": "middle_center",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "play_button_kmMPJh",
+        "heading_hcxGEY"
+      ],
+      "name": "t:sections.video.name",
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "show_controls": false,
+        "video_size": "auto",
+        "mobile_video_size": "auto",
+        "video": "{{ collection.metafields.custom.collectionvideo.value }}",
+        "external_video_url": ""
+      }
+    },
+    "image_with_text_overlay_P7q9nR": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_KidTNQ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          },
+          "blocks": {}
+        },
+        "heading_bqEkKD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_size": "h3",
+            "html_tag": "p",
+            "indent": "none",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_q6fUMU": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Write some text about your products or your brand.<\/p>",
+            "content_width": "sm"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "subheading_KidTNQ",
+        "heading_bqEkKD",
+        "rich_text_q6fUMU"
+      ],
+      "disabled": true,
+      "name": "t:sections.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "enable_sticky_content": false,
+        "content_width": "md",
+        "desktop_text_position": "sm:place-self-center",
+        "mobile_text_position": "place-self-center"
+      }
+    },
+    "image_with_text_overlay_KAdLgf": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_nBepVz": {
+          "type": "subheading",
+          "settings": {
+            "text": "Welcome to"
+          },
+          "blocks": {}
+        },
+        "heading_Me3Hpd": {
+          "type": "heading",
+          "settings": {
+            "text": "MIAMI",
+            "heading_size": "h3",
+            "html_tag": "p",
+            "indent": "none",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_rbNX7T": {
+          "type": "rich-text",
+          "settings": {
+            "text": "<p>Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt<\/p>",
+            "content_width": "sm"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "subheading_nBepVz",
+        "heading_Me3Hpd",
+        "rich_text_rbNX7T"
+      ],
+      "disabled": true,
+      "name": "t:sections.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/2025_01_13_SH_1880.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20,
+        "enable_sticky_content": false,
+        "content_width": "md",
+        "desktop_text_position": "sm:place-self-center",
+        "mobile_text_position": "place-self-center"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "video_BQ7KUn": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "scheme-3",
+            "position": 1,
+            "size": "2_1",
+            "video": "shopify:\/\/files\/videos\/HotelCamp_MIAMI_HighRes.mp4",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "content_position": "place-self-center",
+            "subheading": "<strong>Scent Notes <\/strong> Lemon Peel, Patchouli and Sea Salt. A zesty citrus blend with earthy patchouli, hydrating like a dip in the ocean.",
+            "heading": "",
+            "heading_size": "h2",
+            "content": "",
+            "button_text": "",
+            "url": "",
+            "open_in_new_tab": false,
+            "style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "video_BQ7KUn"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "products_per_page": 36,
+        "products_per_row_mobile": 2,
+        "products_per_row_desktop": 4,
+        "show_product_card_size_selector": false,
+        "quick_links_menu": "",
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false,
+        "swatch_selector_size": "sm"
+      }
+    },
+    "scrolling_content_QUPqGf": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_B8HhCY": {
+          "type": "text",
+          "settings": {
+            "text": "PARABEN-FREE",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_aHyj84": {
+          "type": "text",
+          "settings": {
+            "text": "MINERAL OIL-FREE",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_x6yV6L": {
+          "type": "text",
+          "settings": {
+            "text": "NO HARMFUL SULFATES",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_YyPTRM": {
+          "type": "text",
+          "settings": {
+            "text": "VEGAN",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_43_RENDER.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_hnrfrU": {
+          "type": "text",
+          "settings": {
+            "text": "CRUELTY-FREE",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_44_RENDER.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_B8HhCY",
+        "text_aHyj84",
+        "text_x6yV6L",
+        "text_YyPTRM",
+        "text_hnrfrU"
+      ],
+      "name": "t:sections.scrolling_content.name",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "scrolling_speed": 0.1,
+        "scroll_direction": "end-to-start",
+        "section_rotation": 0,
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 4,
+        "text_font_size_desktop": 2,
+        "section_vertical_spacing_mobile": 16,
+        "section_vertical_spacing_desktop": 20,
+        "item_horizontal_spacing_mobile": 40,
+        "item_horizontal_spacing_desktop": 80
+      }
+    },
+    "multi_column_JjLQbq": {
+      "type": "multi-column",
+      "blocks": {
+        "multi_column_column_HGKYWz": {
+          "type": "_multi-column-column",
+          "settings": {
+            "color_scheme": "",
+            "text_alignment": "left"
+          },
+          "blocks": {
+            "image_8ia8DV": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/ScentCallout_67d5f8d3-43d9-4362-88c3-0a00ba3836a9.png",
+                "max_width": 100,
+                "mobile_max_width": 100
+              },
+              "blocks": {}
+            },
+            "heading_Krzdz9": {
+              "type": "heading",
+              "settings": {
+                "text": "Scent Notes",
+                "heading_size": "h4",
+                "html_tag": "p",
+                "indent": "none",
+                "highlight_effect": "default",
+                "highlight_accent_color": "",
+                "highlight_text_color": ""
+              },
+              "blocks": {}
+            },
+            "rich_text_BHiDND": {
+              "type": "rich-text",
+              "settings": {
+                "text": "<p>Vanilla Orchid, Coconut and Sandalwood—a tropical trio that lifts your hair with a burst of sweetness and soft, woodsy notes for Rio-level volume.<\/p>",
+                "content_width": "sm"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_8ia8DV",
+            "heading_Krzdz9",
+            "rich_text_BHiDND"
+          ]
+        },
+        "multi_column_column_Rk44gF": {
+          "type": "_multi-column-column",
+          "settings": {
+            "color_scheme": "",
+            "text_alignment": "left"
+          },
+          "blocks": {
+            "image_HRN9CW": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/rio-block-middle.jpg",
+                "max_width": 100,
+                "mobile_max_width": 100
+              },
+              "blocks": {}
+            },
+            "heading_LTgy9F": {
+              "type": "heading",
+              "settings": {
+                "text": "Who is it for?",
+                "heading_size": "h4",
+                "html_tag": "p",
+                "indent": "none",
+                "highlight_effect": "default",
+                "highlight_accent_color": "",
+                "highlight_text_color": ""
+              },
+              "blocks": {}
+            },
+            "rich_text_NKJtdh": {
+              "type": "rich-text",
+              "settings": {
+                "text": "<p>For the “more is more” crowd. Welcome to your stay at the Rio resort.<\/p>",
+                "content_width": "sm"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_HRN9CW",
+            "heading_LTgy9F",
+            "rich_text_NKJtdh"
+          ]
+        },
+        "multi_column_column_3wcRYV": {
+          "type": "_multi-column-column",
+          "settings": {
+            "color_scheme": "",
+            "text_alignment": "left"
+          },
+          "blocks": {
+            "image_4kyBgD": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/Shampoo.png",
+                "max_width": 100,
+                "mobile_max_width": 100
+              },
+              "blocks": {}
+            },
+            "heading_kLXKPp": {
+              "type": "heading",
+              "settings": {
+                "text": "How to use",
+                "heading_size": "h4",
+                "html_tag": "p",
+                "indent": "none",
+                "highlight_effect": "default",
+                "highlight_accent_color": "",
+                "highlight_text_color": ""
+              },
+              "blocks": {}
+            },
+            "rich_text_L6yRmU": {
+              "type": "rich-text",
+              "settings": {
+                "text": "<p>Work into wet hair, focusing on the roots to give your strands a tropical cleanse. Rinse thoroughly, then follow up with SHAMPOOHOTEL™ Rio volume conditioner for a full getaway.<\/p>",
+                "content_width": "sm"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_4kyBgD",
+            "heading_kLXKPp",
+            "rich_text_L6yRmU"
+          ]
+        },
+        "section-header": {
+          "type": "_section-header",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "subheading": "",
+            "title": "Multi-column",
+            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "multi_column_column_HGKYWz",
+        "multi_column_column_Rk44gF",
+        "multi_column_column_3wcRYV"
+      ],
+      "name": "t:sections.multi_column.name",
+      "settings": {
+        "color_scheme": "",
+        "show_internal_borders": false,
+        "add_horizontal_spacing": true,
+        "add_top_spacing": true,
+        "add_bottom_spacing": true,
+        "items_per_row": 3,
+        "stack_on_mobile": true,
+        "stack_on_desktop": true,
+        "column_spacing": "md",
+        "row_spacing": "md"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "video_gezAmt",
+    "image_with_text_overlay_P7q9nR",
+    "image_with_text_overlay_KAdLgf",
+    "main",
+    "scrolling_content_QUPqGf",
+    "multi_column_JjLQbq"
+  ]
+}

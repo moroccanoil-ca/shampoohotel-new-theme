@@ -346,7 +346,7 @@
       "taxes_included_and_shipping_policy_html": "세금 포함. 체크아웃 시 <a href=\"{{ link }}\" class=\"link\">배송료<\/a> 계산.",
       "taxes_and_shipping_at_checkout": "체크아웃 시 세금과 배송료 계산",
       "terms_of_services_checkbox": "이용 약관에 동의합니다",
-      "terms_of_services_checkbox_with_link_html": "<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">이용 약관</a>에 동의합니다",
+      "terms_of_services_checkbox_with_link_html": "<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">이용 약관<\/a>에 동의합니다",
       "offers": "제안"
     },
     "order": {
@@ -357,7 +357,7 @@
       "remove_with_title": "{{ title }} 제거"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "<span class='bold'>{{ remaining_amount }}</span> 더 구매하면 배송료가 무료입니다!",
+      "limit_unreached_html": "<span class='bold'>{{ remaining_amount }}<\/span> 더 구매하면 배송료가 무료입니다!",
       "limit_reached_html": "무료 배송이 적용됩니다."
     },
     "shipping_estimator": {
@@ -445,7 +445,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "비포/애프터 비교를 표시하려면, 섹션에서 블록을 더 많이 추가하세요.",
+      "not_enough_blocks": "비포\/애프터 비교를 표시하려면, 섹션에서 블록을 더 많이 추가하세요.",
       "percentage_shown": "표시되는 애프터 사진 비율",
       "cursor_accessibility_text": "왼쪽과 오른쪽 화살표 키를 사용하여 이전 및 이후 사진을 탐색하십시오."
     },

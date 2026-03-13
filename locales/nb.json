@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Volumprissetting",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "til {{ price }}/pr. stk"
+      "price_at_each": "til {{ price }}\/pr. stk"
     },
     "rating_count": {
       "zero": "Ingen vurderinger",
@@ -353,7 +353,7 @@
       "taxes_included_and_shipping_policy_html": "Inklusiv avgifter. <a href=\"{{ link }}\" class=\"link\">Frakt<\/a> beregnes i kassen.",
       "taxes_and_shipping_at_checkout": "Avgifter og frakt beregnes i kassen",
       "terms_of_services_checkbox": "Jeg godtar tjenestevilkårene",
-      "terms_of_services_checkbox_with_link_html": "Jeg godtar <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">tjenestevilkårene</a>",
+      "terms_of_services_checkbox_with_link_html": "Jeg godtar <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">tjenestevilkårene<\/a>",
       "offers": "Tilbud"
     },
     "order": {
@@ -364,7 +364,7 @@
       "remove_with_title": "Fjern {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Bruk <span class='bold'>{{ remaining_amount }}</span> til og få gratis frakt!",
+      "limit_unreached_html": "Bruk <span class='bold'>{{ remaining_amount }}<\/span> til og få gratis frakt!",
       "limit_reached_html": "Du er nå kvalisert til å få gratis frakt."
     },
     "shipping_estimator": {

@@ -18,6 +18,19 @@ Supported variables
 {%- endcomment -%}
 
 <quantity-selector class="quantity-selector {% if line_item != blank %}quantity-selector--line-item{% endif %}" {% if quick_order %}allow-reset-to-zero{% endif %}>
+  {% comment %} check for gwp {% endcomment %}
+  {%- liquid
+  assign is_gwp = false
+  if line_item != blank
+    for collection in line_item.product.collections
+      if collection.handle == 'guasha-gwp'
+        assign is_gwp = true
+        break
+      endif
+    endfor
+  endif
+-%}
+{% comment %} end gwp check {% endcomment %}
   {%- liquid
     assign max_quantity = ''
     assign variant = line_item.variant | default: variant
@@ -43,15 +56,17 @@ Supported variables
       <span class="sr-only">{{ 'product.quantity.decrease_quantity' | t }}</span>
       {%- render 'icon' with 'quantity-minus' -%}
     </button>
-  {%- else -%}
-    <a href="{{ routes.cart_change_url }}?id={{ line_item.key }}&quantity={{ line_item.quantity | minus: line_item.variant.quantity_rule.increment }}" class="quantity-selector__button">
-      <span class="sr-only">{{ 'product.quantity.decrease_quantity' | t }}</span>
-      {%- render 'icon' with 'quantity-minus' -%}
-    </a>
+    {%- else -%}
+      <a href="{{ routes.cart_change_url }}?id={{ line_item.key }}&quantity={{ line_item.quantity | minus: line_item.variant.quantity_rule.increment }}" class="quantity-selector__button">
+        <span class="sr-only">{{ 'product.quantity.decrease_quantity' | t }}</span>
+        {%- render 'icon' with 'quantity-minus' -%}
+      </a>
   {%- endif -%}
 
   <quantity-input class="contents">
-    <input class="quantity-selector__input subheading" type="number" value="{{ quantity_value }}" name="{% if line_item != blank %}updates[]{% else %}quantity{% endif %}" inputmode="numeric" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if max_quantity != blank %}max="{{ max_quantity }}"{% endif %} {% if form %}form="{{ form }}"{% endif %} {% if line_item != blank %}data-line-key="{{ line_item.key }}"{% endif %} aria-label="{{ 'product.quantity.change_quantity' | t | escape }}">
+    {% comment %} <input class="quantity-selector__input subheading" type="number" value="{{ quantity_value }}" name="{% if line_item != blank %}updates[]{% else %}quantity{% endif %}" inputmode="numeric" step="{{ variant.quantity_rule.increment }}" min="{{ variant.quantity_rule.min }}" {% if max_quantity != blank %}max="{{ max_quantity }}"{% endif %} {% if form %}form="{{ form }}"{% endif %} {% if line_item != blank %}data-line-key="{{ line_item.key }}"{% endif %} aria-label="{{ 'product.quantity.change_quantity' | t | escape }}"> {% endcomment %}
+
+    <input class="quantity-selector__input subheading" type="number" value="{{ quantity_value }}" ... {% if is_gwp %}disabled readonly style="pointer-events: none;"{% endif %}>
 
     {%- if show_spinner -%}
       {%- render 'icon' with 'spinner', class: 'visibility-hidden' -%}
@@ -64,9 +79,16 @@ Supported variables
       {%- render 'icon' with 'quantity-plus' -%}
     </button>
   {%- else -%}
-    <a href="{{ routes.cart_change_url }}?id={{ line_item.key }}&quantity={{ line_item.quantity | plus: line_item.variant.quantity_rule.increment }}" class="quantity-selector__button">
-      <span class="sr-only">{{ 'product.quantity.increase_quantity' | t }}</span>
-      {%- render 'icon' with 'quantity-plus' -%}
-    </a>
+    {%- if is_gwp -%}
+      <button type="button" tabindex="-1" class="quantity-selector__button" disabled>
+        <span class="sr-only">{{ 'product.quantity.increase_quantity' | t }}</span>
+        {%- render 'icon' with 'quantity-plus' -%}
+      </button>
+    {%- else -%}
+      <a href="{{ routes.cart_change_url }}?id={{ line_item.key }}&quantity={{ line_item.quantity | plus: line_item.variant.quantity_rule.increment }}" class="quantity-selector__button">
+        <span class="sr-only">{{ 'product.quantity.increase_quantity' | t }}</span>
+        {%- render 'icon' with 'quantity-plus' -%}
+      </a>
+    {%- endif -%}
   {%- endif -%}
 </quantity-selector>

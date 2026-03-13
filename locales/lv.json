@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Cenu noteikšana pēc apjoma",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/gab"
+      "price_at_each": "{{ price }}\/gab"
     },
     "rating_count": {
       "zero": "Nav atsauksmju",
@@ -354,7 +354,7 @@
       "taxes_included_and_shipping_policy_html": "Nodokļi iekļauti. <a href=\"{{ link }}\" class=\"link\">Piegādes izmaksas<\/a> tiek aprēķinātas pirms apmaksas.",
       "taxes_and_shipping_at_checkout": "Nodokļi un piegādes izmaksas tiks aprēķinātas pirms apmaksas",
       "terms_of_services_checkbox": "Piekrītu pakalpojumu sniegšanas noteikumiem",
-      "terms_of_services_checkbox_with_link_html": "Piekrītu <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">pakalpojumu sniegšanas noteikumiem</a>",
+      "terms_of_services_checkbox_with_link_html": "Piekrītu <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">pakalpojumu sniegšanas noteikumiem<\/a>",
       "offers": "Piedāvājumi"
     },
     "order": {
@@ -365,7 +365,7 @@
       "remove_with_title": "Noņemt {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Iztērējiet vēl <span class='bold'>{{ remaining_amount }}</span> un saņemiet bezmaksas piegādi!",
+      "limit_unreached_html": "Iztērējiet vēl <span class='bold'>{{ remaining_amount }}<\/span> un saņemiet bezmaksas piegādi!",
       "limit_reached_html": "Jūs varat saņemt bezmaksas piegādi."
     },
     "shipping_estimator": {
@@ -457,7 +457,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Lai parādītu salīdzinājumu “pirms/pēc”, iekļaujiet sadaļā vairāk bloku.",
+      "not_enough_blocks": "Lai parādītu salīdzinājumu “pirms\/pēc”, iekļaujiet sadaļā vairāk bloku.",
       "percentage_shown": "Parādāmā “pēc” attēla daļa procentos",
       "cursor_accessibility_text": "Izmantojiet kreiso un labo bulttaustiņus, lai pārvietotos starp pirms un pēc fotoattēliem."
     },

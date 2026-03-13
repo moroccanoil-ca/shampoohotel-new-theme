@@ -1,1 +1,100 @@
-{"type":"header","name":"Header group","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"message-2":{"type":"message","settings":{"text":"FREE SHIPPING ON ORDERS +$25!"}},"message-1":{"type":"message","settings":{"text":"FREE KEYCHAIN ON ORDERS +$45!"}}},"block_order":["message-2","message-1"],"settings":{"color_scheme":"scheme-5","enable_sticky":false,"show_on_homepage_only":false,"autoplay":true,"cycle_speed":5}},"header":{"type":"header","blocks":{"mega_menu_V7LjLB":{"type":"mega_menu","settings":{"menu_item":"Shop All","mega_menu_justify_content":"justify-between","stretch_promo_blocks":true,"promo_column_gap":"4px","promo_text_alignment":"left","promo_heading_tag":"subheading","promo_text_color":"#ffffff","promo_1_product":"","promo_1_image":"shopify:\/\/shop_images\/2025_12_08_SHAMPOOHOTEL_633.jpg","promo_1_heading":"SHOP OUR FAVORITES","promo_1_text":"","promo_1_link":"shopify:\/\/collections\/best-sellers","promo_2_product":"","promo_2_image":"shopify:\/\/shop_images\/2025_01_13_SH_1968.jpg","promo_2_heading":"ABOUT US","promo_2_text":"","promo_2_link":"shopify:\/\/pages\/brand-story","promo_3_product":"","promo_3_heading":"","promo_3_text":"","promo_3_link":"shopify:\/\/pages\/contact","promo_4_product":"","promo_4_heading":"","promo_4_text":"","promo_4_link":"","promo_5_product":"","promo_5_heading":"","promo_5_text":"","promo_5_link":"","promo_6_product":"","promo_6_heading":"","promo_6_text":"","promo_6_link":""}}},"block_order":["mega_menu_V7LjLB"],"settings":{"color_scheme":"schema-1","enable_sticky":true,"hide_on_scroll":true,"mobile_layout":"logo_left_navigation_right","desktop_layout":"logo_center_navigation_inline","logo":"shopify:\/\/shop_images\/Shampoohotel_Logo.png","logo_max_width":200,"logo_mobile_max_width":170,"menu":"main-menu-2026","drawer_menu":"main-menu-2026","secondary_menu":"","desktop_dropdown_menu_style":"below","menu_open_trigger":"hover","desktop_icon_size":16,"drawer_show_nested_menu_indicator":true,"show_country_selector":true,"show_country_name":false,"show_country_flag":true,"show_locale_selector":true,"transparent_header_text_color":"#321e1e"}}},"order":["announcement-bar","header"]}
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message-2": {
+          "type": "message",
+          "settings": {
+            "text": "FREE SHIPPING ON ORDERS +$25!"
+          }
+        }
+      },
+      "block_order": [
+        "message-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-5",
+        "enable_sticky": false,
+        "show_on_homepage_only": false,
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_V7LjLB": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Shop All",
+            "mega_menu_justify_content": "justify-between",
+            "stretch_promo_blocks": true,
+            "promo_column_gap": "4px",
+            "promo_text_alignment": "left",
+            "promo_heading_tag": "subheading",
+            "promo_text_color": "#ffffff",
+            "promo_1_product": "",
+            "promo_1_image": "shopify:\/\/shop_images\/2025_12_08_SHAMPOOHOTEL_633.jpg",
+            "promo_1_heading": "SHOP OUR FAVORITES",
+            "promo_1_text": "",
+            "promo_1_link": "shopify:\/\/collections\/best-sellers",
+            "promo_2_product": "",
+            "promo_2_image": "shopify:\/\/shop_images\/2025_01_13_SH_1968.jpg",
+            "promo_2_heading": "ABOUT US",
+            "promo_2_text": "",
+            "promo_2_link": "shopify:\/\/pages\/brand-story",
+            "promo_3_product": "",
+            "promo_3_heading": "",
+            "promo_3_text": "",
+            "promo_3_link": "shopify:\/\/pages\/contact",
+            "promo_4_product": "",
+            "promo_4_heading": "",
+            "promo_4_text": "",
+            "promo_4_link": "",
+            "promo_5_product": "",
+            "promo_5_heading": "",
+            "promo_5_text": "",
+            "promo_5_link": "",
+            "promo_6_product": "",
+            "promo_6_heading": "",
+            "promo_6_text": "",
+            "promo_6_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_V7LjLB"
+      ],
+      "settings": {
+        "color_scheme": "schema-1",
+        "enable_sticky": true,
+        "hide_on_scroll": true,
+        "mobile_layout": "logo_left_navigation_right",
+        "desktop_layout": "logo_center_navigation_inline",
+        "logo": "shopify:\/\/shop_images\/Shampoohotel_Logo.png",
+        "logo_max_width": 200,
+        "logo_mobile_max_width": 170,
+        "menu": "main-menu-2026",
+        "drawer_menu": "main-menu-2026",
+        "secondary_menu": "",
+        "desktop_dropdown_menu_style": "below",
+        "menu_open_trigger": "hover",
+        "desktop_icon_size": 16,
+        "drawer_show_nested_menu_indicator": true,
+        "show_country_selector": true,
+        "show_country_name": false,
+        "show_country_flag": true,
+        "show_locale_selector": true,
+        "transparent_header_text_color": "#321e1e"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

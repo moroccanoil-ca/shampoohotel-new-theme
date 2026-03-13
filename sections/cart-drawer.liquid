@@ -91,6 +91,11 @@
           </div>
         </div>
       {%- else -%}
+
+      {%- comment -%} BATHTIME BUNDLE LOGIC {%- endcomment -%}
+  {%- render 'mo-bathtime-bundle-logic' -%}
+  {% comment %} end bathtime bundle logic {% endcomment %}
+
         <div class="v-stack gap-5">
           {%- if settings.cart_show_free_shipping_bar -%}
             {%- render 'free-shipping-bar' -%}

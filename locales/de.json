@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Volumenabhängige Preisgestaltung",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "bei {{ price }}/Stück"
+      "price_at_each": "bei {{ price }}\/Stück"
     },
     "rating_count": {
       "zero": "Keine Bewertungen",
@@ -322,7 +322,7 @@
       "city": "Ort",
       "zip": "PLZ",
       "country": "Land",
-      "province": "Bundesland/Kanton",
+      "province": "Bundesland\/Kanton",
       "set_default": "Als Standardadresse festlegen"
     }
   },
@@ -339,12 +339,12 @@
       "weight": "Gewicht",
       "subtotal": "Zwischensumme",
       "total": "Gesamtbetrag",
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\" class=\"link\">Versand</a> werden beim Checkout berechnet",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\" class=\"link\">Versand<\/a> werden beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
-      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\" class=\"link\">Versand </a> wird beim Checkout berechnet",
+      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\" class=\"link\">Versand <\/a> wird beim Checkout berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet",
       "terms_of_services_checkbox": "Ich stimme den Nutzungsbedingungen zu",
-      "terms_of_services_checkbox_with_link_html": "Ich stimme den <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">Nutzungsbedingungen</a> zu",
+      "terms_of_services_checkbox_with_link_html": "Ich stimme den <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">Nutzungsbedingungen<\/a> zu",
       "add_order_note": "Bestellhinweis hinzufügen",
       "edit_order_note": "Bestellhinweis bearbeiten",
       "order_note": "Bestellhinweis",
@@ -362,13 +362,13 @@
       "remove_with_title": "Entfernen {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Füge deiner Bestellung Artikel im Wert von <span class='bold'>{{ remaining_amount }}</span> hinzu und erhalte kostenlosen Versand!",
+      "limit_unreached_html": "Füge deiner Bestellung Artikel im Wert von <span class='bold'>{{ remaining_amount }}<\/span> hinzu und erhalte kostenlosen Versand!",
       "limit_reached_html": "Deine Bestellung ist für kostenlosen Versand qualizifiert."
     },
     "shipping_estimator": {
       "estimate_shipping": "Versandkosten berechnen",
       "country": "Land",
-      "province": "Bundesland/Kanton",
+      "province": "Bundesland\/Kanton",
       "zip": "PLZ",
       "estimate": "Berechnen",
       "no_results": "Tut uns leid, aber wir verschicken leider nicht an deine Adresse.",
@@ -452,7 +452,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Um den Vorher-/Nachher-Vergleich anzuzeigen, fügen Sie bitte weitere Blöcke im Abschnitt hinzu.",
+      "not_enough_blocks": "Um den Vorher-\/Nachher-Vergleich anzuzeigen, fügen Sie bitte weitere Blöcke im Abschnitt hinzu.",
       "percentage_shown": "Prozentsatz des angezeigten Nachher-Fotos",
       "cursor_accessibility_text": "Verwenden Sie die Pfeiltasten links und rechts, um zwischen Vorher- und Nachher-Fotos zu navigieren."
     },

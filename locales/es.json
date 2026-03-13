@@ -8,7 +8,7 @@
       "go_to_page": "Ir a la página {{ index }}",
       "go_to_item": "Ir al artículo {{ index }}",
       "item_nth_of_count": "Artículo {{ index }} de {{ count }}",
-      "toggle_autoplay": "Activar/desactivar reproducción automática",
+      "toggle_autoplay": "Activar\/desactivar reproducción automática",
       "drag": "Arrastrar",
       "close": "Cerrar",
       "next": "Siguiente",
@@ -341,12 +341,12 @@
       "weight": "Peso",
       "subtotal": "Subtotal",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\" class=\"link\">gastos de envío</a> se calculan en la pantalla de pago",
+      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\" class=\"link\">gastos de envío<\/a> se calculan en la pantalla de pago",
       "taxes_included_but_shipping_at_checkout": "Impuesto incluido y los gastos de envío se calculan en la pantalla de pago",
-      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\" class=\"link\">gastos de envío</a> se calculan en la pantalla de pago.",
+      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\" class=\"link\">gastos de envío<\/a> se calculan en la pantalla de pago.",
       "taxes_and_shipping_at_checkout": "Los impuestos y gastos de envío se calculan en la pantalla de pago",
       "terms_of_services_checkbox": "Estoy de acuerdo con los términos del servicio",
-      "terms_of_services_checkbox_with_link_html": "Estoy de acuerdo con los <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">términos del servicio</a>",
+      "terms_of_services_checkbox_with_link_html": "Estoy de acuerdo con los <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">términos del servicio<\/a>",
       "add_order_note": "Añadir nota al pedido",
       "edit_order_note": "Editar nota del pedido",
       "order_note": "Nota del pedido",
@@ -364,7 +364,7 @@
       "remove_with_title": "Eliminar {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "¡Gasta <span class='bold'>{{ remaining_amount }}</span> más y consigue envío gratuito!",
+      "limit_unreached_html": "¡Gasta <span class='bold'>{{ remaining_amount }}<\/span> más y consigue envío gratuito!",
       "limit_reached_html": "Tu pedido cumple los requisitos de envío gratuito."
     },
     "shipping_estimator": {

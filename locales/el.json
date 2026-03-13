@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Τιμολόγηση βάσει ποσότητας",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "στα {{ price }}/τμχ"
+      "price_at_each": "στα {{ price }}\/τμχ"
     },
     "rating_count": {
       "zero": "Δεν υπάρχουν αξιολογήσεις",
@@ -353,7 +353,7 @@
       "taxes_included_and_shipping_policy_html": "Ο φόρος περιλαμβάνεται. <a href=\"{{ link }}}\" class=\"link\">Τα έξοδα αποστολής<\/a> υπολογίζονται στο ταμείο.",
       "taxes_and_shipping_at_checkout": "Οι φόροι και τα έξοδα αποστολής υπολογίζονται στο ταμείο",
       "terms_of_services_checkbox": "Συμφωνώ με τους όρους υπηρεσίας",
-      "terms_of_services_checkbox_with_link_html": "Συμφωνώ με τους <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">όρους υπηρεσίας</a>",
+      "terms_of_services_checkbox_with_link_html": "Συμφωνώ με τους <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">όρους υπηρεσίας<\/a>",
       "offers": "Προσφορές"
     },
     "order": {
@@ -364,7 +364,7 @@
       "remove_with_title": "Αφαίρεση {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Ξοδέψτε ακόμα <span class='bold'>{{ remaining_amount }}</span> και κερδίστε δωρεάν αποστολή!",
+      "limit_unreached_html": "Ξοδέψτε ακόμα <span class='bold'>{{ remaining_amount }}<\/span> και κερδίστε δωρεάν αποστολή!",
       "limit_reached_html": "Δικαιούστε δωρεάν αποστολή."
     },
     "shipping_estimator": {
@@ -456,7 +456,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Για να δείτε τη σύγκριση πριν/μετά, προσθέστε περισσότερο περιεχόμενο στην ενότητα.",
+      "not_enough_blocks": "Για να δείτε τη σύγκριση πριν\/μετά, προσθέστε περισσότερο περιεχόμενο στην ενότητα.",
       "percentage_shown": "Ποσοστό εμφάνισης της φωτογραφίας μετά",
       "cursor_accessibility_text": "Χρησιμοποιήστε τα βέλη αριστερά και δεξιά για να πλοηγηθείτε μεταξύ φωτογραφιών πριν και μετά."
     },

@@ -1,1 +1,185 @@
-{"sections":{"image_with_text_overlay_eh3VfE":{"type":"image-with-text-overlay","blocks":{"subheading_f3R9U9":{"type":"subheading","disabled":true,"settings":{"text":"Subheading"},"blocks":{}},"heading_qJw4Hp":{"type":"heading","settings":{"text":"REDUCE OUR FOOTPRINT","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_qiFH6N":{"type":"rich-text","disabled":true,"settings":{"text":"<p>Write some text about your products or your brand.<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["subheading_f3R9U9","heading_qJw4Hp","rich_text_qiFH6N"],"name":"t:sections.image_with_text_overlay.name","settings":{"color_scheme":"","allow_transparent_header":true,"image_size":"md","image":"shopify:\/\/shop_images\/pexels-matthardy-1533720.jpg","overlay_color":"#000000","overlay_opacity":20,"enable_sticky_content":false,"content_width":"md","desktop_text_position":"sm:place-self-center","mobile_text_position":"place-self-center"}},"rich_text_BXCytj":{"type":"rich-text","blocks":{"heading_ymYWJ3":{"type":"heading","disabled":true,"settings":{"text":"REDUCE OUR FOOTPRINT","heading_tag":"h4","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"image_6TfLdh":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/pexels-matthardy-1533720.jpg","width_mode":"full_width","max_width":1000,"mobile_max_width":600}},"subheading_rKFdRh":{"type":"subheading","disabled":true,"settings":{"text":"Subheading"}},"richtext_4EkkBQ":{"type":"richtext","settings":{"text":"<p>EcoCart at Checkout<\/p><p>To further reduce our environmental footprint, we offer EcoCart at checkout, giving customers the option to offset the carbon footprint of their purchase. Through carbon offset credits, we support projects dedicated to reforestation, renewable energy, and more, allowing us to work toward a more sustainable future together.<\/p>"}}},"block_order":["heading_ymYWJ3","image_6TfLdh","subheading_rKFdRh","richtext_4EkkBQ"],"name":"t:sections.rich_text.name","settings":{"color_scheme":"","content_width":"full","text_alignment":"center"}},"main":{"type":"main-page","disabled":true,"settings":{"color_scheme":"","show_title":true,"content_width":"md"}},"video_dBPKQD":{"type":"video","blocks":{"play_button_pk66JA":{"type":"play_button","disabled":true,"settings":{"position":"middle_center","inherit_alignment_on_mobile":true,"mobile_position":"middle_center","show_play_cursor":false}},"heading_67iHMz":{"type":"heading","disabled":true,"settings":{"text":"Video","mobile_heading_tag":"h1","desktop_heading_tag":"sm:h3","position":"middle_center","inherit_alignment_on_mobile":true,"mobile_position":"middle_center","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}}},"block_order":["play_button_pk66JA","heading_67iHMz"],"disabled":true,"name":"t:sections.video.name","settings":{"color_scheme":"","allow_transparent_header":false,"autoplay":true,"show_controls":false,"video_size":"sm","mobile_video_size":"sm","video":"shopify:\/\/files\/videos\/LOGO_SH_Placeholder_Header.mp4","external_video_url":""}},"contact-form":{"type":"contact","disabled":true,"settings":{"color_scheme":"","layout":"stacked","add_image_spacing":false,"subheading":"Contact Us","title":"We'd love to hear from you","heading_size":"h2","content":"<p>If you have any questions, please fill in this contact form, and our team will reach you back as soon as possible.<\/p>","show_social_media":true}}},"order":["image_with_text_overlay_eh3VfE","rich_text_BXCytj","main","video_dBPKQD","contact-form"]}
+{
+  "sections": {
+    "image_with_text_overlay_eh3VfE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_f3R9U9": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          },
+          "blocks": {}
+        },
+        "heading_qJw4Hp": {
+          "type": "heading",
+          "settings": {
+            "text": "REDUCE OUR FOOTPRINT",
+            "heading_size": "h4",
+            "html_tag": "p",
+            "indent": "none",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_qiFH6N": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Write some text about your products or your brand.<\/p>",
+            "content_width": "sm"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "subheading_f3R9U9",
+        "heading_qJw4Hp",
+        "rich_text_qiFH6N"
+      ],
+      "name": "t:sections.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": true,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/pexels-matthardy-1533720.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20,
+        "enable_sticky_content": false,
+        "content_width": "md",
+        "desktop_text_position": "sm:place-self-center",
+        "mobile_text_position": "place-self-center"
+      }
+    },
+    "rich_text_BXCytj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ymYWJ3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "REDUCE OUR FOOTPRINT",
+            "heading_tag": "h4",
+            "indent": "none",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "image_6TfLdh": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-matthardy-1533720.jpg",
+            "width_mode": "full_width",
+            "max_width": 1000,
+            "mobile_max_width": 600
+          }
+        },
+        "subheading_rKFdRh": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "richtext_4EkkBQ": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>EcoCart at Checkout<\/p><p>To further reduce our environmental footprint, we offer EcoCart at checkout, giving customers the option to offset the carbon footprint of their purchase. Through carbon offset credits, we support projects dedicated to reforestation, renewable energy, and more, allowing us to work toward a more sustainable future together.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ymYWJ3",
+        "image_6TfLdh",
+        "subheading_rKFdRh",
+        "richtext_4EkkBQ"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "full",
+        "text_alignment": "center"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "content_width": "md"
+      }
+    },
+    "video_dBPKQD": {
+      "type": "video",
+      "blocks": {
+        "play_button_pk66JA": {
+          "type": "play_button",
+          "disabled": true,
+          "settings": {
+            "position": "middle_center",
+            "inherit_alignment_on_mobile": true,
+            "mobile_position": "middle_center",
+            "show_play_cursor": false
+          }
+        },
+        "heading_67iHMz": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "mobile_heading_tag": "h1",
+            "desktop_heading_tag": "sm:h3",
+            "position": "middle_center",
+            "inherit_alignment_on_mobile": true,
+            "mobile_position": "middle_center",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "play_button_pk66JA",
+        "heading_67iHMz"
+      ],
+      "disabled": true,
+      "name": "t:sections.video.name",
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "show_controls": false,
+        "video_size": "sm",
+        "mobile_video_size": "sm",
+        "video": "shopify:\/\/files\/videos\/LOGO_SH_Placeholder_Header.mp4",
+        "external_video_url": ""
+      }
+    },
+    "contact-form": {
+      "type": "contact",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "layout": "stacked",
+        "add_image_spacing": false,
+        "subheading": "Contact Us",
+        "title": "We'd love to hear from you",
+        "heading_size": "h2",
+        "content": "<p>If you have any questions, please fill in this contact form, and our team will reach you back as soon as possible.<\/p>",
+        "show_social_media": true
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_eh3VfE",
+    "rich_text_BXCytj",
+    "main",
+    "video_dBPKQD",
+    "contact-form"
+  ]
+}

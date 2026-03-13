@@ -1,1 +1,449 @@
-{"sections":{"image_with_text_overlay_Ww7XWz":{"type":"image-with-text-overlay","blocks":{"subheading_Emeegg":{"type":"subheading","settings":{"text":"NEED HELP?"},"blocks":{}},"heading_zyAAdF":{"type":"heading","settings":{"text":"Frequently Asked Questions","heading_size":"h3","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_fRi9hr":{"type":"rich-text","disabled":true,"settings":{"text":"<p>Write some text about your products or your brand.<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["subheading_Emeegg","heading_zyAAdF","rich_text_fRi9hr"],"name":"t:sections.image_with_text_overlay.name","settings":{"color_scheme":"","allow_transparent_header":false,"image_size":"lg","image":"shopify:\/\/shop_images\/2025_12_08_SHAMPOOHOTEL_112.jpg","overlay_color":"#000000","overlay_opacity":20,"enable_sticky_content":false,"content_width":"md","desktop_text_position":"sm:place-self-center","mobile_text_position":"place-self-center"}},"faq_7YecnU":{"type":"faq","blocks":{"category_WmTcbe":{"type":"category","settings":{"title":"The Basics","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_gU86Ap":{"type":"question","settings":{"question":"How can I contact ShampooHotel? ","answer":"<p>You can contact us at support@shampoohotel.com<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_rc6nXx":{"type":"question","settings":{"question":"What if there’s a missing product in my order? ","answer":"<p>Please contact us at support@shampoohotel.com with your order details and the missing product(s), and we’ll be happy to assist you in resolving the issue.<br\/><br\/><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_WTY9K6":{"type":"question","settings":{"question":"Received a damaged product?","answer":"<p>If you received a damaged package or product, please contact us at support@shampoohotel.com with your order details and we’ll be happy to assist you in resolving the issue.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_dwRkTL":{"type":"question","settings":{"question":"Where can I buy ShampooHotel?","answer":"<p>You can purchase ShampooHotel products directly from our website, at your nearest ULTA store, or online at <a href=\"http:\/\/ulta.com\"><span style=\"text-decoration:underline\">ulta.com<\/span><\/a><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_nyGBWP":{"type":"question","settings":{"question":"Can I use multiple discount codes on a single order?","answer":"<p>Our website allows the use of one discount code per order; multiple discounts cannot be combined.<br\/><br\/><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_KkETBP":{"type":"question","settings":{"question":"Who can I contact about partnerships or sponsorship with ShampooHotel?","answer":"<p>For any collaboration inquiries, please email <a href=\"mailto:Support@shampoohotel.com\">support@shampoohotel.com<\/a> and we’ll forward your request to the proper department.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_Encm4D":{"type":"category","settings":{"title":"Shipping","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_87ecLc":{"type":"question","settings":{"question":"Where does ShampooHotel ship?","answer":"<p>We ship anywhere within the United States via FedEx Standard Ground. Please note that additional charges apply for orders shipped to Alaska and Hawaii, <strong>and that we are unable to deliver to PO Boxes<\/strong>. At this time, we do not ship to Puerto Rico, Guam, the U.S. Virgin Islands, or other U.S. territories. Shipping to Canada and international destinations is also not available. For any questions or further assistance, feel free to reach out to our Client Care team at <a>support@shampoohotel.com<\/a>.<br\/><br\/><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_kdAJXy":{"type":"question","settings":{"question":"What are your shipping costs?","answer":"<p>We are happy to offer free shipping on all orders over $25. Shipping on orders less than $25 is a flat fee of $8.<\/p><p>Shipping to Alaska and Hawaii is a flat rate of $35.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_M9zbWB":{"type":"question","settings":{"question":"When will my order ship?","answer":"<p>Please allow 1-2 business days for order processing and 5-10 business days for delivery. You will receive an email notification once your order has shipped.<br\/><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_iGwJyj":{"type":"question","settings":{"question":"My package said it was delivered, but I can’t find it.","answer":"<p>Contact our Client Care Team with your order details at <a href=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> and we will be happy to assist you.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_AXiVJM":{"type":"question","settings":{"question":"Help, my address is wrong on my order!","answer":"<p>If the address on your order is incorrect, please email <a>support@shampoohotel.com<\/a> with the correct shipping address as soon as possible. While we will make every effort to update the package before it ships, please note that this is not guaranteed.<br\/><br\/><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_9jCPnb":{"type":"category","settings":{"title":"Billing","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_k3G8BY":{"type":"question","settings":{"question":"When will my card get charged?","answer":"<p>Your payment will be processed once the order has been fulfilled. Orders typically take 1-2 business days to be processed.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_xX4Nna":{"type":"question","settings":{"question":"What payment methods do you accept? ","answer":"<p>We accept Visa, Mastercard, Discover, American Express,  Apple Pay, Shop Pay, Amazon Pay and Google Pay. <\/p><p>If you are having issues with your method of payment, please ensure your billing information is correct and for further assistance you can contact <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_A3gpUK":{"type":"category","settings":{"title":"Returns and Canceling Orders","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_tBCyDn":{"type":"question","settings":{"question":"Can I add or remove a product to my order after I already checked out?","answer":"<p>Once an order is placed, we are unable to add, remove or change an item in the order.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_wh7r3A":{"type":"question","settings":{"question":"What is your return policy? ","answer":"<p>We’re happy to provide a customer-friendly return policy. If you’re not fully satisfied with a product purchased directly from our website, please reach out to our Client Care Team at <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> within 30 days of your purchase.<br\/><br\/><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_i7F9n8":{"type":"question","settings":{"question":"How do I return products from orders not made directly through the ShampooHotel website?","answer":"<p>If you purchase the product through a different retailer, all returns are based on the individual return policy of the place of purchase. <strong>Unfortunately, we are unable to process returns, refunds or exchanges for products not purchased directly from our website.  <\/strong><\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_ztCeWh":{"type":"question","settings":{"question":"How do I cancel my order?","answer":"<p>To cancel your order contact <a href=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> with your order number, and we will validate if your order is eligible for cancellation.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_xVAhb7":{"type":"category","settings":{"title":"Get to Know the Products","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_HDRVDN":{"type":"question","settings":{"question":"Are there any ingredients that you stay away from in your products?","answer":"<p>Yes! All of our products are paraben-free, free from harmful sulfates, phthalates-free, mineral-oil free, PETA-Certified cruelty free and vegan! We want your hair to always look and feel its best, so we only use ingredients that keep your strands healthy in the long run.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_RBaNg9":{"type":"question","settings":{"question":"Are your products gluten- free?","answer":"<p>Yes, all our products are gluten-free.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_NhQLFm":{"type":"question","settings":{"question":"Are ShampooHotel products tested on animals?","answer":"<p>None of our products are tested on animals. <\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_Q8ridF":{"type":"question","settings":{"question":"Can ShampooHotel packaging be recycled?","answer":"<p>All ShampooHotel bottles are recyclable. Just remove the cap and spray applicator (if applicable) and you’re good to go.  <\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_3HraQm":{"type":"question","settings":{"question":"How can I make sure my products are authentic?","answer":"<p>To guarantee the authenticity of your products, we recommend purchasing directly from our website or from ULTA.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_XJH8yM":{"type":"category","settings":{"title":"Promotions\/Sales","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_UJp3Gw":{"type":"question","settings":{"question":"Can I receive an additional discount on custom\/value kits?","answer":"<p>Custom and value kits are already specially priced, so additional discounts do not apply. For any further questions, please refer to our Client Care Team at <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a>.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_KqTWje":{"type":"category","settings":{"title":"Sustainability","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_Ci7rAb":{"type":"question","settings":{"question":"Can ShampooHotel packaging be recycled?","answer":"<p>All ShampooHotel bottles are recyclable. Just remove the cap and spray applicator (if applicable) and you’re good to go. <\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"question_hCe3Ap":{"type":"question","settings":{"question":"Is ShampooHotel Products Peta-Certified?","answer":"<p>Yes! We are Peta-Certified Cruelty Free.<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}},"category_FRWWKi":{"type":"category","settings":{"title":"Other","icon":"none","icon_width":16,"mobile_icon_width":20}},"question_LxbKPd":{"type":"question","settings":{"question":"Still have a question?","answer":"<p>If you didn’t find the answer you were looking for, feel free to reach out to our friendly Client Care Team at <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> — we're happy to help!<\/p>","icon":"none","icon_width":24,"mobile_icon_width":20}}},"block_order":["category_WmTcbe","question_gU86Ap","question_rc6nXx","question_WTY9K6","question_dwRkTL","question_nyGBWP","question_KkETBP","category_Encm4D","question_87ecLc","question_kdAJXy","question_M9zbWB","question_iGwJyj","question_AXiVJM","category_9jCPnb","question_k3G8BY","question_xX4Nna","category_A3gpUK","question_tBCyDn","question_wh7r3A","question_i7F9n8","question_ztCeWh","category_xVAhb7","question_HDRVDN","question_RBaNg9","question_NhQLFm","question_Q8ridF","question_3HraQm","category_XJH8yM","question_UJp3Gw","category_KqTWje","question_Ci7rAb","question_hCe3Ap","category_FRWWKi","question_LxbKPd"],"custom_css":["span {font-family: \"Gopher Bold\";}"],"settings":{"color_scheme":"","layout":"stacked","accordion_style":"border","question_style":"text","subheading":"","title":"","title_tag":"h3","content":"","button_text":"","button_url":"","button_style":"solid"}}},"order":["image_with_text_overlay_Ww7XWz","faq_7YecnU"]}
+{
+  "sections": {
+    "image_with_text_overlay_Ww7XWz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_Emeegg": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEED HELP?"
+          },
+          "blocks": {}
+        },
+        "heading_zyAAdF": {
+          "type": "heading",
+          "settings": {
+            "text": "Frequently Asked Questions",
+            "heading_size": "h3",
+            "html_tag": "p",
+            "indent": "none",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_fRi9hr": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Write some text about your products or your brand.<\/p>",
+            "content_width": "sm"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "subheading_Emeegg",
+        "heading_zyAAdF",
+        "rich_text_fRi9hr"
+      ],
+      "name": "t:sections.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": false,
+        "image_size": "lg",
+        "image": "shopify:\/\/shop_images\/2025_12_08_SHAMPOOHOTEL_112.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20,
+        "enable_sticky_content": false,
+        "content_width": "md",
+        "desktop_text_position": "sm:place-self-center",
+        "mobile_text_position": "place-self-center"
+      }
+    },
+    "faq_7YecnU": {
+      "type": "faq",
+      "blocks": {
+        "category_WmTcbe": {
+          "type": "category",
+          "settings": {
+            "title": "The Basics",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_gU86Ap": {
+          "type": "question",
+          "settings": {
+            "question": "How can I contact ShampooHotel? ",
+            "answer": "<p>You can contact us at support@shampoohotel.com<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_rc6nXx": {
+          "type": "question",
+          "settings": {
+            "question": "What if there’s a missing product in my order? ",
+            "answer": "<p>Please contact us at support@shampoohotel.com with your order details and the missing product(s), and we’ll be happy to assist you in resolving the issue.<br\/><br\/><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_WTY9K6": {
+          "type": "question",
+          "settings": {
+            "question": "Received a damaged product?",
+            "answer": "<p>If you received a damaged package or product, please contact us at support@shampoohotel.com with your order details and we’ll be happy to assist you in resolving the issue.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_dwRkTL": {
+          "type": "question",
+          "settings": {
+            "question": "Where can I buy ShampooHotel?",
+            "answer": "<p>You can purchase ShampooHotel products directly from our website, at your nearest ULTA store, or online at <a href=\"http:\/\/ulta.com\"><span style=\"text-decoration:underline\">ulta.com<\/span><\/a><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_nyGBWP": {
+          "type": "question",
+          "settings": {
+            "question": "Can I use multiple discount codes on a single order?",
+            "answer": "<p>Our website allows the use of one discount code per order; multiple discounts cannot be combined.<br\/><br\/><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_KkETBP": {
+          "type": "question",
+          "settings": {
+            "question": "Who can I contact about partnerships or sponsorship with ShampooHotel?",
+            "answer": "<p>For any collaboration inquiries, please email <a href=\"mailto:Support@shampoohotel.com\">support@shampoohotel.com<\/a> and we’ll forward your request to the proper department.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_Encm4D": {
+          "type": "category",
+          "settings": {
+            "title": "Shipping",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_87ecLc": {
+          "type": "question",
+          "settings": {
+            "question": "Where does ShampooHotel ship?",
+            "answer": "<p>We ship anywhere within the United States via FedEx Standard Ground. Please note that additional charges apply for orders shipped to Alaska and Hawaii, <strong>and that we are unable to deliver to PO Boxes<\/strong>. At this time, we do not ship to Puerto Rico, Guam, the U.S. Virgin Islands, or other U.S. territories. Shipping to Canada and international destinations is also not available. For any questions or further assistance, feel free to reach out to our Client Care team at <a>support@shampoohotel.com<\/a>.<br\/><br\/><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_kdAJXy": {
+          "type": "question",
+          "settings": {
+            "question": "What are your shipping costs?",
+            "answer": "<p>We are happy to offer free shipping on all orders over $25. Shipping on orders less than $25 is a flat fee of $8.<\/p><p>Shipping to Alaska and Hawaii is a flat rate of $35.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_M9zbWB": {
+          "type": "question",
+          "settings": {
+            "question": "When will my order ship?",
+            "answer": "<p>Please allow 1-2 business days for order processing and 5-10 business days for delivery. You will receive an email notification once your order has shipped.<br\/><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_iGwJyj": {
+          "type": "question",
+          "settings": {
+            "question": "My package said it was delivered, but I can’t find it.",
+            "answer": "<p>Contact our Client Care Team with your order details at <a href=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> and we will be happy to assist you.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_AXiVJM": {
+          "type": "question",
+          "settings": {
+            "question": "Help, my address is wrong on my order!",
+            "answer": "<p>If the address on your order is incorrect, please email <a>support@shampoohotel.com<\/a> with the correct shipping address as soon as possible. While we will make every effort to update the package before it ships, please note that this is not guaranteed.<br\/><br\/><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_9jCPnb": {
+          "type": "category",
+          "settings": {
+            "title": "Billing",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_k3G8BY": {
+          "type": "question",
+          "settings": {
+            "question": "When will my card get charged?",
+            "answer": "<p>Your payment will be processed once the order has been fulfilled. Orders typically take 1-2 business days to be processed.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_xX4Nna": {
+          "type": "question",
+          "settings": {
+            "question": "What payment methods do you accept? ",
+            "answer": "<p>We accept Visa, Mastercard, Discover, American Express,  Apple Pay, Shop Pay, Amazon Pay and Google Pay. <\/p><p>If you are having issues with your method of payment, please ensure your billing information is correct and for further assistance you can contact <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_A3gpUK": {
+          "type": "category",
+          "settings": {
+            "title": "Returns and Canceling Orders",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_tBCyDn": {
+          "type": "question",
+          "settings": {
+            "question": "Can I add or remove a product to my order after I already checked out?",
+            "answer": "<p>Once an order is placed, we are unable to add, remove or change an item in the order.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_wh7r3A": {
+          "type": "question",
+          "settings": {
+            "question": "What is your return policy? ",
+            "answer": "<p>We’re happy to provide a customer-friendly return policy. If you’re not fully satisfied with a product purchased directly from our website, please reach out to our Client Care Team at <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> within 30 days of your purchase.<br\/><br\/><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_i7F9n8": {
+          "type": "question",
+          "settings": {
+            "question": "How do I return products from orders not made directly through the ShampooHotel website?",
+            "answer": "<p>If you purchase the product through a different retailer, all returns are based on the individual return policy of the place of purchase. <strong>Unfortunately, we are unable to process returns, refunds or exchanges for products not purchased directly from our website.  <\/strong><\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_ztCeWh": {
+          "type": "question",
+          "settings": {
+            "question": "How do I cancel my order?",
+            "answer": "<p>To cancel your order contact <a href=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> with your order number, and we will validate if your order is eligible for cancellation.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_xVAhb7": {
+          "type": "category",
+          "settings": {
+            "title": "Get to Know the Products",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_HDRVDN": {
+          "type": "question",
+          "settings": {
+            "question": "Are there any ingredients that you stay away from in your products?",
+            "answer": "<p>Yes! All of our products are paraben-free, free from harmful sulfates, phthalates-free, mineral-oil free, PETA-Certified cruelty free and vegan! We want your hair to always look and feel its best, so we only use ingredients that keep your strands healthy in the long run.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_RBaNg9": {
+          "type": "question",
+          "settings": {
+            "question": "Are your products gluten- free?",
+            "answer": "<p>Yes, all our products are gluten-free.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_NhQLFm": {
+          "type": "question",
+          "settings": {
+            "question": "Are ShampooHotel products tested on animals?",
+            "answer": "<p>None of our products are tested on animals. <\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_Q8ridF": {
+          "type": "question",
+          "settings": {
+            "question": "Can ShampooHotel packaging be recycled?",
+            "answer": "<p>All ShampooHotel bottles are recyclable. Just remove the cap and spray applicator (if applicable) and you’re good to go.  <\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_3HraQm": {
+          "type": "question",
+          "settings": {
+            "question": "How can I make sure my products are authentic?",
+            "answer": "<p>To guarantee the authenticity of your products, we recommend purchasing directly from our website or from ULTA.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_XJH8yM": {
+          "type": "category",
+          "settings": {
+            "title": "Promotions\/Sales",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_UJp3Gw": {
+          "type": "question",
+          "settings": {
+            "question": "Can I receive an additional discount on custom\/value kits?",
+            "answer": "<p>Custom and value kits are already specially priced, so additional discounts do not apply. For any further questions, please refer to our Client Care Team at <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a>.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_KqTWje": {
+          "type": "category",
+          "settings": {
+            "title": "Sustainability",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_Ci7rAb": {
+          "type": "question",
+          "settings": {
+            "question": "Can ShampooHotel packaging be recycled?",
+            "answer": "<p>All ShampooHotel bottles are recyclable. Just remove the cap and spray applicator (if applicable) and you’re good to go. <\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_hCe3Ap": {
+          "type": "question",
+          "settings": {
+            "question": "Is ShampooHotel Products Peta-Certified?",
+            "answer": "<p>Yes! We are Peta-Certified Cruelty Free.<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        },
+        "category_FRWWKi": {
+          "type": "category",
+          "settings": {
+            "title": "Other",
+            "icon": "none",
+            "icon_width": 16,
+            "mobile_icon_width": 20
+          }
+        },
+        "question_LxbKPd": {
+          "type": "question",
+          "settings": {
+            "question": "Still have a question?",
+            "answer": "<p>If you didn’t find the answer you were looking for, feel free to reach out to our friendly Client Care Team at <a href=\"mailto:support@shampoohotel.com\" title=\"mailto:support@shampoohotel.com\">support@shampoohotel.com<\/a> — we're happy to help!<\/p>",
+            "icon": "none",
+            "icon_width": 24,
+            "mobile_icon_width": 20
+          }
+        }
+      },
+      "block_order": [
+        "category_WmTcbe",
+        "question_gU86Ap",
+        "question_rc6nXx",
+        "question_WTY9K6",
+        "question_dwRkTL",
+        "question_nyGBWP",
+        "question_KkETBP",
+        "category_Encm4D",
+        "question_87ecLc",
+        "question_kdAJXy",
+        "question_M9zbWB",
+        "question_iGwJyj",
+        "question_AXiVJM",
+        "category_9jCPnb",
+        "question_k3G8BY",
+        "question_xX4Nna",
+        "category_A3gpUK",
+        "question_tBCyDn",
+        "question_wh7r3A",
+        "question_i7F9n8",
+        "question_ztCeWh",
+        "category_xVAhb7",
+        "question_HDRVDN",
+        "question_RBaNg9",
+        "question_NhQLFm",
+        "question_Q8ridF",
+        "question_3HraQm",
+        "category_XJH8yM",
+        "question_UJp3Gw",
+        "category_KqTWje",
+        "question_Ci7rAb",
+        "question_hCe3Ap",
+        "category_FRWWKi",
+        "question_LxbKPd"
+      ],
+      "custom_css": [
+        "span {font-family: \"Gopher Bold\";}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "layout": "stacked",
+        "accordion_style": "border",
+        "question_style": "text",
+        "subheading": "",
+        "title": "",
+        "title_tag": "h3",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "button_style": "solid"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_Ww7XWz",
+    "faq_7YecnU"
+  ]
+}

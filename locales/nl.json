@@ -8,7 +8,7 @@
       "go_to_page": "Naar pagina {{ index }}",
       "go_to_item": "Naar artikel {{ index }}",
       "item_nth_of_count": "Artikel {{ index }} van {{ count }}",
-      "toggle_autoplay": "Automatisch afspelen in-/uitschakelen",
+      "toggle_autoplay": "Automatisch afspelen in-\/uitschakelen",
       "drag": "Slepen",
       "close": "Sluiten",
       "next": "Volgende",
@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Volumeprijsstelling",
       "minimum": "Meer dan {{ quantity }}",
-      "price_at_each": "{{ price }}/st."
+      "price_at_each": "{{ price }}\/st."
     },
     "rating_count": {
       "zero": "Geen recensies",
@@ -353,7 +353,7 @@
       "taxes_included_and_shipping_policy_html": "Btw inbegrepen. <a href=\"{{ link }}\" class=\"link\">Verzendkosten<\/a> berekend bij het afrekenen.",
       "taxes_and_shipping_at_checkout": "Btw en verzendkosten berekend bij het afrekenen",
       "terms_of_services_checkbox": "Ik ga akkoord met de servicevoorwaarden",
-      "terms_of_services_checkbox_with_link_html": "Ik ga akkoord met de <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">servicevoorwaarden</a>",
+      "terms_of_services_checkbox_with_link_html": "Ik ga akkoord met de <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">servicevoorwaarden<\/a>",
       "offers": "Aanbiedingen"
     },
     "order": {
@@ -364,7 +364,7 @@
       "remove_with_title": "Verwijder {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Besteed <span class='bold'>{{ remaining_amount }}</span> meer en krijg gratis verzending!",
+      "limit_unreached_html": "Besteed <span class='bold'>{{ remaining_amount }}<\/span> meer en krijg gratis verzending!",
       "limit_reached_html": "Je komt in aanmerking voor gratis verzending."
     },
     "shipping_estimator": {
@@ -456,7 +456,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Om de voor/na-vergelijking weer te geven, moet je meer blokken toevoegen in het onderdeel.",
+      "not_enough_blocks": "Om de voor\/na-vergelijking weer te geven, moet je meer blokken toevoegen in het onderdeel.",
       "percentage_shown": "Percentage van achteraf getoonde foto",
       "cursor_accessibility_text": "Gebruik de linker- en rechterpijltjestoetsen om te navigeren tussen voor- en na-foto's."
     },

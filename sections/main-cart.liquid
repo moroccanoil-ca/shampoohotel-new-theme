@@ -13,6 +13,10 @@
             </div>
           </div>
         {%- else -%}
+         {%- comment -%} BATHTIME BUNDLE LOGIC {%- endcomment -%}
+  {%- render 'mo-bathtime-bundle-logic' -%}
+  {% comment %} end bathtime bundle logic {% endcomment %}
+
           <div class="v-stack gap-6 sm:gap-12">
             <header class="cart-header">
               <h1 class="h3">{{ 'cart.general.title' | t }}</h1>

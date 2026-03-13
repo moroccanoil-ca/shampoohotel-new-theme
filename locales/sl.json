@@ -120,7 +120,7 @@
     "volume_pricing": {
       "title": "Količinski popust",
       "minimum": "{{ quantity }} in več",
-      "price_at_each": "po ceni {{ price }}/kos"
+      "price_at_each": "po ceni {{ price }}\/kos"
     },
     "rating_count": {
       "zero": "Ni mnenj",
@@ -365,7 +365,7 @@
       "taxes_included_and_shipping_policy_html": "Davki so vključeni. <a href=\"{{ link }}\" class=\"link\">Stroški pošiljanja<\/a> bodo izračunani v košarici.",
       "taxes_and_shipping_at_checkout": "Davki in stroški pošiljanja bodo izračunani v košarici",
       "terms_of_services_checkbox": "Strinjam se s pogoji storitve",
-      "terms_of_services_checkbox_with_link_html": "Strinjam se s <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">pogoji storitve</a>",
+      "terms_of_services_checkbox_with_link_html": "Strinjam se s <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">pogoji storitve<\/a>",
       "offers": "Ponudbe"
     },
     "order": {
@@ -376,7 +376,7 @@
       "remove_with_title": "Odstrani {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Dodajte še za <span class='bold'>{{ remaining_amount }}</span> izdelkov in izkoristite brezplačno poštnino!",
+      "limit_unreached_html": "Dodajte še za <span class='bold'>{{ remaining_amount }}<\/span> izdelkov in izkoristite brezplačno poštnino!",
       "limit_reached_html": "Upravičeni ste do brezplačnega pošiljanja."
     },
     "shipping_estimator": {
@@ -472,7 +472,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Če želite prikazati primerjavo pred/potem, dodajte več vsebine v razdelek.",
+      "not_enough_blocks": "Če želite prikazati primerjavo pred\/potem, dodajte več vsebine v razdelek.",
       "percentage_shown": "Odstotek prikaza slike potem",
       "cursor_accessibility_text": "Uporabite levo in desno puščico za navigacijo med fotografijami pred in po."
     },

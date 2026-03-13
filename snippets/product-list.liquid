@@ -55,6 +55,13 @@ Supported variables
   {%- endcapture -%}
 
   {%- for product in products -%}
+
+      {%- comment -%} Skip hidden products (GWP) {%- endcomment -%}
+  {%- if product.metafields.seo.hidden == 1 -%}
+    {%- continue -%}
+  {%- endif -%}
+  {%- comment -%} End skip hidden products (GWP) {%- endcomment -%}
+
     {%- for block in blocks -%}
       {%- if has_active_filters or paginate.current_page > 1 or forloop.parentloop.index != block.settings.position -%}
         {%- continue -%}

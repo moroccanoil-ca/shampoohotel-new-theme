@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "批發價",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/每項"
+      "price_at_each": "{{ price }}\/每項"
     },
     "rating_count": {
       "zero": "無評價",
@@ -347,7 +347,7 @@
       "taxes_included_and_shipping_policy_html": "含稅。在結帳時計算<a href=\"{{ link }}\" class=\"link\">運費<\/a>。",
       "taxes_and_shipping_at_checkout": "結帳時計算稅費運費",
       "terms_of_services_checkbox": "我同意服務條款",
-      "terms_of_services_checkbox_with_link_html": "我同意<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">服務條款</a>",
+      "terms_of_services_checkbox_with_link_html": "我同意<a href=\"{{ link }}\" target=\"_blank\" class=\"link\">服務條款<\/a>",
       "offers": "優惠"
     },
     "order": {
@@ -358,7 +358,7 @@
       "remove_with_title": "移除{{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "再消費 <span class='bold'>{{ remaining_amount }}</span> 就能免運！",
+      "limit_unreached_html": "再消費 <span class='bold'>{{ remaining_amount }}<\/span> 就能免運！",
       "limit_reached_html": "已符合免運。"
     },
     "shipping_estimator": {
@@ -448,7 +448,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "若要顯示之前/之後的比較，請在該區塊中加更多內容。",
+      "not_enough_blocks": "若要顯示之前\/之後的比較，請在該區塊中加更多內容。",
       "percentage_shown": "顯示的「之後」照片的百分比",
       "cursor_accessibility_text": "使用左右箭頭鍵在 before 和 after 圖片之間導航。"
     },

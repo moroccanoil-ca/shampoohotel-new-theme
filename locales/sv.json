@@ -88,7 +88,7 @@
       "view_in_space": "Visa i ditt utrymme",
       "taxes_included": "Inkl. moms.",
       "taxes_excluded": "Exkl. moms.",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Frakt</a> beräknas i kassan",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Frakt<\/a> beräknas i kassan",
       "size_chart": "Jämför storlekar",
       "available_colors_count": {
         "one": "{{ count }} färg tillgänglig",
@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Volymprissättning",
       "minimum": "Fler än {{ quantity }}",
-      "price_at_each": "för {{ price }}/styck"
+      "price_at_each": "för {{ price }}\/styck"
     },
     "rating_count": {
       "one": "{{ count }} recension",
@@ -338,12 +338,12 @@
       "weight": "Vikt",
       "subtotal": "Delsumma",
       "total": "Totalt",
-      "taxes_and_shipping_policy_at_checkout_html": "Moms och <a href=\"{{ link }}\" class=\"link\">frakt</a> beräknas i kassan",
+      "taxes_and_shipping_policy_at_checkout_html": "Moms och <a href=\"{{ link }}\" class=\"link\">frakt<\/a> beräknas i kassan",
       "taxes_included_but_shipping_at_checkout": "Moms ingår och frakt beräknas i kassan",
-      "taxes_included_and_shipping_policy_html": "Moms ingår. <a href=\"{{ link }}\" class=\"link\">Frakt</a> beräknas i kassan.",
+      "taxes_included_and_shipping_policy_html": "Moms ingår. <a href=\"{{ link }}\" class=\"link\">Frakt<\/a> beräknas i kassan.",
       "taxes_and_shipping_at_checkout": "Moms och frakt beräknas i kassan",
       "terms_of_services_checkbox": "Jag accepterar tjänstevillkoren",
-      "terms_of_services_checkbox_with_link_html": "Jag accepterar <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">tjänstevillkoren</a>",
+      "terms_of_services_checkbox_with_link_html": "Jag accepterar <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">tjänstevillkoren<\/a>",
       "add_order_note": "Lägg till orderkommentar",
       "edit_order_note": "Redigera ditt orderkommentar",
       "order_note": "Orderkommentar",
@@ -361,7 +361,7 @@
       "remove_with_title": "Ta bort {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Hnadla för <span class='bold'>{{ remaining_amount }}</span> till och få gratis frakt!",
+      "limit_unreached_html": "Hnadla för <span class='bold'>{{ remaining_amount }}<\/span> till och få gratis frakt!",
       "limit_reached_html": "Du får fri frakt!"
     },
     "shipping_estimator": {
@@ -451,7 +451,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "För att visa före/efter jämförelse, lägg till fler block i sektionen.",
+      "not_enough_blocks": "För att visa före\/efter jämförelse, lägg till fler block i sektionen.",
       "percentage_shown": "Procentandel efter det visade fotot",
       "cursor_accessibility_text": "Använd vänster- och högerpiltangenterna för att navigera mellan före och efter foton."
     },

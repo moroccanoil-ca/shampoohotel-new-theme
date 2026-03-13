@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Stabilire preț per volum",
       "minimum": "Peste {{ quantity }}",
-      "price_at_each": "la {{ price }}/buc."
+      "price_at_each": "la {{ price }}\/buc."
     },
     "rating_count": {
       "zero": "Nicio o recenzie",
@@ -354,7 +354,7 @@
       "taxes_included_and_shipping_policy_html": "Taxa este inclusă. <a href=\"{{ link }}\" class=\"link\">Costul de livrare<\/a> este calculat la finalizarea comenzii.",
       "taxes_and_shipping_at_checkout": "Taxele și costul de livrare sunt calculate la finalizarea comenzii",
       "terms_of_services_checkbox": "Sunt de acord cu termenii serviciului",
-      "terms_of_services_checkbox_with_link_html": "Sunt de acord cu <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">termenii serviciului</a>",
+      "terms_of_services_checkbox_with_link_html": "Sunt de acord cu <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">termenii serviciului<\/a>",
       "offers": "Oferte"
     },
     "order": {
@@ -365,7 +365,7 @@
       "remove_with_title": "Eliminați {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Cheltuie încă <span class='bold'>{{ remaining_amount }}</span> și vei obține livrare gratuită!",
+      "limit_unreached_html": "Cheltuie încă <span class='bold'>{{ remaining_amount }}<\/span> și vei obține livrare gratuită!",
       "limit_reached_html": "Ești eligibil pentru livrare gratuită."
     },
     "shipping_estimator": {

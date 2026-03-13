@@ -120,7 +120,7 @@
     "volume_pricing": {
       "title": "Оптовая цена",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/кажд."
+      "price_at_each": "{{ price }}\/кажд."
     },
     "rating_count": {
       "zero": "Нет отзывов",
@@ -365,7 +365,7 @@
       "taxes_included_and_shipping_policy_html": "Налог включен в цену. <a href=\"{{ link }}\" class=\"link\">Стоимость доставки<\/a> рассчитывается при оформлении заказа.",
       "taxes_and_shipping_at_checkout": "Налоги и стоимость доставки рассчитываются при оформлении доставки",
       "terms_of_services_checkbox": "Я согласен с условиями обслуживания",
-      "terms_of_services_checkbox_with_link_html": "Я согласен с <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">условиями обслуживания</a>",
+      "terms_of_services_checkbox_with_link_html": "Я согласен с <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">условиями обслуживания<\/a>",
       "offers": "Предложения"
     },
     "order": {
@@ -376,7 +376,7 @@
       "remove_with_title": "Удалить {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Потратьте еще <span class='bold'>{{ remaining_amount }}</span>, и мы доставим заказ бесплатно!",
+      "limit_unreached_html": "Потратьте еще <span class='bold'>{{ remaining_amount }}<\/span>, и мы доставим заказ бесплатно!",
       "limit_reached_html": "Вам доступна бесплатная доставка."
     },
     "shipping_estimator": {

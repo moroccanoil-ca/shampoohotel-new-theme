@@ -8,7 +8,7 @@
       "go_to_page": "Aller à la page {{ index }}",
       "go_to_item": "Aller à l'élément {{ index }}",
       "item_nth_of_count": "Elément {{ index }} de {{ count }}",
-      "toggle_autoplay": "Activer/désactiver la lecture automatique",
+      "toggle_autoplay": "Activer\/désactiver la lecture automatique",
       "drag": "Tirer",
       "close": "Fermer",
       "next": "Suivant",
@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Tarification basée sur le volume",
       "minimum": "{{ quantity }} ou plus",
-      "price_at_each": "à {{ price }}/pièce"
+      "price_at_each": "à {{ price }}\/pièce"
     },
     "rating_count": {
       "zero": "Aucun avis",
@@ -346,12 +346,12 @@
       "weight": "Poids",
       "subtotal": "Sous-total",
       "total": "Total",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\" class=\"link\">frais d'expédition</a> calculés lors du paiement",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\" class=\"link\">frais d'expédition<\/a> calculés lors du paiement",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais d'expédition calculés lors du paiement",
-      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\" class=\"link\">Frais d'expédition</a> calculés à l'étape de paiement.",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\" class=\"link\">Frais d'expédition<\/a> calculés à l'étape de paiement.",
       "taxes_and_shipping_at_checkout": "Taxes et frais d'expédition calculés lors du paiement",
       "terms_of_services_checkbox": "J'accepte les conditions d'utilisation",
-      "terms_of_services_checkbox_with_link_html": "J'accepte les <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">conditions d'utilisation</a>",
+      "terms_of_services_checkbox_with_link_html": "J'accepte les <a href=\"{{ link }}\" target=\"_blank\" class=\"link\">conditions d'utilisation<\/a>",
       "add_order_note": "Ajouter une note",
       "edit_order_note": "Modifier la note",
       "order_note": "Note de commande",
@@ -369,7 +369,7 @@
       "remove_with_title": "Supprimer {{ title }}"
     },
     "free_shipping_bar": {
-      "limit_unreached_html": "Dépensez <span class='bold'>{{ remaining_amount }}</span> de plus pour bénéficier des frais de livraison offerts.",
+      "limit_unreached_html": "Dépensez <span class='bold'>{{ remaining_amount }}<\/span> de plus pour bénéficier des frais de livraison offerts.",
       "limit_reached_html": "Frais de livraison offerts !"
     },
     "shipping_estimator": {
@@ -461,7 +461,7 @@
   },
   "sections": {
     "before_after": {
-      "not_enough_blocks": "Pour afficher la comparaison avant/après, veuillez ajouter des blocs dans la section.",
+      "not_enough_blocks": "Pour afficher la comparaison avant\/après, veuillez ajouter des blocs dans la section.",
       "percentage_shown": "Pourcentage affiché de la photo après",
       "cursor_accessibility_text": "Utilisez les flèches droite et gauche pour naviguer dans les images avant et après."
     },

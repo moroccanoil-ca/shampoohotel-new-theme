@@ -1,1 +1,634 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"vendor","disabled":true,"settings":{}},"rating":{"type":"rating","settings":{"show_empty":false}},"title":{"type":"title","settings":{"heading_tag":"h3"}},"badges":{"type":"badges","settings":{}},"price":{"type":"price","settings":{"show_taxes_notice":false}},"payment_terms":{"type":"payment_terms","disabled":true,"settings":{}},"separator":{"type":"separator","settings":{}},"text_n6eEdY":{"type":"text","settings":{"text":"<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"}},"text_Q9p7T8":{"type":"text","settings":{"text":"<p>{{ product.metafields.custom.size.value }}<\/p>"}},"description":{"type":"description","disabled":true,"settings":{"collapse_content":false,"uppercase_title":false}},"variant_picker":{"type":"variant_picker","disabled":true,"settings":{"hide_sold_out_variants":false,"separate_options":false,"selector_style":"block","swatch_selector_style":"swatch","swatch_selector_size":"lg","block_selector_style":"outline","variant_image_options":"","size_chart_page":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_payment_button":true,"show_gift_card_recipient":true,"show_quantity_selector":true,"add_quantity_selector_spacing":true,"atc_button_style":"solid","atc_button_background":"","atc_button_text_color":"","payment_button_background":"","payment_button_text_color":""}},"accordion_DHwUmx":{"type":"accordion","settings":{"title":"Product Details","content":"<p>{{ product.metafields.custom.long_description | metafield_tag }}<br\/><br\/><strong>BENEFITS<\/strong><br\/>{{ product.metafields.custom.benefits | metafield_tag }}<\/p><p><strong>CLINICAL CLAIMS<\/strong><br\/>{{ product.metafields.custom.clinical_claims | metafield_tag }}<\/p>","uppercase_title":false,"icon":"picto-happy","page":""}},"accordion_4VCCi3":{"type":"accordion","settings":{"title":"Scent","content":"<p><strong>Smells Like<\/strong>: A bonfire under the desert stars. Sweet orange, cardamom, night-blooming jasmine.<br\/><br\/><strong>Personality<\/strong>: Sultry and striking.<br\/><br\/><strong>Top Notes<\/strong>: Sweet orange, green mandarin, juicy lemon.<br\/><br\/><strong>Mid Notes<\/strong>: Night-blooming jasmine, black pepper, blonde cedar.<br\/><br\/><strong>Base Notes<\/strong>: Amberwood, sweet sandalwood, ethereal musk.<br\/><br\/><strong>Fragrance Family<\/strong>: Warm and woody.<\/p>","uppercase_title":false,"icon":"picto-drop-of-water","page":""}},"accordion_dJEdkt":{"type":"accordion","settings":{"title":"Ingredients","content":"<p><strong>KEY INGREDIENTS<\/strong><\/p>{{ product.metafields.custom.key_ingredients | metafield_tag }}<p><strong>FULL INGREDIENTS<\/strong><\/p><p>{{ product.metafields.custom.full_ingredient_list | metafield_tag }}<\/p><p>*<em>ingredients listed may vary slightly from products received. please refer to your packaging for the most up-to-date ingredient information and any warnings or instructions.<\/em><\/p>","uppercase_title":false,"icon":"picto-science","page":""}},"accordion_8rQCEc":{"type":"accordion","settings":{"title":"How to Use","content":"<p>{{ product.metafields.custom.how_to_use | metafield_tag }}<\/p>","uppercase_title":false,"icon":"picto-ai-spark","page":""}},"complementary_products_JXbbkg":{"type":"complementary_products","settings":{"title":"Pairs well with","products_count":6}}},"block_order":["vendor","rating","title","badges","price","payment_terms","separator","text_n6eEdY","text_Q9p7T8","description","variant_picker","buy_buttons","accordion_DHwUmx","accordion_4VCCi3","accordion_dJEdkt","accordion_8rQCEc","complementary_products_JXbbkg"],"custom_css":[".product-gallery__carousel > *:first-child {display: none !important;}"],"settings":{"color_scheme":"scheme-1","allow_transparent_header":false,"transparent_header_use_primary_colors":false,"add_top_spacing":true,"show_sticky_add_to_cart":true,"product_media_size":50,"content_alignment":"left","desktop_media_layout":"grid","desktop_carousel_controls":"lines","mobile_controls":"lines","enable_media_autoplay":true,"enable_video_looping":false,"enable_image_zoom":false,"max_image_zoom_level":3}},"scrolling_content_DYtcmp":{"type":"scrolling-content","blocks":{"text_VjMQFJ":{"type":"text","settings":{"text":"PARABEN-FREE","custom_icon":"shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_UpFXLk":{"type":"text","settings":{"text":"MINERAL OIL-FREE","custom_icon":"shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_qf9WpU":{"type":"text","settings":{"text":"NO HARMFUL SULFATES","custom_icon":"shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_DUgDCW":{"type":"text","settings":{"text":"VEGAN","custom_icon":"shopify:\/\/shop_images\/Asset_43_RENDER.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}},"text_8hq3UF":{"type":"text","settings":{"text":"CRUELTY-FREE","custom_icon":"shopify:\/\/shop_images\/Asset_44_RENDER.png","icon_position":"before_text","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""}}},"block_order":["text_VjMQFJ","text_UpFXLk","text_qf9WpU","text_DUgDCW","text_8hq3UF"],"name":"t:sections.scrolling_content.name","settings":{"color_scheme":"scheme-5","scrolling_speed":0.1,"scroll_direction":"end-to-start","section_rotation":0,"pause_on_hover":false,"text_font":"heading","text_font_size_mobile":4,"text_font_size_desktop":2,"section_vertical_spacing_mobile":16,"section_vertical_spacing_desktop":20,"item_horizontal_spacing_mobile":40,"item_horizontal_spacing_desktop":80}},"multi_column_FgfMYc":{"type":"multi-column","blocks":{"multi_column_column_CCF3Xe":{"type":"_multi-column-column","settings":{"color_scheme":"","text_alignment":"left"},"blocks":{"image_zhCtgF":{"type":"image","settings":{"image":"{{ closest.product.metafields.custom.media_2.value }}","max_width":100,"mobile_max_width":100},"blocks":{}},"heading_TRTHC7":{"type":"heading","settings":{"text":"Scent Notes","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_UzUnfh":{"type":"rich-text","settings":{"text":"<p>{{ closest.product.metafields.custom.scent_type.value }}<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["image_zhCtgF","heading_TRTHC7","rich_text_UzUnfh"]},"multi_column_column_gg7pNA":{"type":"_multi-column-column","settings":{"color_scheme":"","text_alignment":"left"},"blocks":{"image_8HKiy4":{"type":"image","settings":{"image":"{{ closest.product.metafields.custom.media_3.value }}","max_width":100,"mobile_max_width":100},"blocks":{}},"heading_VP6GPy":{"type":"heading","settings":{"text":"Who is it for?","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_j3PMxm":{"type":"rich-text","settings":{"text":"<p>{{ closest.product.metafields.custom.who_its_for.value }}<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["image_8HKiy4","heading_VP6GPy","rich_text_j3PMxm"]},"multi_column_column_GDXEww":{"type":"_multi-column-column","settings":{"color_scheme":"","text_alignment":"left"},"blocks":{"image_JCV6qq":{"type":"image","settings":{"image":"{{ closest.product.metafields.custom.media_4.value }}","max_width":100,"mobile_max_width":100},"blocks":{}},"heading_rBdhjM":{"type":"heading","settings":{"text":"How to use","heading_size":"h4","html_tag":"p","indent":"none","highlight_effect":"default","highlight_accent_color":"","highlight_text_color":""},"blocks":{}},"rich_text_UhFTiV":{"type":"rich-text","settings":{"text":"<p>{{ closest.product.metafields.custom.how_to_use | metafield_tag }}<\/p>","content_width":"sm"},"blocks":{}}},"block_order":["image_JCV6qq","heading_rBdhjM","rich_text_UhFTiV"]},"section-header":{"type":"_section-header","disabled":true,"static":true,"settings":{"subheading":"","title":"Multi-column","content":"<p>Use this content to share information about your store and products.<\/p>","button_text":"","button_link":"","button_style":"outline","text_alignment":"left","heading_size":"h3","title_icon":"none","show_scrolling_title":false},"blocks":{}}},"block_order":["multi_column_column_CCF3Xe","multi_column_column_gg7pNA","multi_column_column_GDXEww"],"name":"t:sections.multi_column.name","settings":{"color_scheme":"","show_internal_borders":false,"add_horizontal_spacing":true,"add_top_spacing":true,"add_bottom_spacing":true,"items_per_row":3,"stack_on_mobile":false,"stack_on_desktop":true,"column_spacing":"md","row_spacing":"md"}},"17720712294d7903da":{"type":"apps","blocks":{"spark_spotlight_carousal_qWwaLx":{"type":"shopify:\/\/apps\/spark\/blocks\/spotlight-carousal\/3eb8b961-42bd-4d42-a091-9b8e4c877d96","settings":{"show_videos_dynamically":true,"show_play_button":true,"show_views":false,"show_video_title":false,"show_compare_at_price":false,"show_arrow_buttons":true,"auto_play_video_next_video":true,"feed_title":"","title_alignment":"center","product_card_status":"hidden","product_card_btn_actn":"product_details","product_card_btn_background_color":"#000000","product_card_btn_text_color":"#ffffff","product_card_btn_text":"Shop","border_radius":16,"product_card_border_radius":12,"product_card_image_border_radius":8,"product_card_btn_border_radius":24,"padding_top":20,"padding_bottom":20,"show_on_desktop":true,"show_on_tablet":true,"show_on_mobile":true}},"section-header":{"type":"_section-header","disabled":true,"static":true,"settings":{"subheading":"","title":"Header","content":"<p>Use this content to share information about your store and products.<\/p>","button_text":"","button_link":"","button_style":"outline","text_alignment":"left","heading_size":"h3","title_icon":"none","show_scrolling_title":false},"blocks":{}}},"block_order":["spark_spotlight_carousal_qWwaLx"],"settings":{"color_scheme":"","add_vertical_spacing":false,"add_horizontal_spacing":false}},"apps_W3TmMD":{"type":"apps","blocks":{"yotpo_product_reviews_reviews_PAkPPB":{"type":"shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf","settings":{"product":"{{product}}"}},"section-header":{"type":"_section-header","disabled":true,"static":true,"settings":{"subheading":"YOTPO WIDGET WILL APPEAR HERE ONCE WE LAUNCH","title":"","content":"","button_text":"","button_link":"","button_style":"outline","text_alignment":"center","heading_size":"h3","title_icon":"none","show_scrolling_title":false},"blocks":{}}},"block_order":["yotpo_product_reviews_reviews_PAkPPB"],"custom_css":[".card-container,.yotpo-header-container {background-color: transparent;}"],"settings":{"color_scheme":"scheme-2","add_vertical_spacing":false,"add_horizontal_spacing":false}},"blocks_QLL6QA":{"type":"_blocks","blocks":{"ai_gen_block_5cdcdbe_AKEDzF":{"type":"ai_gen_block_5cdcdbe","settings":{"video_1":"shopify:\/\/files\/videos\/ugc_01.mp4","video_2":"shopify:\/\/files\/videos\/ugc_02.mp4","video_3":"shopify:\/\/files\/videos\/ugc_03.mp4","video_4":"shopify:\/\/files\/videos\/ugc_04.mp4","video_5":"shopify:\/\/files\/videos\/ugc_06.mp4","video_6":"shopify:\/\/files\/videos\/ugc_07.mp4","video_7":"shopify:\/\/files\/videos\/ugc_08.mp4","video_8":"shopify:\/\/files\/videos\/ugc_05.mp4","video_9":"shopify:\/\/files\/videos\/ugc_02.mp4","video_10":"shopify:\/\/files\/videos\/ugc_03.mp4","desktop_width_percent":100,"slide_width":30,"slide_width_mobile":70,"gap":20,"aspect_ratio":"177.78","border_radius":16,"show_controls":true,"controls_spacing":20,"button_background":"#321e1e","button_hover_background":"#000000","button_color":"#ffffff","dot_color":"#321e1e","video_background":"#000000"},"blocks":{}},"section-header":{"type":"_section-header","disabled":true,"static":true,"settings":{"subheading":"","title":"Header","content":"<p>Use this content to share information about your store and products.<\/p>","button_text":"","button_link":"","button_style":"outline","text_alignment":"left","heading_size":"h3","title_icon":"none","show_scrolling_title":false},"blocks":{}}},"block_order":["ai_gen_block_5cdcdbe_AKEDzF"],"disabled":true,"name":"Video carousel","settings":{"color_scheme":"","add_vertical_spacing":true,"add_horizontal_spacing":true}},"related-products":{"type":"related-products","blocks":{"section-header":{"type":"_section-header","static":true,"settings":{"subheading":"","title":"Related products","content":"","button_text":"","button_link":"","button_style":"outline","text_alignment":"left","heading_size":"h3","title_icon":"none","show_scrolling_title":false},"blocks":{}}},"settings":{"color_scheme":"","stack_products":false,"recommendations_count":5,"products_per_row_mobile":"2","products_per_row_desktop":5,"show_view_all_button":true,"show_scrolling_bar":true}}},"order":["main","scrolling_content_DYtcmp","multi_column_FgfMYc","17720712294d7903da","apps_W3TmMD","blocks_QLL6QA","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "text_n6eEdY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"
+          }
+        },
+        "text_Q9p7T8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.size.value }}<\/p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false,
+            "uppercase_title": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "separate_options": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "swatch_selector_size": "lg",
+            "block_selector_style": "outline",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "show_quantity_selector": true,
+            "add_quantity_selector_spacing": true,
+            "atc_button_style": "solid",
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "accordion_DHwUmx": {
+          "type": "accordion",
+          "settings": {
+            "title": "Product Details",
+            "content": "<p>{{ product.metafields.custom.long_description | metafield_tag }}<br\/><br\/><strong>BENEFITS<\/strong><br\/>{{ product.metafields.custom.benefits | metafield_tag }}<\/p><p><strong>CLINICAL CLAIMS<\/strong><br\/>{{ product.metafields.custom.clinical_claims | metafield_tag }}<\/p>",
+            "uppercase_title": false,
+            "icon": "picto-happy",
+            "page": ""
+          }
+        },
+        "accordion_4VCCi3": {
+          "type": "accordion",
+          "settings": {
+            "title": "Scent",
+            "content": "<p><strong>Smells Like<\/strong>: A bonfire under the desert stars. Sweet orange, cardamom, night-blooming jasmine.<br\/><br\/><strong>Personality<\/strong>: Sultry and striking.<br\/><br\/><strong>Top Notes<\/strong>: Sweet orange, green mandarin, juicy lemon.<br\/><br\/><strong>Mid Notes<\/strong>: Night-blooming jasmine, black pepper, blonde cedar.<br\/><br\/><strong>Base Notes<\/strong>: Amberwood, sweet sandalwood, ethereal musk.<br\/><br\/><strong>Fragrance Family<\/strong>: Warm and woody.<\/p>",
+            "uppercase_title": false,
+            "icon": "picto-drop-of-water",
+            "page": ""
+          }
+        },
+        "accordion_dJEdkt": {
+          "type": "accordion",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p><strong>KEY INGREDIENTS<\/strong><\/p>{{ product.metafields.custom.key_ingredients | metafield_tag }}<p><strong>FULL INGREDIENTS<\/strong><\/p><p>{{ product.metafields.custom.full_ingredient_list | metafield_tag }}<\/p><p>*<em>ingredients listed may vary slightly from products received. please refer to your packaging for the most up-to-date ingredient information and any warnings or instructions.<\/em><\/p>",
+            "uppercase_title": false,
+            "icon": "picto-science",
+            "page": ""
+          }
+        },
+        "accordion_8rQCEc": {
+          "type": "accordion",
+          "settings": {
+            "title": "How to Use",
+            "content": "<p>{{ product.metafields.custom.how_to_use | metafield_tag }}<\/p>",
+            "uppercase_title": false,
+            "icon": "picto-ai-spark",
+            "page": ""
+          }
+        },
+        "complementary_products_JXbbkg": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Pairs well with",
+            "products_count": 6
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "rating",
+        "title",
+        "badges",
+        "price",
+        "payment_terms",
+        "separator",
+        "text_n6eEdY",
+        "text_Q9p7T8",
+        "description",
+        "variant_picker",
+        "buy_buttons",
+        "accordion_DHwUmx",
+        "accordion_4VCCi3",
+        "accordion_dJEdkt",
+        "accordion_8rQCEc",
+        "complementary_products_JXbbkg"
+      ],
+      "custom_css": [
+        ".product-gallery__carousel > *:first-child {display: none !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "allow_transparent_header": false,
+        "transparent_header_use_primary_colors": false,
+        "add_top_spacing": true,
+        "show_sticky_add_to_cart": true,
+        "product_media_size": 50,
+        "content_alignment": "left",
+        "desktop_media_layout": "grid",
+        "desktop_carousel_controls": "lines",
+        "mobile_controls": "lines",
+        "enable_media_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3
+      }
+    },
+    "scrolling_content_DYtcmp": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_VjMQFJ": {
+          "type": "text",
+          "settings": {
+            "text": "PARABEN-FREE",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_UpFXLk": {
+          "type": "text",
+          "settings": {
+            "text": "MINERAL OIL-FREE",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_qf9WpU": {
+          "type": "text",
+          "settings": {
+            "text": "NO HARMFUL SULFATES",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_DUgDCW": {
+          "type": "text",
+          "settings": {
+            "text": "VEGAN",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_43_RENDER.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "text_8hq3UF": {
+          "type": "text",
+          "settings": {
+            "text": "CRUELTY-FREE",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_44_RENDER.png",
+            "icon_position": "before_text",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_VjMQFJ",
+        "text_UpFXLk",
+        "text_qf9WpU",
+        "text_DUgDCW",
+        "text_8hq3UF"
+      ],
+      "name": "t:sections.scrolling_content.name",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "scrolling_speed": 0.1,
+        "scroll_direction": "end-to-start",
+        "section_rotation": 0,
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 4,
+        "text_font_size_desktop": 2,
+        "section_vertical_spacing_mobile": 16,
+        "section_vertical_spacing_desktop": 20,
+        "item_horizontal_spacing_mobile": 40,
+        "item_horizontal_spacing_desktop": 80
+      }
+    },
+    "multi_column_FgfMYc": {
+      "type": "multi-column",
+      "blocks": {
+        "multi_column_column_CCF3Xe": {
+          "type": "_multi-column-column",
+          "settings": {
+            "color_scheme": "",
+            "text_alignment": "left"
+          },
+          "blocks": {
+            "image_zhCtgF": {
+              "type": "image",
+              "settings": {
+                "image": "{{ closest.product.metafields.custom.media_2.value }}",
+                "max_width": 100,
+                "mobile_max_width": 100
+              },
+              "blocks": {}
+            },
+            "heading_TRTHC7": {
+              "type": "heading",
+              "settings": {
+                "text": "Scent Notes",
+                "heading_size": "h4",
+                "html_tag": "p",
+                "indent": "none",
+                "highlight_effect": "default",
+                "highlight_accent_color": "",
+                "highlight_text_color": ""
+              },
+              "blocks": {}
+            },
+            "rich_text_UzUnfh": {
+              "type": "rich-text",
+              "settings": {
+                "text": "<p>{{ closest.product.metafields.custom.scent_type.value }}<\/p>",
+                "content_width": "sm"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_zhCtgF",
+            "heading_TRTHC7",
+            "rich_text_UzUnfh"
+          ]
+        },
+        "multi_column_column_gg7pNA": {
+          "type": "_multi-column-column",
+          "settings": {
+            "color_scheme": "",
+            "text_alignment": "left"
+          },
+          "blocks": {
+            "image_8HKiy4": {
+              "type": "image",
+              "settings": {
+                "image": "{{ closest.product.metafields.custom.media_3.value }}",
+                "max_width": 100,
+                "mobile_max_width": 100
+              },
+              "blocks": {}
+            },
+            "heading_VP6GPy": {
+              "type": "heading",
+              "settings": {
+                "text": "Who is it for?",
+                "heading_size": "h4",
+                "html_tag": "p",
+                "indent": "none",
+                "highlight_effect": "default",
+                "highlight_accent_color": "",
+                "highlight_text_color": ""
+              },
+              "blocks": {}
+            },
+            "rich_text_j3PMxm": {
+              "type": "rich-text",
+              "settings": {
+                "text": "<p>{{ closest.product.metafields.custom.who_its_for.value }}<\/p>",
+                "content_width": "sm"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_8HKiy4",
+            "heading_VP6GPy",
+            "rich_text_j3PMxm"
+          ]
+        },
+        "multi_column_column_GDXEww": {
+          "type": "_multi-column-column",
+          "settings": {
+            "color_scheme": "",
+            "text_alignment": "left"
+          },
+          "blocks": {
+            "image_JCV6qq": {
+              "type": "image",
+              "settings": {
+                "image": "{{ closest.product.metafields.custom.media_4.value }}",
+                "max_width": 100,
+                "mobile_max_width": 100
+              },
+              "blocks": {}
+            },
+            "heading_rBdhjM": {
+              "type": "heading",
+              "settings": {
+                "text": "How to use",
+                "heading_size": "h4",
+                "html_tag": "p",
+                "indent": "none",
+                "highlight_effect": "default",
+                "highlight_accent_color": "",
+                "highlight_text_color": ""
+              },
+              "blocks": {}
+            },
+            "rich_text_UhFTiV": {
+              "type": "rich-text",
+              "settings": {
+                "text": "<p>{{ closest.product.metafields.custom.how_to_use | metafield_tag }}<\/p>",
+                "content_width": "sm"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_JCV6qq",
+            "heading_rBdhjM",
+            "rich_text_UhFTiV"
+          ]
+        },
+        "section-header": {
+          "type": "_section-header",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "subheading": "",
+            "title": "Multi-column",
+            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "multi_column_column_CCF3Xe",
+        "multi_column_column_gg7pNA",
+        "multi_column_column_GDXEww"
+      ],
+      "name": "t:sections.multi_column.name",
+      "settings": {
+        "color_scheme": "",
+        "show_internal_borders": false,
+        "add_horizontal_spacing": true,
+        "add_top_spacing": true,
+        "add_bottom_spacing": true,
+        "items_per_row": 3,
+        "stack_on_mobile": false,
+        "stack_on_desktop": true,
+        "column_spacing": "md",
+        "row_spacing": "md"
+      }
+    },
+    "17720712294d7903da": {
+      "type": "apps",
+      "blocks": {
+        "spark_spotlight_carousal_qWwaLx": {
+          "type": "shopify:\/\/apps\/spark\/blocks\/spotlight-carousal\/3eb8b961-42bd-4d42-a091-9b8e4c877d96",
+          "settings": {
+            "show_videos_dynamically": true,
+            "show_play_button": true,
+            "show_views": false,
+            "show_video_title": false,
+            "show_compare_at_price": false,
+            "show_arrow_buttons": true,
+            "auto_play_video_next_video": true,
+            "feed_title": "",
+            "title_alignment": "center",
+            "product_card_status": "hidden",
+            "product_card_btn_actn": "product_details",
+            "product_card_btn_background_color": "#000000",
+            "product_card_btn_text_color": "#ffffff",
+            "product_card_btn_text": "Shop",
+            "border_radius": 16,
+            "product_card_border_radius": 12,
+            "product_card_image_border_radius": 8,
+            "product_card_btn_border_radius": 24,
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "show_on_desktop": true,
+            "show_on_tablet": true,
+            "show_on_mobile": true
+          }
+        },
+        "section-header": {
+          "type": "_section-header",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "subheading": "",
+            "title": "Header",
+            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "spark_spotlight_carousal_qWwaLx"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "add_vertical_spacing": false,
+        "add_horizontal_spacing": false
+      }
+    },
+    "apps_W3TmMD": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_PAkPPB": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "section-header": {
+          "type": "_section-header",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "subheading": "YOTPO WIDGET WILL APPEAR HERE ONCE WE LAUNCH",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "center",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_PAkPPB"
+      ],
+      "custom_css": [
+        ".card-container,.yotpo-header-container {background-color: transparent;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "add_vertical_spacing": false,
+        "add_horizontal_spacing": false
+      }
+    },
+    "blocks_QLL6QA": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_5cdcdbe_AKEDzF": {
+          "type": "ai_gen_block_5cdcdbe",
+          "settings": {
+            "video_1": "shopify:\/\/files\/videos\/ugc_01.mp4",
+            "video_2": "shopify:\/\/files\/videos\/ugc_02.mp4",
+            "video_3": "shopify:\/\/files\/videos\/ugc_03.mp4",
+            "video_4": "shopify:\/\/files\/videos\/ugc_04.mp4",
+            "video_5": "shopify:\/\/files\/videos\/ugc_06.mp4",
+            "video_6": "shopify:\/\/files\/videos\/ugc_07.mp4",
+            "video_7": "shopify:\/\/files\/videos\/ugc_08.mp4",
+            "video_8": "shopify:\/\/files\/videos\/ugc_05.mp4",
+            "video_9": "shopify:\/\/files\/videos\/ugc_02.mp4",
+            "video_10": "shopify:\/\/files\/videos\/ugc_03.mp4",
+            "desktop_width_percent": 100,
+            "slide_width": 30,
+            "slide_width_mobile": 70,
+            "gap": 20,
+            "aspect_ratio": "177.78",
+            "border_radius": 16,
+            "show_controls": true,
+            "controls_spacing": 20,
+            "button_background": "#321e1e",
+            "button_hover_background": "#000000",
+            "button_color": "#ffffff",
+            "dot_color": "#321e1e",
+            "video_background": "#000000"
+          },
+          "blocks": {}
+        },
+        "section-header": {
+          "type": "_section-header",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "subheading": "",
+            "title": "Header",
+            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_5cdcdbe_AKEDzF"
+      ],
+      "disabled": true,
+      "name": "Video carousel",
+      "settings": {
+        "color_scheme": "",
+        "add_vertical_spacing": true,
+        "add_horizontal_spacing": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "blocks": {
+        "section-header": {
+          "type": "_section-header",
+          "static": true,
+          "settings": {
+            "subheading": "",
+            "title": "Related products",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "settings": {
+        "color_scheme": "",
+        "stack_products": false,
+        "recommendations_count": 5,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "show_view_all_button": true,
+        "show_scrolling_bar": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "scrolling_content_DYtcmp",
+    "multi_column_FgfMYc",
+    "17720712294d7903da",
+    "apps_W3TmMD",
+    "blocks_QLL6QA",
+    "related-products"
+  ]
+}
