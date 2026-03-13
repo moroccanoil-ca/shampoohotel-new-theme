@@ -5972,6 +5972,38 @@ if (!window.customElements.get("newsletter-popup")) {
   window.customElements.define("newsletter-popup", NewsletterPopup);
 }
 
+// js/sections/mo-image-popup.js
+var ImagePopup = class extends Modal {
+  connectedCallback() {
+    super.connectedCallback();
+    
+    if (this.shouldAppearAutomatically) {
+      setTimeout(() => this.show(), this.apparitionDelay);
+    }
+    
+    // Mark as appeared when closed
+    this.addEventListener('dialog:after-hide', () => {
+      localStorage.setItem('theme:image-popup-closed', 'true');
+    });
+  }
+  
+  get apparitionDelay() {
+    return parseInt(this.getAttribute('apparition-delay') || 0) * 1000;
+  }
+  
+  get shouldAppendToBody() {
+    return false;
+  }
+  
+  get shouldAppearAutomatically() {
+    return !(this.hasAttribute('only-once') && localStorage.getItem('theme:image-popup-closed') === 'true');
+  }
+};
+
+if (!window.customElements.get('image-popup')) {
+  window.customElements.define('image-popup', ImagePopup);
+}
+
 // js/sections/press.js
 import { animate as animate20, animateSequence as animateSequence11 } from "vendor";
 var PressCarousel = class extends EffectCarousel {
@@ -6546,6 +6578,7 @@ export {
   HeaderMenuDropdownSidebar,
   HeightObserver,
   HighlightedHeading,
+  ImagePopup,
   LayoutSelectorButton,
   LineItem,
   LinksWithImage,
