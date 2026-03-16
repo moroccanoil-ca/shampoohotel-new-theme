@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "scrolling_content_ziHjtU": {
@@ -32,7 +41,7 @@
       "settings": {
         "color_scheme": "scheme-5",
         "scrolling_speed": 0.2,
-        "scroll_direction": "start-to-end",
+        "scroll_direction": "end-to-start",
         "section_rotation": 0,
         "pause_on_hover": true,
         "text_font": "heading",
@@ -52,7 +61,7 @@
           "name": "t:sections.slideshow.blocks.video.name",
           "settings": {
             "color_scheme": "",
-            "video": "shopify:\/\/files\/videos\/Group V2_small_568bc088-aece-4bd1-bd11-df4b44a4df14.mp4",
+            "video": "shopify://files/videos/Group V2_small_568bc088-aece-4bd1-bd11-df4b44a4df14.mp4",
             "slide_link": "",
             "content_max_width": 700,
             "mobile_content_position": "place-self-center-start",
@@ -77,7 +86,7 @@
             "rich_text_cQAcpp": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.<\/p>",
+                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.</p>",
                 "content_width": "xs"
               },
               "blocks": {}
@@ -87,7 +96,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop haircare",
-                "url": "shopify:\/\/collections\/hair",
+                "url": "shopify://collections/hair",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -100,7 +109,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop body care",
-                "url": "shopify:\/\/collections\/body",
+                "url": "shopify://collections/body",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -121,7 +130,7 @@
           "name": "t:sections.slideshow.blocks.image.name",
           "settings": {
             "color_scheme": "",
-            "image": "shopify:\/\/shop_images\/SH_Web_Banner_NEW_2.jpg",
+            "image": "shopify://shop_images/SH_Web_Banner_NEW_2.jpg",
             "slide_link": "",
             "content_max_width": 700,
             "mobile_content_position": "place-self-center-start",
@@ -146,7 +155,7 @@
             "rich_text_km67xp": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.<\/p>",
+                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.</p>",
                 "content_width": "xs"
               },
               "blocks": {}
@@ -156,7 +165,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop haircare",
-                "url": "shopify:\/\/collections\/hair",
+                "url": "shopify://collections/hair",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -169,7 +178,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop body care",
-                "url": "shopify:\/\/collections\/body",
+                "url": "shopify://collections/body",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -190,7 +199,7 @@
           "name": "t:sections.slideshow.blocks.video.name",
           "settings": {
             "color_scheme": "",
-            "video": "shopify:\/\/files\/videos\/Group_small.mp4",
+            "video": "shopify://files/videos/Group_small.mp4",
             "slide_link": "",
             "content_max_width": 700,
             "mobile_content_position": "place-self-center-start",
@@ -215,7 +224,7 @@
             "rich_text_FCfyjW": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.<\/p>",
+                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.</p>",
                 "content_width": "xs"
               },
               "blocks": {}
@@ -225,7 +234,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop haircare",
-                "url": "shopify:\/\/collections\/hair",
+                "url": "shopify://collections/hair",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -238,7 +247,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop body care",
-                "url": "shopify:\/\/collections\/body",
+                "url": "shopify://collections/body",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -259,7 +268,7 @@
           "name": "t:sections.slideshow.blocks.image.name",
           "settings": {
             "color_scheme": "",
-            "image": "shopify:\/\/shop_images\/2025_01_13_SH_2741_b586b575-658a-4049-9a90-33963b074622.jpg",
+            "image": "shopify://shop_images/2025_01_13_SH_2741_b586b575-658a-4049-9a90-33963b074622.jpg",
             "slide_link": "",
             "content_max_width": 700,
             "mobile_content_position": "place-self-center-start",
@@ -284,7 +293,7 @@
             "rich_text_kxRgpy": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.<\/p>",
+                "text": "<p>Iconic Cities. Transportive Scents. Professional-Grade Formulas. Real Results for Every Mood. Check in - your destination awaits.</p>",
                 "content_width": "xs"
               },
               "blocks": {}
@@ -294,7 +303,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop haircare",
-                "url": "shopify:\/\/collections\/hair",
+                "url": "shopify://collections/hair",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -307,7 +316,7 @@
               "name": "t:blocks.button.name",
               "settings": {
                 "text": "shop body care",
-                "url": "shopify:\/\/collections\/body",
+                "url": "shopify://collections/body",
                 "open_in_new_tab": false,
                 "style": "solid",
                 "background": "",
@@ -358,7 +367,7 @@
             "collection": "miami",
             "products_count": 12,
             "title": "MIAMI",
-            "content": "<p><strong>INTENSE HYDRATION<\/strong> that smells like sunshine sparkling on the surf<\/p>",
+            "content": "<p><strong>INTENSE HYDRATION</strong> that smells like sunshine sparkling on the surf</p>",
             "link": "{{ block.settings.collection.url }}"
           }
         },
@@ -368,7 +377,7 @@
             "collection": "paris",
             "products_count": 12,
             "title": "PARIS",
-            "content": "<p><strong>SHINE<\/strong> that smells like champagne bubbles sparkling in time with city lights<\/p>",
+            "content": "<p><strong>SHINE</strong> that smells like champagne bubbles sparkling in time with city lights</p>",
             "link": "{{ block.settings.collection.url }}"
           }
         },
@@ -378,7 +387,7 @@
             "collection": "rio",
             "products_count": 4,
             "title": "RIO",
-            "content": "<p><strong>VOLUME<\/strong> that smells like losing yourself in the beat of the music<\/p>",
+            "content": "<p><strong>VOLUME</strong> that smells like losing yourself in the beat of the music</p>",
             "link": "{{ block.settings.collection.url }}"
           }
         },
@@ -388,7 +397,7 @@
             "collection": "marrakesh",
             "products_count": 12,
             "title": "MARRAKESH",
-            "content": "<p><strong>STRENGTHENING<\/strong> that smells like a bonfire under the desert stars<\/p>",
+            "content": "<p><strong>STRENGTHENING</strong> that smells like a bonfire under the desert stars</p>",
             "link": "{{ block.settings.collection.url }}"
           }
         }
@@ -418,7 +427,7 @@
           "type": "text",
           "settings": {
             "text": "PARABEN-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
+            "custom_icon": "shopify://shop_images/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -429,7 +438,7 @@
           "type": "text",
           "settings": {
             "text": "MINERAL OIL-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
+            "custom_icon": "shopify://shop_images/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -440,7 +449,7 @@
           "type": "text",
           "settings": {
             "text": "NO HARMFUL SULFATES",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
+            "custom_icon": "shopify://shop_images/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -451,7 +460,7 @@
           "type": "text",
           "settings": {
             "text": "VEGAN",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_43_RENDER.png",
+            "custom_icon": "shopify://shop_images/Asset_43_RENDER.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -462,7 +471,7 @@
           "type": "text",
           "settings": {
             "text": "CRUELTY-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_44_RENDER.png",
+            "custom_icon": "shopify://shop_images/Asset_44_RENDER.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -502,7 +511,7 @@
             "change_color_scheme_on_hover": false,
             "color_scheme": "scheme-3",
             "color_scheme_hover": "scheme-3",
-            "image": "shopify:\/\/shop_images\/rio-middle0volume.jpg",
+            "image": "shopify://shop_images/rio-middle0volume.jpg",
             "icon": "none",
             "icon_width": 32,
             "mobile_icon_width": 24,
@@ -515,10 +524,10 @@
             "scrolling_title": false,
             "scrolling_title_separator": "none",
             "show_text_vertically": true,
-            "text": "<p>Smells like losing yourself in the beat of the music<\/p>",
+            "text": "<p>Smells like losing yourself in the beat of the music</p>",
             "text_position": "bottom_left",
             "button_style": "solid",
-            "link_url": "shopify:\/\/collections\/rio",
+            "link_url": "shopify://collections/rio",
             "link_text": "Shop Rio",
             "link_position": "bottom_left"
           }
@@ -529,7 +538,7 @@
             "change_color_scheme_on_hover": false,
             "color_scheme": "scheme-3",
             "color_scheme_hover": "scheme-3",
-            "image": "shopify:\/\/shop_images\/2025_12_08_SHAMPOOHOTEL_227.jpg",
+            "image": "shopify://shop_images/2025_12_08_SHAMPOOHOTEL_227.jpg",
             "icon": "none",
             "icon_width": 32,
             "mobile_icon_width": 24,
@@ -542,10 +551,10 @@
             "scrolling_title": false,
             "scrolling_title_separator": "none",
             "show_text_vertically": true,
-            "text": "<p>Smells like sunshine sparkling on the surf<\/p>",
+            "text": "<p>Smells like sunshine sparkling on the surf</p>",
             "text_position": "bottom_left",
             "button_style": "solid",
-            "link_url": "shopify:\/\/collections\/miami",
+            "link_url": "shopify://collections/miami",
             "link_text": "Shop Miami",
             "link_position": "bottom_left"
           }
@@ -556,7 +565,7 @@
             "change_color_scheme_on_hover": false,
             "color_scheme": "scheme-3",
             "color_scheme_hover": "",
-            "image": "shopify:\/\/shop_images\/2025_12_08_SHAMPOOHOTEL_633_91b97495-3d7d-48dc-b23e-56dd4feff159.jpg",
+            "image": "shopify://shop_images/2025_12_08_SHAMPOOHOTEL_633_91b97495-3d7d-48dc-b23e-56dd4feff159.jpg",
             "icon": "none",
             "icon_width": 32,
             "mobile_icon_width": 24,
@@ -569,10 +578,10 @@
             "scrolling_title": false,
             "scrolling_title_separator": "none",
             "show_text_vertically": true,
-            "text": "<p>Smells like champagne bubbles sparkling in time with city lights<\/p>",
+            "text": "<p>Smells like champagne bubbles sparkling in time with city lights</p>",
             "text_position": "bottom_left",
             "button_style": "solid",
-            "link_url": "shopify:\/\/collections\/paris",
+            "link_url": "shopify://collections/paris",
             "link_text": "Shop Paris",
             "link_position": "bottom_left"
           }
@@ -583,7 +592,7 @@
             "change_color_scheme_on_hover": false,
             "color_scheme": "scheme-3",
             "color_scheme_hover": "",
-            "image": "shopify:\/\/shop_images\/marrakesh_shampoohotel.jpg",
+            "image": "shopify://shop_images/marrakesh_shampoohotel.jpg",
             "icon": "none",
             "icon_width": 32,
             "mobile_icon_width": 24,
@@ -596,10 +605,10 @@
             "scrolling_title": false,
             "scrolling_title_separator": "none",
             "show_text_vertically": true,
-            "text": "<p>Smells like a bonfire under the desert stars<\/p>",
+            "text": "<p>Smells like a bonfire under the desert stars</p>",
             "text_position": "bottom_left",
             "button_style": "solid",
-            "link_url": "shopify:\/\/collections\/marrakesh",
+            "link_url": "shopify://collections/marrakesh",
             "link_text": "Shop Marrakesh",
             "link_position": "bottom_left"
           }
@@ -656,7 +665,7 @@
         "rich_text_GQXCQF": {
           "type": "rich-text",
           "settings": {
-            "text": "<h3>Sustainability guides every decision we make, from responsibly sourced ingredients to eco-conscious packaging.<br\/>Elevated by professional-grade formulas, each product delivers visible results you can see and feel — redefining what conscious beauty can be.<\/h3>",
+            "text": "<h3>Sustainability guides every decision we make, from responsibly sourced ingredients to eco-conscious packaging.<br/>Elevated by professional-grade formulas, each product delivers visible results you can see and feel — redefining what conscious beauty can be.</h3>",
             "content_width": "lg"
           },
           "blocks": {}
@@ -675,8 +684,8 @@
         "color_scheme": "",
         "allow_transparent_header": true,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/middle_background.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/sustainability-01-mobile.jpg",
+        "image": "shopify://shop_images/middle_background.jpg",
+        "mobile_image": "shopify://shop_images/sustainability-01-mobile.jpg",
         "overlay_color": "#000000",
         "overlay_opacity": 40,
         "enable_sticky_content": false,
@@ -690,7 +699,7 @@
       "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
-        "image": "shopify:\/\/shop_images\/middle_background.jpg",
+        "image": "shopify://shop_images/middle_background.jpg",
         "subheading": "OUR MISSION",
         "content": "Sustainability guides every decision we make, from responsibly sourced ingredients to eco-conscious packaging. Elevated by professional-grade formulas, each product delivers visible results you can see and feel — redefining what conscious beauty can be.",
         "button_text": "Learn more",
@@ -735,7 +744,7 @@
           "type": "rich-text",
           "disabled": true,
           "settings": {
-            "text": "<p>Write some text about your products or your brand.<\/p>",
+            "text": "<p>Write some text about your products or your brand.</p>",
             "content_width": "sm"
           },
           "blocks": {}
@@ -751,8 +760,8 @@
         "color_scheme": "",
         "allow_transparent_header": true,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/welcometoshampoohotel.png",
-        "mobile_image": "shopify:\/\/shop_images\/welcometoshampoohotel-mobile.png",
+        "image": "shopify://shop_images/welcometoshampoohotel.png",
+        "mobile_image": "shopify://shop_images/welcometoshampoohotel-mobile.png",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "enable_sticky_content": false,
@@ -787,8 +796,8 @@
             "image_with_caption_zbwxUF": {
               "type": "image-with-caption",
               "settings": {
-                "image": "shopify:\/\/shop_images\/topofvideo-welcome_4afd3640-52a7-46ae-9f09-8f720b55a05b.png",
-                "mobile_image": "shopify:\/\/shop_images\/topofvideo-welcome-mobile.png",
+                "image": "shopify://shop_images/topofvideo-welcome_4afd3640-52a7-46ae-9f09-8f720b55a05b.png",
+                "mobile_image": "shopify://shop_images/topofvideo-welcome-mobile.png",
                 "caption": "",
                 "max_width": 100,
                 "mobile_max_width": 100
@@ -971,7 +980,7 @@
             "rich-text-1": {
               "type": "rich-text",
               "settings": {
-                "text": "<h6><span style=\"text-decoration:underline\"><em>Instructions: <\/em><\/span><br\/><strong><br\/><\/strong>Choose your destination - then lather, rinse, retreat.<\/h6><h6><\/h6><h6><\/h6>",
+                "text": "<h6><span style=\"text-decoration:underline\"><em>Instructions: </em></span><br/><strong><br/></strong>Choose your destination - then lather, rinse, retreat.</h6><h6></h6><h6></h6>",
                 "content_width": "lg"
               },
               "blocks": {}
@@ -994,8 +1003,8 @@
         "color_scheme": "scheme-5",
         "allow_transparent_header": true,
         "show_background_image_parallax": false,
-        "background_video": "shopify:\/\/files\/videos\/SH_Placeholder_Header.mp4",
-        "mobile_background_video": "shopify:\/\/files\/videos\/Mobile_No Logo.mp4",
+        "background_video": "shopify://files/videos/SH_Placeholder_Header.mp4",
+        "mobile_background_video": "shopify://files/videos/Mobile_No Logo.mp4",
         "add_vertical_spacing": false,
         "add_horizontal_spacing": false,
         "gap": 16,
@@ -1013,9 +1022,9 @@
         "image_size": "md",
         "add_image_spacing": true,
         "subheading": "Coming soon",
-        "title": "<em>Mark<\/em> your calendars.",
+        "title": "<em>Mark</em> your calendars.",
         "heading_tag": "h2",
-        "content": "<p>Let's celebrate our new release, and get an exceptional 20% discount on your order. The perfect gift for you or your best friend.<\/p>",
+        "content": "<p>Let's celebrate our new release, and get an exceptional 20% discount on your order. The perfect gift for you or your best friend.</p>",
         "button_text": "",
         "button_url": "",
         "button_style": "solid",
@@ -1062,9 +1071,9 @@
             "card_1_pill_bg": "#cba77f",
             "card_1_pill_color": "#ffffff",
             "card_1_pill_radius": 20,
-            "card_1_before_img": "shopify:\/\/shop_images\/Argan_Oil_for_Hair_model_2.jpg",
+            "card_1_before_img": "shopify://shop_images/Argan_Oil_for_Hair_model_2.jpg",
             "card_1_before_cap": "Month 0",
-            "card_1_after_img": "shopify:\/\/shop_images\/2025_01_13_SH_1880.jpg",
+            "card_1_after_img": "shopify://shop_images/2025_01_13_SH_1880.jpg",
             "card_1_after_cap": "Month 3",
             "card_1_quote": "I've noticed such a difference in my hair thickness and volume!",
             "card_1_name": "Danielle K.",
@@ -1074,9 +1083,9 @@
             "card_2_pill_bg": "#cba77f",
             "card_2_pill_color": "#ffffff",
             "card_2_pill_radius": 20,
-            "card_2_before_img": "shopify:\/\/shop_images\/Screenshot_2025-12-04_at_4.17.03_PM.png",
+            "card_2_before_img": "shopify://shop_images/Screenshot_2025-12-04_at_4.17.03_PM.png",
             "card_2_before_cap": "Month 0",
-            "card_2_after_img": "shopify:\/\/shop_images\/u3699392818_extreme_hyper_realistic_close-up_of_retro_cat-eye_1293c451-5334-4616-bc56-8a73ac4fe286_1.png",
+            "card_2_after_img": "shopify://shop_images/u3699392818_extreme_hyper_realistic_close-up_of_retro_cat-eye_1293c451-5334-4616-bc56-8a73ac4fe286_1.png",
             "card_2_after_cap": "Month 3",
             "card_2_quote": "My scalp feels so much healthier and my hair looks amazing!",
             "card_2_name": "Sarah M.",
@@ -1086,9 +1095,9 @@
             "card_3_pill_bg": "#cba77f",
             "card_3_pill_color": "#ffffff",
             "card_3_pill_radius": 20,
-            "card_3_before_img": "shopify:\/\/shop_images\/Shampoohotel_Shot_08_RioModel_HairProduct_0498_NG_114636_RT1_v1.png",
+            "card_3_before_img": "shopify://shop_images/Shampoohotel_Shot_08_RioModel_HairProduct_0498_NG_114636_RT1_v1.png",
             "card_3_before_cap": "Month 0",
-            "card_3_after_img": "shopify:\/\/shop_images\/zhuoqian-yang-uiZL24ipVt4-unsplash_9eba6771-c2ed-42a7-a8e4-f9a632add59f.png",
+            "card_3_after_img": "shopify://shop_images/zhuoqian-yang-uiZL24ipVt4-unsplash_9eba6771-c2ed-42a7-a8e4-f9a632add59f.png",
             "card_3_after_cap": "Month 3",
             "card_3_quote": "I'm shedding so much less hair now. This really works!",
             "card_3_name": "Jessica L.",
@@ -1098,9 +1107,9 @@
             "card_4_pill_bg": "#cba77f",
             "card_4_pill_color": "#ffffff",
             "card_4_pill_radius": 20,
-            "card_4_before_img": "shopify:\/\/shop_images\/0006_Shampoohotel_Shot_09_RioModel_BodyProduct_0457_v2_ALT_QC_R300.jpg",
+            "card_4_before_img": "shopify://shop_images/0006_Shampoohotel_Shot_09_RioModel_BodyProduct_0457_v2_ALT_QC_R300.jpg",
             "card_4_before_cap": "Month 0",
-            "card_4_after_img": "shopify:\/\/shop_images\/Screenshot_2025-11-10_at_10.59.19_AM.png",
+            "card_4_after_img": "shopify://shop_images/Screenshot_2025-11-10_at_10.59.19_AM.png",
             "card_4_after_cap": "Month 3",
             "card_4_quote": "The volume is incredible! My hair has never looked better.",
             "card_4_name": "Emily R.",
@@ -1182,7 +1191,7 @@
         "testimonial-1": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0003_Shampoohotel_Shot_11_MarrakeshModel_HairProduct_0716_v1_QC_R300.jpg",
+            "image": "shopify://shop_images/0003_Shampoohotel_Shot_11_MarrakeshModel_HairProduct_0716_v1_QC_R300.jpg",
             "show_rating": true,
             "rating": 5,
             "author": "Francoise T.",
@@ -1195,7 +1204,7 @@
         "testimonial-2": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/u3699392818_extreme_hyper_realistic_close-up_of_retro_cat-eye_1293c451-5334-4616-bc56-8a73ac4fe286_1.png",
+            "image": "shopify://shop_images/u3699392818_extreme_hyper_realistic_close-up_of_retro_cat-eye_1293c451-5334-4616-bc56-8a73ac4fe286_1.png",
             "show_rating": true,
             "rating": 5,
             "author": "Elodie M.",
@@ -1255,7 +1264,7 @@
           "settings": {
             "content_position": "place-self-start",
             "subheading": "Our commitment",
-            "title": "Pure & <em>raw<\/em> ingredients.",
+            "title": "Pure & <em>raw</em> ingredients.",
             "heading_tag": "h1",
             "highlight_effect": "circle",
             "highlight_accent_color": "#f6a429",
@@ -1268,7 +1277,7 @@
             "color_scheme": "",
             "content_position": "md:place-self-end",
             "title": "Pure beauty.",
-            "content": "<p>Certified by Ecocert and bearing the Cosmos Organic and Cosmos Natural labels, our products meet the highest standards of ingredient quality. Packaged in recycled glass, they also reflect a strong commitment to environmental responsibility.<\/p>",
+            "content": "<p>Certified by Ecocert and bearing the Cosmos Organic and Cosmos Natural labels, our products meet the highest standards of ingredient quality. Packaged in recycled glass, they also reflect a strong commitment to environmental responsibility.</p>",
             "indent_heading": false
           }
         }
@@ -1290,7 +1299,7 @@
         "item-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmo.svg",
+            "image": "shopify://shop_images/cosmo.svg",
             "logo_width": 90,
             "author": "Le monde",
             "content": "Brazilian beauty is having a huge moment, and I’m obsessed with this Rio-inspired scent from Shampoo Hotel. It lathers up SO well on my body and hydrates my sensitive skin with ease. When I step out of the shower after using this, I smell like I’ve just come back from a sweet beach vacation."
@@ -1299,7 +1308,7 @@
         "item-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forbes-logos-black-png-download-7.png",
+            "image": "shopify://shop_images/forbes-logos-black-png-download-7.png",
             "logo_width": 76,
             "author": "Marie-Claire",
             "content": "When you can’t make it to Marrakesh, you can check into the Shampoohotel anytime to escape with your skincare. Turn your bathroom into a hotel with this new brand that has four collections around iconic destinations: Miami, Marrakesh, Rio and Paris."
@@ -1308,7 +1317,7 @@
         "item-3": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2026-02-18_at_7.33.11_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2026-02-18_at_7.33.11_PM.png",
             "logo_width": 76,
             "author": "Elle",
             "content": "Perfect if you’re dealing with damage or want a routine that doubles as sensory escape."
@@ -1317,7 +1326,7 @@
         "item_mdDVeJ": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ok_logo_black.png",
+            "image": "shopify://shop_images/ok_logo_black.png",
             "logo_width": 76,
             "author": "Elle",
             "content": "Inspired by the beachside vibe of its namesake city, this leave-in conditioner is your shortcut to soft, hydrated, and effortlessly smooth hair. Infused with nourishing hyaluronic acid, the formula detangles and replenishes moisture to leave hair with a silky feel. This leave-in reduces frizz by up to 85%* in high humidity and is formulated for all hair types."
@@ -1326,7 +1335,7 @@
         "item_ikDwKp": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2026-02-18_at_7.34.58_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2026-02-18_at_7.34.58_PM.png",
             "logo_width": 76,
             "author": "Elle",
             "content": "Bringing the charm of hotel amenities into the home, Shampoohotel offers a beauty range that combines sensorial fragrance, salon-quality formulas, and accessible pricing to elevate everyday routines."
@@ -1335,7 +1344,7 @@
         "item_dyhzBJ": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/americansalonlogo.svg",
+            "image": "shopify://shop_images/americansalonlogo.svg",
             "logo_width": 76,
             "author": "Elle",
             "content": "Because that shower after a pool or beach day just hits different, especially on vacation. The decadent body products from this new travel-inspired hair and body brand are developed by in-house perfumers with scents inspired by iconic destinations: Paris (crisp and sophisticated), Miami (uplifting and bright), Marrakesh (sultry and striking), and Rio (warm and intoxicating). "
@@ -1344,7 +1353,7 @@
         "item_y4hR3z": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rd-us-weekly-02-04-1.webp",
+            "image": "shopify://shop_images/rd-us-weekly-02-04-1.webp",
             "logo_width": 76,
             "author": "Elle",
             "content": "The shampoo was luxuriously creamy and left my hair feeling clean but not stripped . . . the conditioner hydrated my waves really well without weighing them down. The fragrance of all of these products is heavenly, too; it’s this sunscreeny, summery, salty smell that I couldn’t stop opening the bottles to take a whiff of!”"
@@ -1403,7 +1412,7 @@
         "richtext-1": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Our mission extends beyond skincare—we’re dedicated to making a meaningful difference for the planet and its people. Every purchase on our Eshop helps us grow this impact. Since 2018, we’ve planted 200,000 trees worldwide—nurturing ecosystems and supporting reforestation, one order at a time.<\/p>",
+            "text": "<p>Our mission extends beyond skincare—we’re dedicated to making a meaningful difference for the planet and its people. Every purchase on our Eshop helps us grow this impact. Since 2018, we’ve planted 200,000 trees worldwide—nurturing ecosystems and supporting reforestation, one order at a time.</p>",
             "position": "bottom_left"
           }
         },
