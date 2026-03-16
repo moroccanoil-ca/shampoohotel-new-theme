@@ -36,24 +36,8 @@
         "featured_products": []
       }
     },
-    "newsletter-popup": {
-      "type": "newsletter-popup",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "apparition_delay": 5,
-        "show_only_on_index": true,
-        "hide_for_account_holders": true,
-        "show_only_once": true,
-        "title": "Signup for our newsletter",
-        "button_text": "Subscribe",
-        "content": "Describe what your customers will receive when subscribing to your newsletter.",
-        "conditions": "By entering your address, you confirm that you have read our privacy policy."
-      }
-    },
     "mo_image_pop_h3xf6B": {
       "type": "mo-image-pop",
-      "disabled": true,
       "name": "Image Popup",
       "settings": {
         "desktop_image": "shopify://shop_images/Website_Pop-Up_Banner_-_Desktop_3.png",
@@ -64,7 +48,6 @@
   "order": [
     "cart-drawer",
     "search-drawer",
-    "newsletter-popup",
     "mo_image_pop_h3xf6B"
   ]
 }
