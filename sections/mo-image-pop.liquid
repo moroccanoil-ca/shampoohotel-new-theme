@@ -106,7 +106,7 @@
 }
 </style>
 
-{%- unless request.page_type == 'captcha' -%}
+{%- if request.page_type == 'index' -%}
   <image-popup 
     class="modal mo-image-popup" 
     apparition-delay="4" 
@@ -131,7 +131,7 @@
       </div>
     {%- endif -%}
   </image-popup>
-{%- endunless -%}
+{%- endif -%}
 
 {% schema %}
 {
