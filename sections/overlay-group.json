@@ -40,8 +40,8 @@
       "type": "mo-image-pop",
       "name": "Image Popup",
       "settings": {
-        "desktop_image": "shopify://shop_images/Website_Pop-Up_Banner_-_Desktop_3.png",
-        "mobile_image": "shopify://shop_images/Website_Pop-Up_Banner_-_Mobile_V2_1.png"
+        "desktop_image": "shopify://shop_images/Website_Pop-Up_Banner_-_Desktop_4.png",
+        "mobile_image": "shopify://shop_images/Website_Pop-Up_Banner_-_Mobile_V2_3.png"
       }
     }
   },
