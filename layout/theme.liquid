@@ -80,7 +80,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- endunless -%}
 
     {%- render 'social-meta-tags' -%}
-    {%- render 'microdata-schema' -%}
+   
+        {% comment %} MO checks for miami handle and injects default SEO schema {% endcomment %}
+{%- liquid
+  assign has_custom_schema = false
+  
+  if product.handle contains 'miami' or product.handle contains 'rio' or product.handle contains 'marakesh' or product.handle contains 'marrakesh'
+    assign has_custom_schema = true
+  endif
+  
+  unless has_custom_schema
+    render 'microdata-schema'
+  endunless
+-%}
+
     {%- render 'css-variables' -%}
     {%- render 'js-variables' -%}
 
