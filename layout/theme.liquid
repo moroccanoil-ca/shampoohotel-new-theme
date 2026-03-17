@@ -199,6 +199,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         to improve performance and reduce reflows.
       {%- endcomment -%}
     </span>
+
+    {% comment %} MO redirect from collections/all to collections/frontaphe {% endcomment %}
+    {%- if request.page_type == 'collection' and collection.handle == 'all' -%}
+      <script>
+        window.location.href = '/collections/frontpage';  
+      </script>
+    {%- endif -%}
+
+{% comment %} MO redirect from collections/body-lotion/lotion and Lotion to collections/body-lotion {% endcomment %}
+    {%- if request.path == '/collections/body-lotion/lotion' or request.path == '/collections/body-lotion/Lotion' -%}
+      <script>
+        window.location.href = '/collections/body-lotion';  
+      </script>
+    {%- endif -%}
+    {% comment %} MO redirect from collections/frontpage/hair {% endcomment %}
+    {%- if request.path == '/collections/frontpage/hair'  -%}
+      <script>
+        window.location.href = '/collections/hair';  
+      </script>
+    {%- endif -%}
+        {%- if request.path == '/collections/frontpage/body' -%}
+      <script>
+        window.location.href = '/collections/body';  
+      </script>
+    {%- endif -%}
+    {%- if request.path == '/collections/frontpage/shampoo' -%}
+      <script>
+        window.location.href = '/collections/shampoo';  
+      </script>
+    {%- endif -%}
+        {%- if request.path == '/collections/frontpage/conditioner' -%}
+      <script>
+        window.location.href = '/collections/conditioner';  
+      </script>
+          {%- endif -%}
     
     {%- if request.page_type != 'password' -%}
       {%- sections 'header-group' -%}
