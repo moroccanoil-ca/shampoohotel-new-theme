@@ -10,12 +10,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PW22PXJJ');</script>
 <!-- End Google Tag Manager -->
 
+ {% comment %} MO SEO scripts - scripts are provided by Optimal {% endcomment %}
+{%- if template.suffix == 'miami' -%}
+  {%- render 'schema-miami-collection' -%}
+{%- elsif template.suffix == 'rio' -%}
+  {%- render 'schema-rio-collection' -%}
+{%- elsif template.suffix == 'marrakesh' -%}
+  {%- render 'schema-marrakesh-collection' -%}
+{%- endif -%}
+
+{%- liquid
+  # Product schemas
+  if product.handle
+    case product.handle
+      when 'miami-hydrating-shampoo'
+        render 'schema-miami-shampoo'
+      when 'miami-hydrating-conditioner'
+        render 'schema-miami-conditioner'
+      when 'miami-leave-in-conditioner'
+        render 'schema-miami-leave-in'
+      when 'miami-hydrating-body-wash'
+        render 'schema-miami-wash'
+      when 'miami-hydrating-lotion'
+        render 'schema-miami-lotion'
+      when 'rio-volume-shampoo'
+        render 'schema-rio-shampoo'
+      when 'rio-volume-conditioner'
+        render 'schema-rio-conditioner'
+      when 'rio-body-wash'
+        render 'schema-rio-wash'
+      when 'rio-body-lotion'
+        render 'schema-rio-lotion'
+      when 'marrakesh-strengthening-shampoo'
+        render 'schema-marrakesh-shampoo'
+      when 'marrakesh-strengthening-conditioner'
+        render 'schema-marrakesh-conditioner'
+      when 'marrakesh-body-wash'
+        render 'schema-marrakesh-wash'
+      when 'marrakesh-body-lotion'
+        render 'schema-marrakesh-lotion'
+    endcase
+  endif
+-%}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
     {% comment %} MO added for security {% endcomment %}
     <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self';">
-    
+
     <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% endif %}</title>
 
     {%- if page_description -%}
