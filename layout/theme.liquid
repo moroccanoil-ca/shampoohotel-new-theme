@@ -10,9 +10,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PW22PXJJ');</script>
 <!-- End Google Tag Manager -->
 
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
-
+    {% comment %} MO added for security {% endcomment %}
+    <meta http-equiv="Content-Security-Policy" content="object-src 'none'; base-uri 'self';">
+    
     <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif %}{% endif %}</title>
 
     {%- if page_description -%}
