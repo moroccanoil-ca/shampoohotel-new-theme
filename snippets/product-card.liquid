@@ -1,39 +1,39 @@
 {%- comment -%}
-----------------------------------------------------------------------------------------------------------------------
-PRODUCT CARD COMPONENT
-----------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------
+  PRODUCT CARD COMPONENT
+  ----------------------------------------------------------------------------------------------------------------------
 
-This component is used in collection and featured collection to render a single product as a card.
+  This component is used in collection and featured collection to render a single product as a card.
 
-A card can be highlighted (takes bigger space in listing) by creating a metafield definition with the key
-"highlight_card" and namespace "custom". It must be a boolean metafield.
+  A card can be highlighted (takes bigger space in listing) by creating a metafield definition with the key
+  "highlight_card" and namespace "custom". It must be a boolean metafield.
 
-NOTE TO DEVELOPERS OR AGENCIES: this code is quite complex due to the extremely large number of possible combinations
-that the design team wanted to achieve. There are hundreds of possible permutations, and we tried to handle them
-using the least amount of code possible. We however had to do some deep nesting of div to be able to handle most of
-the conditions. If you have to modify extensively this code, we would eventually recommend to first simplify the structure
-based on your desired layout (and remove most of the settings associated), and then do your customizations on top of it.
+  NOTE TO DEVELOPERS OR AGENCIES: this code is quite complex due to the extremely large number of possible combinations
+  that the design team wanted to achieve. There are hundreds of possible permutations, and we tried to handle them
+  using the least amount of code possible. We however had to do some deep nesting of div to be able to handle most of
+  the conditions. If you have to modify extensively this code, we would eventually recommend to first simplify the structure
+  based on your desired layout (and remove most of the settings associated), and then do your customizations on top of it.
 
-********************************************
-Supported variables
-********************************************
+  ********************************************
+  Supported variables
+  ********************************************
 
-* product: the product to render
-* reveal: if set to true, the card will be revealed on scroll through animation
-* position: the position of the card in the list. If specified, the theme will eagerly load the first 3 cards images
-* color_scheme: the color scheme to use (if none is set, it defaults to the default card scheme)
-* section_color_scheme: the color scheme of the section, which is used to calculate if the card blends or not with the section
-* allow_highlight: if set to true, this card is allowed to be highlighted (shown bigger) if the "custom.highlight_card" metafield is set
-* show_badges: show or not the badges (default to true if nothing is set).
-* show_rating: show or not the rating. If nothing is set, the theme uses the default product card setting
-* show_vendor: show or not the vendor. If nothing is set, the theme uses the default product card setting
-* show_quick_buy: show or not the quick buy (which open a modal if the product contains more than 1 choice)
-* show_secondary_image: show or not the secondary media on hover. If nothing is set, the theme uses the default product card setting
-* show_swatches: show or not the swatches. The swatch type is inferred from setting, and will default to true if nothing is set.
-* force_no_border: if set to true, no border will be added around cards, even if the global setting ask to
-* sizes: the value of the sizes attribute (because it depends of the context, it should be calculated outside)
-* prefix_id: an optional prefix being used to prefix all the inputs. This is useful when we have to output multiple
-             product card on the same page, to avoid any ID conflicts.
+  * product: the product to render
+  * reveal: if set to true, the card will be revealed on scroll through animation
+  * position: the position of the card in the list. If specified, the theme will eagerly load the first 3 cards images
+  * color_scheme: the color scheme to use (if none is set, it defaults to the default card scheme)
+  * section_color_scheme: the color scheme of the section, which is used to calculate if the card blends or not with the section
+  * allow_highlight: if set to true, this card is allowed to be highlighted (shown bigger) if the "custom.highlight_card" metafield is set
+  * show_badges: show or not the badges (default to true if nothing is set).
+  * show_rating: show or not the rating. If nothing is set, the theme uses the default product card setting
+  * show_vendor: show or not the vendor. If nothing is set, the theme uses the default product card setting
+  * show_quick_buy: show or not the quick buy (which open a modal if the product contains more than 1 choice)
+  * show_secondary_image: show or not the secondary media on hover. If nothing is set, the theme uses the default product card setting
+  * show_swatches: show or not the swatches. The swatch type is inferred from setting, and will default to true if nothing is set.
+  * force_no_border: if set to true, no border will be added around cards, even if the global setting ask to
+  * sizes: the value of the sizes attribute (because it depends of the context, it should be calculated outside)
+  * prefix_id: an optional prefix being used to prefix all the inputs. This is useful when we have to output multiple
+               product card on the same page, to avoid any ID conflicts.
 {%- endcomment -%}
 
 {%- liquid
@@ -128,22 +128,28 @@ Supported variables
   endif
 -%}
 
-<product-card class="{{ product_card_classes }} color-scheme color-scheme--{{ color_scheme.id }}" {% if reveal and settings.stagger_products %}reveal-on-scroll="true"{% endif %} handle="{{ product.handle | escape }}">
+<product-card
+  class="{{ product_card_classes }} color-scheme color-scheme--{{ color_scheme.id }}"
+  {% if reveal and settings.stagger_products %}
+    reveal-on-scroll="true"
+  {% endif %}
+  handle="{{ product.handle | escape }}"
+>
   {%- comment -%}
-  --------------------------------------------------------------------------------------------------------------------
-  PRODUCT MEDIA
-  --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    PRODUCT MEDIA
+    --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   <div class="product-card__figure">
     {%- if show_badges and show_badges_along_info != true -%}
-      {%- render 'product-badges', 
+      {%- render 'product-badges',
         product: product,
         context: 'card',
         show_custom_badge: true,
         show_sold_out_badge: settings.product_card_show_sold_out_badge,
         show_discount_badge: settings.product_card_show_discount,
-        direction: 'column', 
+        direction: 'column',
         vertical_text: settings.product_card_show_badges_vertically,
         class: settings.product_card_badges_placement,
         alignment: badges_alignment
@@ -154,7 +160,7 @@ Supported variables
       {%- if product.media.size > 0 -%}
         {%- liquid
           assign sizes = sizes | default: '100vw'
-          assign main_media_loading_strategy = nil
+          assign main_media_loading_strategy = null
 
           if section.index > 3 or position > 3
             assign main_media_loading_strategy = 'lazy'
@@ -166,7 +172,15 @@ Supported variables
         -%}
 
         {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_card_image_aspect_ratio contains 'crop' %}size-full object-cover{% endif %} aspect-{{ settings.product_card_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: main_media_loading_strategy, sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        {{-
+          product.featured_media
+          | image_url: width: product.featured_media.width
+          | image_tag:
+            loading: main_media_loading_strategy,
+            sizes: sizes,
+            widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800',
+            class: main_image_classes
+        -}}
 
         {%- liquid
           if show_secondary_image and product.media.size > 1
@@ -181,48 +195,6 @@ Supported variables
         {{- 'image' | placeholder_svg_tag -}}
       {%- endif -%}
     </a>
-
-    {%- if show_quick_buy and product.available -%}
-      <div class="product-card__quick-buy {% if settings.product_card_info_position == 'inside' and settings.product_card_info_vertical_alignment == 'end' %}product-card__quick-buy--top-mobile{% endif %} {% if show_product_size_selector %}no-touch:hidden{% endif %}">
-        {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
-          <product-form>
-            {%- form 'product', product -%}
-              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-
-              {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
-              {%- render 'button', content: button_label, type: 'submit', stretch: true, background: settings.default_color_scheme.settings.background, text_color: settings.default_color_scheme.settings.text_color, class: 'touch:hidden' -%}
-
-              <button type="submit" class="block tap-area no-touch:hidden">
-                <span class="sr-only">{{ button_label }}</span>
-
-                <button-content>
-                  {%- render 'icon' with 'cart' -%}
-                </button-content>
-              </button>
-            {%- endform -%}
-          </product-form>
-        {%- else -%}
-          {%- capture quick_buy_id -%}product-quick-buy-{{ prefix_id }}-{{ block.id }}-{{ section.id }}-{{ product.id }}{%- endcapture -%}
-
-          {%- if show_product_size_selector == false -%}
-            {%- assign button_label = 'product.general.choose_options' | t -%}
-            {%- render 'button', content: button_label, aria_controls: quick_buy_id, stretch: true, background: settings.default_color_scheme.settings.background, text_color: settings.default_color_scheme.settings.text_color, class: 'touch:hidden' -%}
-          {%- endif -%}
-
-          <button type="button" aria-controls="{{ quick_buy_id }}" class="block tap-area no-touch:hidden">
-            <span class="sr-only">{{ button_label }}</span>
-
-            <button-content>
-              {%- render 'icon' with 'cart' -%}
-            </button-content>
-          </button>
-
-          <quick-buy-modal id="{{ quick_buy_id }}" product-url="{{ product.url }}" class="modal modal--quick-buy color-scheme color-scheme--{{ settings.default_color_scheme.id }}">
-            {%- comment -%}The content will be dynamically filled in JS{%- endcomment -%}
-          </quick-buy-modal>
-        {%- endif -%}
-      </div>
-    {%- endif -%}
 
     {%- if show_product_size_selector -%}
       <div class="product-card__floating-size-selector touch:hidden">
@@ -240,7 +212,16 @@ Supported variables
                 {%- assign disabled = true -%}
               {%- endunless -%}
 
-              {%- render 'button', type: 'submit', content: variant.title, size: 'sm', background: settings.default_color_scheme.settings.background, text_color: settings.default_color_scheme.settings.text_color, stretch: true, disabled: disabled, class: class_list -%}
+              {%- render 'button',
+                type: 'submit',
+                content: variant.title,
+                size: 'sm',
+                background: settings.default_color_scheme.settings.background,
+                text_color: settings.default_color_scheme.settings.text_color,
+                stretch: true,
+                disabled: disabled,
+                class: class_list
+              -%}
             {%- endform -%}
           </product-form>
         {%- endfor -%}
@@ -249,9 +230,9 @@ Supported variables
   </div>
 
   {%- comment -%}
-  --------------------------------------------------------------------------------------------------------------------
-  PRODUCT INFO
-  --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    PRODUCT INFO
+    --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   {%- capture swatches -%}
@@ -334,13 +315,23 @@ Supported variables
                 {%- render 'vendor' with product.vendor, class: vendor_class -%}
               {%- endif -%}
 
-              <a href="{{ product.url }}" class="product-title {{ title_class }} {% if settings.product_card_title_max_lines > 0 %}line-clamp{% else %}{% if show_vendor == false %}trim-start{% endif %}{% endif %}" {% if settings.product_card_title_max_lines > 0 %}style="--line-clamp-count: {{ settings.product_card_title_max_lines }}"{% endif %}>
+              <a
+                href="{{ product.url }}"
+                class="product-title {{ title_class }} {% if settings.product_card_title_max_lines > 0 %}line-clamp{% else %}{% if show_vendor == false %}trim-start{% endif %}{% endif %}"
+                {% if settings.product_card_title_max_lines > 0 %}
+                  style="--line-clamp-count: {{ settings.product_card_title_max_lines }}"
+                {% endif %}
+              >
                 {{- product.title -}}
               </a>
             </div>
 
             {%- if show_rating and settings.product_card_info_horizontal_alignment == 'split' -%}
-              {%- render 'product-rating', product: product, show_empty: settings.product_card_show_rating_if_empty, display_mode: settings.product_card_rating_mode -%}
+              {%- render 'product-rating',
+                product: product,
+                show_empty: settings.product_card_show_rating_if_empty,
+                display_mode: settings.product_card_rating_mode
+              -%}
             {%- endif -%}
           </div>
         </div>
@@ -352,10 +343,48 @@ Supported variables
             {%- render 'price-list', product: product, context: 'card' -%}
 
             {%- if show_rating -%}
-              {%- render 'product-rating', product: product, show_empty: settings.product_card_show_rating_if_empty, display_mode: settings.product_card_rating_mode -%}
+              {%- render 'product-rating',
+                product: product,
+                show_empty: settings.product_card_show_rating_if_empty,
+                display_mode: settings.product_card_rating_mode
+              -%}
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        {% comment %} MO moving quick add button {% endcomment %}
+        {%- if show_quick_buy and product.available -%}
+          {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
+            <product-form>
+              {%- form 'product', product -%}
+                <input type="hidden" name="on_success" value="force_open_drawer">
+                <input type="hidden" name="quantity" value="1">
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <button type="submit" class="button">
+                  <button-content class="button__content" up-text="Add to cart">
+                    {{- 'product.general.add_to_cart_button' | t -}}
+                  </button-content>
+                  {% comment %} {%- render 'icon' with 'plus' -%} {% endcomment %}
+                </button>
+              {%- endform -%}
+            </product-form>
+          {%- else -%}
+            {%- capture quick_buy_id -%}product-quick-buy-{{ section.id }}-{{ block.id }}-{{ quick_buy_context }}-{{ product.id }}{%- endcapture -%}
+
+            <button type="button" aria-controls="{{ quick_buy_id }}" class="product-card__quick-add-button">
+              <span class="sr-only">{{ 'product.general.choose_options' | t }}</span>
+              {%- render 'icon' with 'plus' -%}
+            </button>
+
+            <quick-buy-modal
+              handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}"
+              class="quick-buy-modal modal"
+              id="{{ quick_buy_id }}"
+            >
+            </quick-buy-modal>
+          {%- endif -%}
+        {%- endif -%}
+        {% comment %} end quick add {% endcomment %}
       </div>
 
       {%- if swatches != blank and settings.product_card_swatches_position == 'outside' or show_swatches_along_info -%}
@@ -364,7 +393,10 @@ Supported variables
     </div>
   </div>
 
-  {%- if swatches != blank and settings.product_card_swatches_position == 'inside' and show_swatches_along_info == false -%}
+  {%- if swatches != blank
+    and settings.product_card_swatches_position == 'inside'
+    and show_swatches_along_info == false
+  -%}
     {{- swatches -}}
   {%- endif -%}
 </product-card>

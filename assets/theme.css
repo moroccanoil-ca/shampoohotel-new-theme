@@ -3316,7 +3316,6 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 }
 
 .product-card__image--secondary {
-  object-fit: cover;
   width: 100%;
   height: 100%;
   display: none;
