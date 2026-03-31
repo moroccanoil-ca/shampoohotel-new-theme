@@ -21,25 +21,158 @@
     "1771470712c75c4cb0": {
       "type": "apps",
       "blocks": {
-        "quiz_kit_ai_product_finder_quiz_XWKUKA": {
-          "type": "shopify://apps/quiz-kit-product-quiz-maker/blocks/quiz/0b04f315-849a-4507-8339-7be41cc01813",
+        "section-header": {
+          "type": "_section-header",
+          "static": true,
           "settings": {
-            "key": "kdfW2tBNU"
-          }
+            "subheading": "",
+            "title": "Header",
+            "content": "<p>Use this content to share information about your store and products.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
         }
       },
-      "block_order": [
-        "quiz_kit_ai_product_finder_quiz_XWKUKA"
-      ],
       "settings": {
         "color_scheme": "",
         "add_vertical_spacing": true,
         "add_horizontal_spacing": true
       }
+    },
+    "rich_text_LiXdtQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JDCW7R": {
+          "type": "heading",
+          "settings": {
+            "text": "SHAMPOOHOTEL x ASPIREIQ INFLUENCER/CONTENT CREATOR TERMS AND CONDITIONS(the “Terms and Conditions”)",
+            "heading_tag": "h6",
+            "indent": "none",
+            "highlight_effect": "default",
+            "highlight_accent_color": "",
+            "highlight_text_color": ""
+          }
+        },
+        "richtext_eR8CNm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>BETWEEN</strong></p>"
+          }
+        },
+        "richtext_knEwtP": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Any individual selected by Shampoohotel to participate in a social mediaeffort as described under these Terms and Conditions(“<strong>Talent</strong>”)</p>"
+          }
+        },
+        "richtext_7eXEEF": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>AND</strong></p>"
+          }
+        },
+        "richtext_8zMqjq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Shampoohotel Inc.</strong>(“<strong>Shampoohotel</strong>”) having its principal office at 1185 Avenue of the Americas, 33rdFloor, New York, NY 10036.1.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JDCW7R",
+        "richtext_eR8CNm",
+        "richtext_knEwtP",
+        "richtext_7eXEEF",
+        "richtext_8zMqjq"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "md",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_pVK3CD": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_cknQXY": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>1. ENGAGEMENT DETAILS:</strong></p>"
+          }
+        },
+        "richtext_RhUYKh": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>For the duration of the Term, Talent to create multiple pieces of content with Shampoohotel products(“<strong>Products</strong>”) as further contemplated herein.</p>"
+          }
+        },
+        "richtext_aytyTV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>2. NEGOTIATION VIA THE ASPIREIQ PLATFORM:</strong></p>"
+          }
+        },
+        "richtext_JPn9xh": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The parties agree that all negotiations, discussions, and arrangements related to the engagement ofTalent’s Services, including but not limited to fees, deliverables, due dates, revision rounds, usage rightsand go-live dates (the “<strong>Engagement Details</strong>”), shall be conducted through the AspireIQ platform(“<strong>Aspire</strong>”). The parties agree to abide by the Engagement Details finalized on Aspire, which shall be madeavailable to Talent through a brief (the “<strong>Brief</strong>”). Any agreement reached between the Parties via Aspireshall be subject to these Terms and Conditions.</p>"
+          }
+        },
+        "richtext_WQDa8g": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>3.TERM:</strong></p>"
+          }
+        },
+        "richtext_diiP3C": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The term of these Terms and Conditions shall commence upon Talent accepting the Terms and Conditionson Aspire, and, unless terminated early pursuant to the terms hereof, shall expire at the later of (i) uponcompletion by Talent of all Services hereunder, or (ii) upon expiration of the usage rights granted herein(“<strong>Term</strong>”). Any terms that, by their nature, are intended to survive termination shall remain in full forceand effect following such termination</p>"
+          }
+        },
+        "richtext_fCDQkB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>4. USAGE BY SHAMPOOHOTEL:</strong></p>"
+          }
+        },
+        "richtext_MJgfF4": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The usage rights for all content developed hereunder (the “<strong>Content</strong>”) by Talent, including the duration ofthe usage rights, shall be agreed upon by the Parties via Aspire.The Content may be utilized organically and/or in a paid capacity.If organic usage is agreed to via Aspire, Shampoohotel , its subsidiaries, affiliates, licensees, agents,representatives, successors, and assigns (the “<strong>ShampoohotelParties</strong>”) shall have the unrestricted,worldwide, royalty free and transferable right, power and authority to post and re-post the Content</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_cknQXY",
+        "richtext_RhUYKh",
+        "richtext_aytyTV",
+        "richtext_JPn9xh",
+        "richtext_WQDa8g",
+        "richtext_diiP3C",
+        "richtext_fCDQkB",
+        "richtext_MJgfF4"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "content_width": "md",
+        "text_alignment": "center"
+      }
     }
   },
   "order": [
     "main",
-    "1771470712c75c4cb0"
+    "1771470712c75c4cb0",
+    "rich_text_LiXdtQ",
+    "rich_text_pVK3CD"
   ]
 }
