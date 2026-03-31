@@ -109,7 +109,7 @@
 {%- if request.page_type == 'index' -%}
   <image-popup 
     class="modal mo-image-popup" 
-    apparition-delay="4" 
+    apparition-delay="{{ section.settings.apparition_delay }}" 
     title="Image popup" 
     handle-editor-events>
     
@@ -144,7 +144,7 @@
   "settings": [
     {
       "type": "paragraph",
-      "content": "This popup will appear 4 seconds after page load and won't show again once closed."
+      "content": "This popup will appear 12 seconds after page load and won't show again once closed."
     },
     {
       "type": "image_picker",
@@ -157,6 +157,15 @@
       "id": "mobile_image",
       "label": "Mobile Image (Long)",
       "info": "1000 x 1600px recommended for tall/portrait format"
+    }, 
+    {
+      "type":"range",
+      "id":"apparition_delay",
+      "label":"Apparition delay (seconds)",
+      "min":0,
+      "max":30,
+      "step":1,
+      "default":12
     }
   ],
   "presets": [

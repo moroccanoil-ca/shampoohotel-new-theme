@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
     "icon_stroke_width": 1.2,
@@ -54,19 +45,19 @@
     "cart_icon": "tote_bag",
     "cart_show_free_shipping_bar": true,
     "cart_free_shipping_threshold": "25",
-    "social_facebook": "https://www.facebook.com/profile.php?id=61573917116858",
-    "social_instagram": "https://www.instagram.com/shampoohotel/",
-    "social_tiktok": "https://www.tiktok.com/@shampoohotel",
-    "favicon": "shopify://shop_images/website-icons_1.png",
+    "social_facebook": "https:\/\/www.facebook.com\/profile.php?id=61573917116858",
+    "social_instagram": "https:\/\/www.instagram.com\/shampoohotel\/",
+    "social_tiktok": "https:\/\/www.tiktok.com\/@shampoohotel",
+    "favicon": "shopify:\/\/shop_images\/website-icons_1.png",
     "content_for_index": [],
     "blocks": {
       "7570552984445421165": {
-        "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "type": "shopify:\/\/apps\/yotpo-product-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
         "settings": {}
       },
       "8962992520437913685": {
-        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
         "disabled": true,
         "settings": {
           "inject_modules_loader": true,
@@ -74,8 +65,8 @@
         }
       },
       "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": true,
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
         "settings": {}
       }
     },
