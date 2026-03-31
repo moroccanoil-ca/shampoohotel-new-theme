@@ -271,8 +271,8 @@
             "image": "shopify://shop_images/2025_01_13_SH_2741_b586b575-658a-4049-9a90-33963b074622.jpg",
             "slide_link": "",
             "content_max_width": 700,
-            "mobile_content_position": "place-self-center-start",
-            "desktop_content_position": "sm:place-self-center-start",
+            "mobile_content_position": "place-self-end-start",
+            "desktop_content_position": "sm:place-self-end-start",
             "overlay_color": "#000000",
             "overlay_opacity": 10
           },
