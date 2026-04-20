@@ -45,10 +45,10 @@
         "add_horizontal_spacing": true
       }
     },
-    "rich_text_LiXdtQ": {
+    "rich_text_Vkz8yD": {
       "type": "rich-text",
       "blocks": {
-        "heading_JDCW7R": {
+        "heading_VWFk8D": {
           "type": "heading",
           "settings": {
             "text": "SHAMPOOHOTEL x ASPIREIQ INFLUENCER/CONTENT CREATOR TERMS AND CONDITIONS(the “Terms and Conditions”)",
@@ -59,37 +59,37 @@
             "highlight_text_color": ""
           }
         },
-        "richtext_eR8CNm": {
+        "richtext_N9ic8E": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>BETWEEN</strong></p>"
           }
         },
-        "richtext_knEwtP": {
+        "richtext_DAdBH6": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Any individual selected by Shampoohotel to participate in a social mediaeffort as described under these Terms and Conditions(“<strong>Talent</strong>”)</p>"
+            "text": "<p>Any individual selected by Shampoohotel to participate in a social media effort as described under these Terms and Conditions(“<strong>Talent</strong>”)</p>"
           }
         },
-        "richtext_7eXEEF": {
+        "richtext_bRGcL3": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>AND</strong></p>"
           }
         },
-        "richtext_8zMqjq": {
+        "richtext_EHirdE": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>Shampoohotel Inc.</strong>(“<strong>Shampoohotel</strong>”) having its principal office at 1185 Avenue of the Americas, 33rdFloor, New York, NY 10036.1.</p>"
+            "text": "<p><strong>Shampoohotel Inc.</strong>(“<strong>Shampoohotel</strong>”) having its principal office at 1185 Avenue of the Americas, 33rd Floor, New York, NY 10036.1.</p>"
           }
         }
       },
       "block_order": [
-        "heading_JDCW7R",
-        "richtext_eR8CNm",
-        "richtext_knEwtP",
-        "richtext_7eXEEF",
-        "richtext_8zMqjq"
+        "heading_VWFk8D",
+        "richtext_N9ic8E",
+        "richtext_DAdBH6",
+        "richtext_bRGcL3",
+        "richtext_EHirdE"
       ],
       "name": "t:sections.rich_text.name",
       "settings": {
@@ -98,333 +98,333 @@
         "text_alignment": "center"
       }
     },
-    "rich_text_zQqtnp": {
+    "rich_text_btWHGA": {
       "type": "rich-text",
       "blocks": {
-        "richtext_fDazrM": {
+        "richtext_hLDqJq": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>1. ENGAGEMENT DETAILS:</strong></p>"
+            "text": "<p><strong>1.  ENGAGEMENT DETAILS:</strong></p>"
           }
         },
-        "richtext_Cj4Nfd": {
+        "richtext_Fn9LFY": {
           "type": "richtext",
           "settings": {
-            "text": "<p>For the duration of the Term, Talent to create multiple pieces of content with Shampoohotel products(“<strong>Products</strong>”) as further contemplated herein.</p>"
+            "text": "<p>For the duration of the Term, Talent to create multiple pieces of content with Shampoohotel products (“<strong>Products</strong>”) as further contemplated herein.</p>"
           }
         },
-        "richtext_BbLWYm": {
+        "richtext_96JmmG": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>2. NEGOTIATION VIA THE ASPIREIQ PLATFORM:</strong></p>"
+            "text": "<p><strong>2.  NEGOTIATION VIA THE ASPIREIQ PLATFORM:</strong></p>"
           }
         },
-        "richtext_LXJXBf": {
+        "richtext_JFEM6j": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The parties agree that all negotiations, discussions, and arrangements related to the engagement ofTalent’s Services, including but not limited to fees, deliverables, due dates, revision rounds, usage rightsand go-live dates (the “<strong>Engagement Details</strong>”), shall be conducted through the AspireIQ platform(“<strong>Aspire</strong>”). The parties agree to abide by the Engagement Details finalized on Aspire, which shall be madeavailable to Talent through a brief (the “<strong>Brief</strong>”). Any agreement reached between the Parties via Aspireshall be subject to these Terms and Conditions.</p>"
+            "text": "<p>The parties agree that all negotiations, discussions, and arrangements related to the engagement of Talent’s Services, including but not limited to fees, deliverables, due dates, revision rounds, usage rights and go-live dates (the “<strong>Engagement Details</strong>”), shall be conducted through the AspireIQ platform (“<strong>Aspire</strong>”). The parties agree to abide by the Engagement Details finalized on Aspire, which shall be made available to Talent through a brief (the “<strong>Brief</strong>”). Any agreement reached between the Parties via Aspire shall be subject to these Terms and Conditions.  </p>"
           }
         },
-        "richtext_RPaLmT": {
+        "richtext_xKtAiF": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>3.TERM:</strong></p>"
+            "text": "<p><strong>3. TERM:</strong></p>"
           }
         },
-        "richtext_gFhAjF": {
+        "richtext_xL9bf3": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The term of these Terms and Conditions shall commence upon Talent accepting the Terms and Conditionson Aspire, and, unless terminated early pursuant to the terms hereof, shall expire at the later of (i) uponcompletion by Talent of all Services hereunder, or (ii) upon expiration of the usage rights granted herein(“<strong>Term</strong>”). Any terms that, by their nature, are intended to survive termination shall remain in full forceand effect following such termination</p>"
+            "text": "<p>The parties agree that all negotiations, discussions, and arrangements related to the engagement of Talent’s Services, including but not limited to fees, deliverables, due dates, revision rounds, usage rights and go-live dates (the “<strong>Engagement Details</strong>”), shall be conducted through the AspireIQ platform (“<strong>Aspire</strong>”). The parties agree to abide by the Engagement Details finalized on Aspire, which shall be made available to Talent through a brief (the “<strong>Brief</strong>”). Any agreement reached between the Parties via Aspire shall be subject to these Terms and Conditions.  </p>"
           }
         },
-        "richtext_8fn9py": {
+        "richtext_pBUfHY": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>4. USAGE BY SHAMPOOHOTEL:</strong></p>"
+            "text": "<p><strong>4.  USAGE BY SHAMPOOHOTEL:</strong></p>"
           }
         },
-        "richtext_tEQBLK": {
+        "richtext_yJgVbf": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The usage rights for all content developed hereunder (the “<strong>Content</strong>”) by Talent, including the duration of the usage rights, shall be agreed upon by the Parties via Aspire. </p><p>The Content may be utilized organically and/or in a paid capacity.</p><p> If organic usage is agreed to via Aspire, Shampoohotel , its subsidiaries, affiliates, licensees, agents, representatives, successors, and assigns (the “<strong>Shampoohotel Parties</strong>”) shall have the unrestricted, worldwide, royalty free and transferable right, power and authority to post and re-post the Content through their organic distribution<br/>channels (Facebook, X Instagram, TikTok, YouTube, Pinterest, Threads, and<br/>Snapchat) their own digital media platforms (social channels, websites, emails) as well as the right to allow its retail and salon partners (such as  Ulta) to post and re-post through their own websites (including product pages) and social channels as part of its public<br/>relations content (press releases, email blasts and press kits) for a period of twelve (12) months, unless a different period is agreed to via Aspire, commencing on the date of first public use by the Shampoohotel Parties.</p><p> If paid usage is agreed to via Aspire, the Shampoohotel Parties shall have the unrestricted, worldwide, royalty free and transferable right, power and authority to use, reproduce, publish, distribute, transmit, copy or otherwise exploit the Content, in whole or in part, in all digital and online media, which shall include but not be limited to their paid distribution channels (Facebook, X, Instagram, Youtube, TikTok, Pinterest, Snapchat and Threads), including whitelisting and digital ads. Such paid usage shall be for the purpose of their online and digital advertisements, promotions, retail and salon marketing activities, educational and other commercial or non-commercial purposes for a period of one (1) month, unless a different period is agreed to via Aspire, commencing on the date of first paid public use by the Shampoohotel Parties.</p>"
+            "text": "<p>The usage rights for all content developed hereunder (the “<strong>Content</strong>”) by Talent, including the duration of the usage rights, shall be agreed upon by the Parties via Aspire. </p><p>The Content may be utilized organically and/or in a paid capacity. </p><p>If organic usage is agreed to via Aspire, Shampoohotel , its subsidiaries, affiliates, licensees, agents, representatives, successors, and assigns (the “<strong>Shampoohotel  Parties</strong>”) shall have the unrestricted, worldwide, royalty free and transferable right, power and authority to post and re-post the Content  through their organic distribution channels (Facebook, X Instagram, TikTok, YouTube, Pinterest, Threads, and Snapchat) their own digital media platforms (social channels, websites, emails) as well as the right to allow its retail and salon partners (such as  Ulta) to post and re-post through their own websites (including product pages) and social channels as part of its public relations content (press releases, email blasts and press kits) for a period of twelve (12) months, unless a different period is agreed to via Aspire, commencing on the date of first public use by the Shampoohotel Parties.</p><p>If paid usage is agreed to via Aspire, the Shampoohotel Parties shall have the unrestricted, worldwide, royalty free and transferable right, power and authority to use, reproduce, publish, distribute, transmit, copy or otherwise exploit the Content, in whole or in part, in all digital and online media, which shall include but not be limited to their paid distribution channels (Facebook, X, Instagram, Youtube, TikTok, Pinterest, Snapchat and Threads), including whitelisting and digital ads. Such paid usage shall be for the purpose of their online and digital advertisements, promotions, retail and salon marketing activities, educational and other commercial or non-commercial purposes for a period of one (1) month, unless a different period is agreed to via Aspire, commencing on the date of first paid public use by the Shampoohotel<br/>Parties.</p>"
           }
         },
-        "richtext_EhHaPe": {
+        "richtext_wTEwtw": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>5. COMPENSATION: </strong></p>"
+            "text": "<p><strong>5.  COMPENSATION: </strong></p>"
           }
         },
-        "richtext_hgXxwi": {
+        "richtext_A7zRdT": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The fee payable to Talent shall be agreed upon by the parties via Aspire (the “<strong>Fee”</strong>)<br/>and be paid within thirty (30) days of completion of services.</p><p>Payment may be made via Paypal, Aspire, or another method reasonably determined by Shampoohotel. Talent shall be responsible for all related fees, which fees will be deducted from the Fee.</p><p>Talent shall be responsible for any withholdings, taxes, agency, and/or other fees due on and/or in connection with such total compensation payable hereunder. Any additional and/or so-called “overage” compensation for any services rendered by Talent shall be pre-approved in writing by Shampoohotel. No further compensation shall be due in connection with the acquisition, exercise or exploitation of the rights granted hereunder unless agreed to in writing by Shampoohotel. </p><p>Talent acknowledges and agrees that the Fee represents complete and sufficient compensation for all the Services and that no other fee, royalty, right or payment will be issued by Shampoohotel as compensation for these Services.</p><p> The Parties agree that if Talent was sourced via an agency (the “<strong>Agency</strong>”), not a party to these Terms and Conditions, that has been mandated by Shampoohotel to source Talent, the Agency shall handle all compensation obligations hereunder on Shampoohotel’s behalf. Talent agrees that they shall be fully compensated directly by Agency and fully releases Shampoohotel from any payment obligations or claims in connection with these Terms and Conditions, the Content created hereunder, and the usage rights agreed to via Aspire. </p><p></p>"
+            "text": "<p>The fee payable to Talent shall be agreed upon by the parties via Aspire (the “<strong>Fee”</strong>)<br/>and be paid within thirty (30) days of completion of services.</p><p>Payment may be made via Paypal, Aspire, or another method reasonably determined by Shampoohotel. Talent shall be responsible for all related fees, which fees will be deducted from the Fee.</p><p>Talent shall be responsible for any withholdings, taxes, agency, and/or other fees due on and/or in connection with such total compensation payable hereunder. Any additional and/or so-called “overage” compensation for any services rendered by Talent shall be pre-approved in writing by Shampoohotel. No further compensation shall be due in connection with the acquisition, exercise or exploitation of the rights granted hereunder unless agreed to in writing by<br/>Shampoohotel.  </p><p>Talent acknowledges and agrees that the Fee represents complete and sufficient compensation for all the Services and that no other fee, royalty, right or payment will be issued by Shampoohotel as compensation for these Services.</p><p>The Parties agree that if Talent was sourced via an agency (the “<strong>Agency</strong>”), not a party to these Terms and Conditions, that has been mandated by Shampoohotel to source Talent, the Agency shall handle all compensation obligations hereunder on Shampoohotel’s behalf. Talent agrees that they shall be fully compensated directly by Agency and fully releases Shampoohotel from any payment obligations or claims in connection with these Terms and Conditions, the Content created hereunder, and the usage rights agreed to via Aspire. </p>"
           }
         },
-        "richtext_k9VBQ3": {
+        "richtext_pxRbeb": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>6. Shampoohotel Requirements:</strong></p>"
+            "text": "<p><strong>6.   SHAMPOOHOTEL REQUIREMENTS:</strong></p>"
           }
         },
-        "richtext_DnNNE4": {
+        "richtext_yneEUW": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The parties shall agree in advance, in writing (via Aspire or email to suffice), whether Talent shall post the Content to their own social media channels or create Content for Shampoohotel to post to its proprietary channels (“<strong>User Generated Content</strong>”). </p><p>If Talent agrees to post the Content to their own social media channels, Talent must respect the requirements set out in Sections<br/>6.1 and 6.2 below.</p><p>If Talent agrees to create User Generated Content only, and will not be posting the Content to their own social media channels, Talent must respect the requirements set out in Section 6.2 below. If Talent chooses to post any of User Generated Content on their own social media platforms of their own volition, Talent must respect the requirements set out in Sections<br/>6.1 and 6.2. </p>"
+            "text": "<p>The parties shall agree in advance, in writing (via Aspire or email to suffice), whether Talent shall post the Content to their own social media channels or create Content for Shampoohotel to post to its proprietary channels (“<strong>User Generated Content</strong>”).  </p><p>If Talent agrees to post the Content to their own social media channels, Talent must respect the requirements set out in Sections 6.1 and 6.2 below.</p><p>If Talent agrees to create User Generated Content only, and will not be posting the Content to their own social media channels, Talent must respect the requirements set out in Section 6.2 below. If Talent chooses to post any of User Generated Content on their own social media platforms of their own volition, Talent must respect the requirements set out in Sections 6.1 and 6.2. </p>"
           }
         },
-        "richtext_EzWDzj": {
+        "richtext_Nk8dYU": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>6.1   Requirements for Content that Talent will post to their own social media channels </strong></p>"
+            "text": "<p><strong>6.1    REQUIREMENTS FOR CONTENT THAT TALENT WILL POST TO THEIR OWN SOCIAL MEDIA CHANNELS</strong></p>"
           }
         },
-        "richtext_e7QbLd": {
+        "richtext_hLGHft": {
           "type": "richtext",
           "settings": {
             "text": "<p>If Talent is to post the Content, Talent shall respect the following guidelines and requirements:</p><p>●    Go-live date for all Content shall be confirmed by Shampoohotel in writing.</p><p>●    Talent will not post the Content, or any other material regarding the Products, without Shampoohotel’s express written permission and in no instance prior to the confirmed go-live date.</p><p>●    Talent to create verbiage and Content in their own voice and aesthetic, but agrees to abide by the following guidelines:</p><p>          o  Tag Shampoohotel in all Content and captions</p><p>          o  Use provided hashtags and the paid partnership feature </p><p>      o  All social media Content will incorporate FTC disclosure language such as #ad, #sponsor and #ShampoohotelPartner, specifically as follows: </p><p>●       For TikTok:</p><p>      o    Caption: #ShampoohotelPartner or Ad/Sponsored in the beginning of caption.</p><p>      o    On Screen: Shampoohotel Partner (No Hashtag) for the first seven seconds of the video.</p><p>●       For Instagram: </p><p>      o    Caption: #ShampoohotelPartner or Ad/Sponsored in the beginning of caption.</p><p>      o    On Screen: Shampoohotel Partner (No Hashtag) for the first seven seconds of the  video.</p><p>●       If Talent resides in North America, Verbal disclosure for Instagram and TikTok is required (if video includes Talent talking): Talent must verbally disclose partnership within the first seven seconds of the video. Without limiting the foregoing, all disclosure language must be conspicuous (i.e. included “above the break” in social media posts), made in close proximity to the claim(s) it relates to and written in font that is easy to read and notice </p><p>●    Talent agrees to save all imagery and copy and share with Shampoohotel within twelve (12) hours after posting for organic usage.</p><p>●    Talent will not post any other paid or sponsored hair branded content within twelve (12) hours before or after the go- live date of the Shampoohotel post.</p><p>●    Talent agrees to provide screenshots of analytics within seventy-two (72) hours after the Content goes live.</p><p>●    Properly credit and link the Products featured in each post using a personalized link provided by Shampoohotel, where provided. </p><p>●   Include all Shampoohotel-provided key talking points verbally, on-screen, and in caption. </p>"
           }
         },
-        "richtext_LQi96L": {
+        "richtext_FcepmY": {
           "type": "richtext",
           "settings": {
-            "text": "<p><strong>6.2 Requirements for all Content created under these Terms<br/>and Conditions </strong></p>"
+            "text": "<p><strong>6.2  REQUIREMENTS FOR ALL CONTENT CREATED UNDER THESE TERMS AND CONDITIONS</strong></p>"
           }
         },
-        "richtext_CVAWPM": {
+        "richtext_mKJGAH": {
           "type": "richtext",
           "settings": {
             "text": "<p> For any testimonials or Product reviews, Talent will respect the following criteria:</p><p>●        All Content must reflect actual experiences and be the personal opinion of Talent. As such, any claims about the performance of the Product must be accurate and founded.</p><p>●        Talent should avoid making performance claims regarding the Products unless it is based on adequate and proper testing. </p><p>●        For further clarity, Talent’s testimonial must: </p><p>      o  Reflect its genuine, reasonable and current opinion. </p><p>      o  Not be false or misleading. </p><p>      o  Not be generated using artificial intelligence. </p><p>      o  Be based upon Talent’s experience with the Product</p><p>      o  Be made only once Talent has used the Product, and if continued use if stated or implied, Talent must continue to use the Product. </p><p>      o  Disclose any important qualifications or limitations of the Products. </p><p>●       Talent agrees that neither he or she, nor any of their agents or employees, shall make any derogatory or critical public statements about Shampoohotel or these Terms and Conditions.</p><p>●       Talent agrees that the Content shall not associate or appear to associate the Shampoohotel brand with any specific ideology, political view, or belief not expressly authorized by Shampoohotel.</p><p>●       Talent agrees that all Content will go live at mutually approved dates throughout the Term, where such obligation has been agreed upon. Shampoohotel will provide a creative brief and timeline for all posts (if Talent is to post the Contest to its own social media channels) and pre-approve Talent created Content, as detailed above. Shampoohotel shall be entitled to two (2) rounds of revisions to ensure that all Content aligns with the creative brief requirements, unless otherwise agreed to via Aspire.</p><p>●       All Content shall exclusively refer to Products and shall not mention any other<br/>products, whether or not related to haircare.</p><p>●       Talent agrees that Content will only feature Talent’s own voice over or Shampoohotel-approved audio.</p><p>●       Talent shall ensure that the Content features the Products in use and their respective labels are prominently displayed in the Content.</p><p>●       Talent agrees to follow Shampoohotel across all social media platforms throughout the duration of the Term, where such obligation has been agreed upon. </p><p>●       Talent shall turn off Instagram Bonuses and keep likes and comments turned on for Instagram posts. </p><p>●       Unless otherwise approved by Shampoohotel in writing, Talent agrees not to use any affiliate programming or links, including RewardStyle, in conjunction with this program and to  instead use the personalized links provided by Shampoohotel.</p><p>●       Talent agrees not to use any presets/filters in any Content created pursuant to these Terms and Conditions.</p><p>●       Talent agrees to keep all Content active for at least one (1) year, where such obligation has been agreed upon. </p><p>●       Talent to inform Shampoohotel of any hair style changes twenty-four (24) hours prior to making them.</p><p>●       Talent agrees to one (1) reshoot per piece of Content should Shampoohotel request it at its sole and absolute discretion, unless an increased amount of reshoots is agreed upon via Aspire.</p><p>●       Unless otherwise agreed to, all Content (videos, photos and copy), including written copy, must be sent to Shampoohotel within at least seventy-two (72) hours before the go-live dates for feedback for written pre-approval by Shampoohotel, unless a different timeframe has been mutually agreed upon. </p>"
           }
         },
-        "richtext_wVezYM": {
+        "richtext_pCqFtM": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>7.       INTELLECTUAL PROPERTY:</strong></p>"
           }
         },
-        "richtext_cCnfHJ": {
+        "richtext_H6TJ38": {
           "type": "richtext",
           "settings": {
             "text": "<p>Except for references to Shampoohotel’s name and trademarks as part of the Content as authorized herein, Talent agrees not to use or refer to Shampoohotel’s name or trademark or any other name or trademark of Shampoohotel or any of its affiliates (collectively, the “<strong>Marks</strong>”) without Shampoohotel’s prior written approval on a case-by-case basis. Any approval given hereunder shall apply only to the particular Mark and for the specific purpose for which the approval was expressly given. Talent’s use of the Marks shall inure exclusively to the benefit of Shampoohotel, and Talent shall not acquire any rights therein.</p><p>Each party shall retain all right, title, and interest to its own intellectual property, including, without limitation, trademark, copyright, and any and all renewals, extensions, revivals and resuscitations thereof, throughout the universe in perpetuity in all media now known or hereafter devised.</p>"
           }
         },
-        "richtext_3QRDYE": {
+        "richtext_ttMeGM": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>8.       NO AGENCY:</strong></p>"
           }
         },
-        "richtext_XUAraC": {
+        "richtext_ExDNFD": {
           "type": "richtext",
           "settings": {
             "text": "<p>Talent is not and shall not be deemed an employee, agent, joint venture, or partner of Shampoohotel, and neither party shall have any right or authority to assume or create any obligation on behalf of or bind the other party in any manner whatsoever.</p>"
           }
         },
-        "richtext_LX9PxR": {
+        "richtext_6y4fVt": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>9. LOAN-OUT CORPORATION & TALENT INTERVENTION: </strong></p>"
           }
         },
-        "richtext_WCwV3B": {
+        "richtext_PicifK": {
           "type": "richtext",
           "settings": {
             "text": "<p>If a loan-out company (a “<strong>Lender</strong>”) is agreeing to these Terms and Conditions on behalf of Talent then Lender agrees to provide Talent’s services, ensure that Talent complies with all obligations hereunder, and grant Shampoohotel the rights as outlined herein. In addition to its other representations and warranties contained hereunder, Lender represents and warrants having the right and authority to enter into these Terms and Conditions on behalf of Talent without requiring any additional consent or other agreement from Talent.</p><p><strong>a.       </strong>Lender is responsible for fully performing and discharging all obligations of Shampoohotel pertaining to Talent and Talent’s services under these Terms and Conditions. This includes obligations such as withholding or payment of sums required by governmental authorities, guild or union health, welfare, or pension plans, and Shampoohotel bears no responsibility or liability for these matters. Notwithstanding the above, Lender and Talent will at all times remain solidarily liable for their obligations under these Terms and Conditions.</p><p></p><p><strong>b.       </strong>If Lender should be dissolved or otherwise cease to exist, Talent may at Shampoohotel’s election, be deemed to be engaged directly by Shampoohotel for the balance of the term hereof subject to these Terms and Conditions.</p>"
           }
         },
-        "richtext_jTN3Aj": {
+        "richtext_YVpAVN": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>10.  REPRESENTATIONS, WARRANTIES AND COVENANTS:</strong></p>"
           }
         },
-        "richtext_7U6DY8": {
+        "richtext_rjTaMr": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong> </strong>●       Each party represents and warrants that:</p><p> (i)           it has the full right, power and authority to enter into and perform its obligations under the Terms and Conditions, and that these Terms and Conditions do not contravene and is not otherwise limited by any other agreement to which it is or shall be a party; and</p><p>(ii)          it shall keep all non-public information relating to the other party or its affiliates, or their respective businesses or products, or disclosed during performance of these Terms and Conditions, whether in oral, written, graphic or electronic form, strictly confidential and only use such information for the purposes of performing its responsibilities in accordance with these Terms and Conditions.</p><p>●        Talent further represents, warrants and covenants that:</p><p>(i)       it shall perform its responsibilities in a professional manner consistent with the degree of care and skill ordinarily exercised under similar circumstances of the same profession;</p><p>(ii)        it shall not use any artificial intelligence platforms, tools or software in the creation of Content under these Terms and Conditions;</p><p>(iii)        it shall not violate, infringe upon, or misappropriate any third party’s rights, including without limitation as the same relates to the images and other intellectual property created in connection with work performed for Shampoohotel hereunder; and</p><p>(iv)        it shall at all times comply with all applicable federal, national, state, provincial, local and other laws, rules, regulations and guidelines, including without limitation all FTC regulations and guidelines (including, without limitation the FTC's Revised Endorsement Guidelines).</p>"
           }
         },
-        "richtext_LPx6HX": {
+        "richtext_EQ9NVa": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>11.       INDEMNIFICATION:</strong></p>"
           }
         },
-        "richtext_nkAPkb": {
+        "richtext_xG8X4D": {
           "type": "richtext",
           "settings": {
             "text": "<p>Talent will defend, indemnify, and hold Shampoohotel, its affiliates and each of their respective officers, employees, affiliates and agents harmless from and against all third party claims, suits, judgments, losses, damages, fines or costs (including reasonable outside attorney’s fees and expenses) related to or arising out of its willful misconduct, negligence, or breach of these Terms and Conditions or any applicable law, rule or regulation. Shampoohotel will defend, indemnify, and hold Talent harmless from and against all third-party claims, suits, judgments, losses, damages, fines or costs (including reasonable outside attorney’s fees and expenses) related to or arising out of claims that Talent’s use of the Marks infringes on the intellectual property rights of others. The obligations under this Section will survive the expiration and/or termination of these Terms and Conditions.</p>"
           }
         },
-        "richtext_cb6BVA": {
+        "richtext_bMbRbB": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>12.  CONFIDENTIALITY AND TRADE SECRETS:</strong></p>"
           }
         },
-        "richtext_TfUzNr": {
+        "richtext_TzUfef": {
           "type": "richtext",
           "settings": {
             "text": "<p>Proprietary Information is any and all information of the other party in any medium that is considered to be information that derives independent economic value, actual or potential, from not being generally known to the public or to other persons who can obtain economic value from its disclosure or use and that has been the subject of efforts to maintain its secrecy. A non-exclusive list of the items that may be Proprietary Information includes the following, whether disclosed in writings and oral disclosures: products, formulae, pricing, financial information, production information, marketing information, legal strategies, plans and any procedures. Any information that either party believes to be Proprietary Information and informs the other party that the information is claimed to be Proprietary Information or information that by its nature should be deemed as confidential must be treated and protected against disclosure in the same manner as Proprietary Information.</p><p>(i)      Obligations Concerning Proprietary Information and Confidential Information</p><p>(a)          Each party agrees not to misappropriate or to disclose to any unauthorized person or business any of the other party’s Proprietary Information.</p><p>(b)          Each party agrees that all Proprietary Information provided to it by the other party will be held in strict confidence and protected by security precautions that are at least as protective as the precautions that the party takes to protect its own valuable property, but not less protective than a reasonable person would take to protect extremely valuable personal property.</p><p>(c)           Each party agrees to return all of the Proprietary Information or Confidential Information to the party disclosing it upon request or at the termination of these Terms and Conditions. </p><p>In particular, and notwithstanding the generality of the foregoing, these Terms and Conditions are strictly confidential and may not be disclosed by Talent without Shampoohotel’s prior written consent, except: (i) to its respective legal, financial and/or business advisor(s) who agree to be bound by the confidentiality restrictions of this Section; (ii) by Talent, if necessary to obtain compliance with these Terms and Conditions ; and (iii) as required pursuant to any legal proceeding, order, rule or other requirement.</p><p>Talent shall not make any statements to the press or any media service or distribute or circulate any written release, promotional literature, news story, advertising, publicity or communications of any kind (including but not limited to, discussions or mentions about such confidential information on the internet including but not limited to blogs, social network sites such as Facebook, message boards, etc.) to any other party regarding the subject matter of these Terms and Conditions or Shampoohotel, its services, operations or activities without Shampoohotel’s prior written approval.</p><p>Without limiting the foregoing, Talent agrees not to publicize or divulge via the channels mentioned hereinabove or otherwise, any details associated with the Products or their launches before the go-live date confirmed by Shampoohotel in writing, unless otherwise approved by Shampoohotel in writing.</p>"
           }
         },
-        "richtext_xYDYNR": {
+        "richtext_88Jh8r": {
           "type": "richtext",
           "settings": {
             "text": "<p>13.    TERMINATION:</p>"
           }
         },
-        "richtext_iJnraH": {
+        "richtext_ty8c7L": {
           "type": "richtext",
           "settings": {
             "text": "<p>Shampoohotel may terminate these Terms and Conditions at any time, with or without cause, upon five (5) days written notice thereof to Talent. If the Terms and Conditions are terminated by Shampoohotel before the end of the Term, the performance of the Services to Shampoohotel shall cease and Shampoohotel shall pay a pro rata portion of the Fee based on services rendered at the time of termination. Payment of the above shall constitute full settlement of any and all claims of Talent for any activities provided on behalf of Shampoohotel. Talent may terminate these Terms and Conditions for Shampoohotel’s material breach, if Talent provides written notice to Shampoohotel specifying the nature of the breach. Shampoohotel  will have five (5) days from receipt of such notice to cure the breach. If Shampoohotel does not cure such breach within this timeframe, these Terms and Conditions shall be terminated. </p>"
           }
         },
-        "richtext_RMm4dQ": {
+        "richtext_LYLgfP": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>14.    CANCELLATION:</strong></p>"
           }
         },
-        "richtext_QAPtii": {
+        "richtext_HAjnpA": {
           "type": "richtext",
           "settings": {
             "text": "<p>The parties agree that time is of the essence in respect of the delivery of the Services. Therefore, should Talent not appear when and where required, or should he or she be unable to honor his or her obligations under the present Terms and Conditions in a fully professional and workman like manner, Shampoohotel  shall be entitled to a refund of a pro rata portion of the Fee based on the services rendered at the time of the breach.</p>"
           }
         },
-        "richtext_tAhpL6": {
+        "richtext_cYmXar": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>15.      FORCE MAJEURE:<br/></strong></p>"
           }
         },
-        "richtext_nyCE86": {
+        "richtext_phtrga": {
           "type": "richtext",
           "settings": {
-            "text": "<p>The parties agree that time is of the essence in respect of the delivery of the Services. Therefore, should Talent not appear when and where required, or should he or she be unable to honor his or her obligations under the present Terms and Conditions in a fully professional and workman like manner, Shampoohotel  shall be entitled to a refund of a pro rata portion of the Fee based on the services rendered at the time of the breach.</p>"
+            "text": "<p>In the event that either party is unable to perform its obligations hereunder, in whole or in part, due to, but not limited to, acts of God, including fire, explosion, earthquakes, hurricanes, unsafe conditions, extreme inclement weather, disease, epidemic, quarantine, terrorism, civil disorder, government regulations or intervention, public utility failure, accident, curtailment of transportation, strikes, labor slowdowns or unrest, flood, embargo, war, nuclear disaster or riot (a “<strong>Force Majeure Occurrence</strong>”), the affected party must promptly inform the other party in writing detailing the nature and expected duration of such Force Majeure Occurrence and probable consequences. If possible, the parties are required to reach an agreement on how the affected obligations may be executed at a later date within the framework hereof. If the parties are unable to reach an agreement within ten (10) days, Shampoohotel shall be entitled to terminate these Terms and Conditions instantly and receive an immediate refund of any fees paid hereunder on a pro-rated basis.</p>"
           }
         },
-        "richtext_zXYgyQ": {
+        "richtext_XaMKeJ": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>16.    GOVERNING LAW, JURISDICTION AND VENUE:</strong></p>"
           }
         },
-        "richtext_b9p7CW": {
+        "richtext_GQP7pr": {
           "type": "richtext",
           "settings": {
             "text": "<p>The provisions of these Terms and Conditions will be construed and enforced in accordance with, and any dispute arising out of or in connection with these Terms and Conditions, including any action in tort, will be governed by, the laws of the State of New York. Each party hereby irrevocably submits to the exclusive jurisdiction and venue of the courts within New York City.</p>"
           }
         },
-        "richtext_BMXyG7": {
+        "richtext_FeWdde": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>17.    NOTICES:</strong></p>"
           }
         },
-        "richtext_8zFneP": {
+        "richtext_RENeVm": {
           "type": "richtext",
           "settings": {
             "text": "<p>All notices or other communications, required or permitted to be given hereunder, shall be in writing and shall be delivered electronically, personally or mailed, certified mail, return receipt requested, postage prepaid, to the parties at their addresses as set forth above. Any notice given electronically shall be deemed received on the business day following transmission. Any notice mailed in accordance with the terms hereof shall be deemed received on the third day following the day of mailing. Either party may change the address to which such notices to such party may be given hereunder by serving proper notice of such change of address to the other party.</p>"
           }
         },
-        "richtext_Wjkhhk": {
+        "richtext_eTqd3t": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>18.      MISCELLANOUS:</strong></p>"
           }
         },
-        "richtext_KhpGBQ": {
+        "richtext_HbwQbc": {
           "type": "richtext",
           "settings": {
             "text": "<p>These Terms and Conditions supersede all prior oral or written representations or communications between the parties and constitutes the entire understanding of the parties, regarding the subject matter of these Terms and Conditions. Shampoohotel may update these Terms and Conditions from time to time at its sole discretion. Any changes will be posted on this webpage, and such updates will become effective upon posting unless otherwise stated or required by applicable law. These Terms and Conditions may not be assigned in whole or in part by either party without the prior written approval of the other party.  These Terms and Conditions shall be agreed upon by Talent via Aspire. </p>"
           }
         },
-        "richtext_EWRiXk": {
+        "richtext_PXjhCr": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>19.      PRECEDENCE</strong></p>"
           }
         },
-        "richtext_eDYJL4": {
+        "richtext_K4G6cf": {
           "type": "richtext",
           "settings": {
             "text": "<p>The parties acknowledge that there may be third-party terms and conditions applicable to certain aspects of the Aspire platform. In the event of any conflict between such terms and these Terms and Conditions, these Terms and Conditions shall prevail. </p><p>Additionally, the parties agree that in the event of any conflict between the Brief and these Terms and Conditions, the Brief shall prevail. </p>"
           }
         },
-        "richtext_pxcxiY": {
+        "richtext_DNcwXJ": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong> 20.    TRANSLATION:</strong></p>"
           }
         },
-        "richtext_r4N8LR": {
+        "richtext_8hUhAw": {
           "type": "richtext",
           "settings": {
             "text": "<p>All translations of these Terms and Conditions are provided as a courtesy. In the event of any conflict or discrepancy between the translated version and the original English version, the English version shall prevail and be deemed authoritative.</p>"
           }
         },
-        "richtext_w7Tzim": {
+        "richtext_p3p7r7": {
           "type": "richtext",
           "settings": {
             "text": "<p><strong>21.    DATA PRIVACY:</strong></p>"
           }
         },
-        "richtext_HwbGNj": {
+        "richtext_tpXmKb": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Talent hereby acknowledges and agrees that Shampoohotel  will process their Personal Data, as defined in the European General Data Protection Regulation (“GDPR”), in the following manner:</p><p>a.      Purposes of Data Processing: Talent consents that Shampoohotel  will process their Personal Data for the purpose of promoting its products and services. Shampoohotel may process the following types of Personal Data:</p><p>                                 <br/>i.     Name and contact information;                              <br/>ii.     Images and videos;                             <br/>iii.     Social media and web presence.</p><p>b.       Data Processing: Shampoohotel will process Talent’s Personal Data in accordance with the GDPR, the California Consumer Privacy Act (CCPA), and/or any other applicable data privacy regimes (“<strong>Data Privacy Laws</strong>”). Shampoohotel will take all necessary steps to ensure that Talent’s Personal Data is kept secure and confidential. Talent expressly agrees to the collection and processing of Talent’s Personal Data by Shampoohotel for the purposes described above.</p><p>c.      Data Retention: Shampoohotel will retain Talent’s Personal Data only for as long as necessary to fulfill the purposes for which it was collected, or as required by law.</p><p>d.      Data Sharing: Shampoohotel may share Talent’s Personal Data with third-party service providers who assist in the promotion of its products. Shampoohotel will ensure that any third-party service providers are compliant with the Data<br/>Privacy Laws.</p><p>e.      In addition to the above, Talent is entitled to the following rights in respect of their Personal Data:</p><p>                                      <br/>i.     Right to be informed: Talent has the                 right to be informed about how their Personal Data is being used and processed;   </p><p>                                 <br/>ii.     Right of access: Talent has the right to request access to their Personal Data;    </p><p>                             <br/>iii.     Right to rectification: Talent has the right to request that any inaccurate or incomplete Personal Data be corrected or updated;    </p><p>                        <br/>iv.     Right to erasure: Talent has the right to request that their Personal Data be erased, also known as the \"right to be forgotten\";     </p><p>                            <br/>v.     Right to restrict processing: Talent has the right to request that the processing of their Personal Data is restricted under certain circumstances;       </p><p>                   <br/>vi.     Right to data portability: Talent has the right to request a copy of Talent’s Personal Data in a structured, commonly used, and machine-readable format;  </p><p>                              <br/>vii.     Right to object: Talent has the right to object to the processing of Talent’s Personal Data in certain circumstances.     </p><p>                 <br/>viii.     Rights related to automated decision-making and profiling: Talent has the right to not be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them.       </p><p>                           <br/>ix.      Right to file a complaint: Talent has the right to lodge a complaint directly with the competent lead supervisory authority and Shampoohotel’s Data Protection Officer if unsatisfied with the treatment of Talent’s Personal Data.</p><p>Transfer of Personal Data: Shampoohotel may transfer Talent’s Personal Data internationally, including outside the European Economic Area (EEA) and to jurisdictions that may not have equivalent data protection laws, only if adequate protection measures are in place that comply with the requirements of the Data Privacy Laws. Such measures may include data transfer agreements incorporating standard contractual clauses approved by the European Commission, adherence to an approved certification mechanism, or other solutions that ensure compliance with EU data protection laws. </p><p> </p>"
+            "text": "<p>Talent hereby acknowledges and agrees that Shampoohotel  will process their Personal Data, as defined in the European General Data Protection Regulation (“GDPR”), in the following manner:</p><p>a.      Purposes of Data Processing: Talent consents that Shampoohotel  will process their Personal Data for the purpose of promoting its products and services. Shampoohotel may process the following types of Personal Data:</p><p>                                 <br/>i.     Name and contact information;                              <br/>ii.     Images and videos;                             <br/>iii.     Social media and web presence.</p><p>b.       Data Processing: Shampoohotel will process Talent’s Personal Data in accordance with the GDPR, the California Consumer Privacy Act (CCPA), and/or any other applicable data privacy regimes (“<strong>Data Privacy Laws</strong>”). Shampoohotel will take all necessary steps to ensure that Talent’s Personal Data is kept secure and confidential. Talent expressly agrees to the collection and processing of Talent’s Personal Data by Shampoohotel for the purposes described above.</p><p>c.      Data Retention: Shampoohotel will retain Talent’s Personal Data only for as long as necessary to fulfill the purposes for which it was collected, or as required by law.</p><p>d.      Data Sharing: Shampoohotel may share Talent’s Personal Data with third-party service providers who assist in the promotion of its products. Shampoohotel will ensure that any third-party service providers are compliant with the Data Privacy Laws.</p><p>e.      In addition to the above, Talent is entitled to the following rights in respect of their Personal Data:</p><p>                                      <br/>i.     Right to be informed: Talent has the                 right to be informed about how their Personal Data is being used and processed;   </p><p>                                 <br/>ii.     Right of access: Talent has the right to request access to their Personal Data;    </p><p>                             <br/>iii.     Right to rectification: Talent has the right to request that any inaccurate or incomplete Personal Data be corrected or updated;    </p><p>                        <br/>iv.     Right to erasure: Talent has the right to request that their Personal Data be erased, also known as the \"right to be forgotten\";     </p><p>                            <br/>v.     Right to restrict processing: Talent has the right to request that the processing of their Personal Data is restricted under certain circumstances;       </p><p>                   <br/>vi.     Right to data portability: Talent has the right to request a copy of Talent’s Personal Data in a structured, commonly used, and machine-readable format;  </p><p>                              <br/>vii.     Right to object: Talent has the right to object to the processing of Talent’s Personal Data in certain circumstances.     </p><p>                 <br/>viii.     Rights related to automated decision-making and profiling: Talent has the right to not be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them.       </p><p>                           <br/>ix.      Right to file a complaint: Talent has the right to lodge a complaint directly with the competent lead supervisory authority and Shampoohotel’s Data Protection Officer if unsatisfied with the treatment of Talent’s Personal Data.</p><p>Transfer of Personal Data: Shampoohotel may transfer Talent’s Personal Data internationally, including outside the European Economic Area (EEA) and to jurisdictions that may not have equivalent data protection laws, only if adequate protection measures are in place that comply with the requirements of the Data Privacy Laws. Such measures may include data transfer agreements incorporating standard contractual clauses approved by the European Commission, adherence to an approved certification mechanism, or other solutions that ensure compliance with EU data protection laws. </p><p> </p>"
           }
         }
       },
       "block_order": [
-        "richtext_fDazrM",
-        "richtext_Cj4Nfd",
-        "richtext_BbLWYm",
-        "richtext_LXJXBf",
-        "richtext_RPaLmT",
-        "richtext_gFhAjF",
-        "richtext_8fn9py",
-        "richtext_tEQBLK",
-        "richtext_EhHaPe",
-        "richtext_hgXxwi",
-        "richtext_k9VBQ3",
-        "richtext_DnNNE4",
-        "richtext_EzWDzj",
-        "richtext_e7QbLd",
-        "richtext_LQi96L",
-        "richtext_CVAWPM",
-        "richtext_wVezYM",
-        "richtext_cCnfHJ",
-        "richtext_3QRDYE",
-        "richtext_XUAraC",
-        "richtext_LX9PxR",
-        "richtext_WCwV3B",
-        "richtext_jTN3Aj",
-        "richtext_7U6DY8",
-        "richtext_LPx6HX",
-        "richtext_nkAPkb",
-        "richtext_cb6BVA",
-        "richtext_TfUzNr",
-        "richtext_xYDYNR",
-        "richtext_iJnraH",
-        "richtext_RMm4dQ",
-        "richtext_QAPtii",
-        "richtext_tAhpL6",
-        "richtext_nyCE86",
-        "richtext_zXYgyQ",
-        "richtext_b9p7CW",
-        "richtext_BMXyG7",
-        "richtext_8zFneP",
-        "richtext_Wjkhhk",
-        "richtext_KhpGBQ",
-        "richtext_EWRiXk",
-        "richtext_eDYJL4",
-        "richtext_pxcxiY",
-        "richtext_r4N8LR",
-        "richtext_w7Tzim",
-        "richtext_HwbGNj"
+        "richtext_hLDqJq",
+        "richtext_Fn9LFY",
+        "richtext_96JmmG",
+        "richtext_JFEM6j",
+        "richtext_xKtAiF",
+        "richtext_xL9bf3",
+        "richtext_pBUfHY",
+        "richtext_yJgVbf",
+        "richtext_wTEwtw",
+        "richtext_A7zRdT",
+        "richtext_pxRbeb",
+        "richtext_yneEUW",
+        "richtext_Nk8dYU",
+        "richtext_hLGHft",
+        "richtext_FcepmY",
+        "richtext_mKJGAH",
+        "richtext_pCqFtM",
+        "richtext_H6TJ38",
+        "richtext_ttMeGM",
+        "richtext_ExDNFD",
+        "richtext_6y4fVt",
+        "richtext_PicifK",
+        "richtext_YVpAVN",
+        "richtext_rjTaMr",
+        "richtext_EQ9NVa",
+        "richtext_xG8X4D",
+        "richtext_bMbRbB",
+        "richtext_TzUfef",
+        "richtext_88Jh8r",
+        "richtext_ty8c7L",
+        "richtext_LYLgfP",
+        "richtext_HAjnpA",
+        "richtext_cYmXar",
+        "richtext_phtrga",
+        "richtext_XaMKeJ",
+        "richtext_GQP7pr",
+        "richtext_FeWdde",
+        "richtext_RENeVm",
+        "richtext_eTqd3t",
+        "richtext_HbwQbc",
+        "richtext_PXjhCr",
+        "richtext_K4G6cf",
+        "richtext_DNcwXJ",
+        "richtext_8hUhAw",
+        "richtext_p3p7r7",
+        "richtext_tpXmKb"
       ],
       "custom_css": [
         "p {text-align: left;}"
@@ -440,7 +440,7 @@
   "order": [
     "main",
     "1771470712c75c4cb0",
-    "rich_text_LiXdtQ",
-    "rich_text_zQqtnp"
+    "rich_text_Vkz8yD",
+    "rich_text_btWHGA"
   ]
 }
