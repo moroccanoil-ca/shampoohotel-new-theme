@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -11,7 +20,7 @@
         "collection_title_size": "h2",
         "content_position": "place-self-center",
         "background_color_scheme": "scheme-1",
-        "image": "shopify:\/\/shop_images\/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png",
+        "image": "shopify://shop_images/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png",
         "image_size": "auto",
         "quick_navigation_menu": "collections"
       }
@@ -90,7 +99,7 @@
           "type": "rich-text",
           "disabled": true,
           "settings": {
-            "text": "<p>Write some text about your products or your brand.<\/p>",
+            "text": "<p>Write some text about your products or your brand.</p>",
             "content_width": "sm"
           },
           "blocks": {}
@@ -107,7 +116,7 @@
         "color_scheme": "",
         "allow_transparent_header": true,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png",
+        "image": "shopify://shop_images/Miami_fdfe48d5-86af-4e6a-b59f-bd4d483e07b2.png",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
         "enable_sticky_content": false,
@@ -142,7 +151,7 @@
         "rich_text_rbNX7T": {
           "type": "rich-text",
           "settings": {
-            "text": "<p>Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt<\/p>",
+            "text": "<p>Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt</p>",
             "content_width": "sm"
           },
           "blocks": {}
@@ -159,7 +168,7 @@
         "color_scheme": "",
         "allow_transparent_header": true,
         "image_size": "auto",
-        "image": "shopify:\/\/shop_images\/2025_01_13_SH_1880.jpg",
+        "image": "shopify://shop_images/2025_01_13_SH_1880.jpg",
         "overlay_color": "#000000",
         "overlay_opacity": 20,
         "enable_sticky_content": false,
@@ -178,11 +187,11 @@
             "color_scheme": "scheme-3",
             "position": 1,
             "size": "2_1",
-            "video": "shopify:\/\/files\/videos\/HotelCamp_MIAMI_HighRes.mp4",
+            "video": "shopify://files/videos/HotelCamp_MIAMI_HighRes.mp4",
             "overlay_color": "#000000",
             "overlay_opacity": 0,
             "content_position": "place-self-center",
-            "subheading": "<strong>Scent Notes <\/strong> Lemon Peel, Patchouli and Sea Salt. A zesty citrus blend with earthy patchouli, hydrating like a dip in the ocean.",
+            "subheading": "<strong>Scent Notes </strong> Lemon Peel, Patchouli and Sea Salt. A zesty citrus blend with earthy patchouli, hydrating like a dip in the ocean.",
             "heading": "",
             "heading_size": "h2",
             "content": "",
@@ -195,6 +204,9 @@
       },
       "block_order": [
         "video_BQ7KUn"
+      ],
+      "custom_css": [
+        ".price-list {padding-bottom: 10px;}"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -219,7 +231,7 @@
           "type": "text",
           "settings": {
             "text": "PARABEN-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
+            "custom_icon": "shopify://shop_images/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -230,7 +242,7 @@
           "type": "text",
           "settings": {
             "text": "MINERAL OIL-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
+            "custom_icon": "shopify://shop_images/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -241,7 +253,7 @@
           "type": "text",
           "settings": {
             "text": "NO HARMFUL SULFATES",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
+            "custom_icon": "shopify://shop_images/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -252,7 +264,7 @@
           "type": "text",
           "settings": {
             "text": "VEGAN",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_43_RENDER.png",
+            "custom_icon": "shopify://shop_images/Asset_43_RENDER.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -263,7 +275,7 @@
           "type": "text",
           "settings": {
             "text": "CRUELTY-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_44_RENDER.png",
+            "custom_icon": "shopify://shop_images/Asset_44_RENDER.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -307,7 +319,7 @@
             "image_8ia8DV": {
               "type": "image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/ScentCallout_67d5f8d3-43d9-4362-88c3-0a00ba3836a9.png",
+                "image": "shopify://shop_images/ScentCallout_67d5f8d3-43d9-4362-88c3-0a00ba3836a9.png",
                 "max_width": 100,
                 "mobile_max_width": 100
               },
@@ -329,7 +341,7 @@
             "rich_text_BHiDND": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>Vanilla Orchid, Coconut and Sandalwood—a tropical trio that lifts your hair with a burst of sweetness and soft, woodsy notes for Rio-level volume.<\/p>",
+                "text": "<p>Vanilla Orchid, Coconut and Sandalwood—a tropical trio that lifts your hair with a burst of sweetness and soft, woodsy notes for Rio-level volume.</p>",
                 "content_width": "sm"
               },
               "blocks": {}
@@ -351,7 +363,7 @@
             "image_HRN9CW": {
               "type": "image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/rio-block-middle.jpg",
+                "image": "shopify://shop_images/rio-block-middle.jpg",
                 "max_width": 100,
                 "mobile_max_width": 100
               },
@@ -373,7 +385,7 @@
             "rich_text_NKJtdh": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>For the “more is more” crowd. Welcome to your stay at the Rio resort.<\/p>",
+                "text": "<p>For the “more is more” crowd. Welcome to your stay at the Rio resort.</p>",
                 "content_width": "sm"
               },
               "blocks": {}
@@ -395,7 +407,7 @@
             "image_4kyBgD": {
               "type": "image",
               "settings": {
-                "image": "shopify:\/\/shop_images\/Shampoo.png",
+                "image": "shopify://shop_images/Shampoo.png",
                 "max_width": 100,
                 "mobile_max_width": 100
               },
@@ -417,7 +429,7 @@
             "rich_text_L6yRmU": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>Work into wet hair, focusing on the roots to give your strands a tropical cleanse. Rinse thoroughly, then follow up with SHAMPOOHOTEL™ Rio volume conditioner for a full getaway.<\/p>",
+                "text": "<p>Work into wet hair, focusing on the roots to give your strands a tropical cleanse. Rinse thoroughly, then follow up with SHAMPOOHOTEL™ Rio volume conditioner for a full getaway.</p>",
                 "content_width": "sm"
               },
               "blocks": {}
@@ -436,7 +448,7 @@
           "settings": {
             "subheading": "",
             "title": "Multi-column",
-            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "content": "<p>Use this content to share information about your store and products.</p>",
             "button_text": "",
             "button_link": "",
             "button_style": "outline",
