@@ -408,6 +408,9 @@
         "collection-1",
         "collection_KBGAzr"
       ],
+      "custom_css": [
+        ".price-list {padding-bottom: 10px;}"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "stack_products_mobile": false,
