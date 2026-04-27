@@ -174,7 +174,14 @@ Supported variables
 
           {%- when 'separator' -%}
             <hr>
-
+            {%- comment -%} Award Winner Badge 2026 {%-endcomment-%}
+              {%- if product.metafields.custom.award_winner != blank -%}
+                <div class="badge-image-container">
+                  <img
+                    src="{{ product.metafields.custom.award_winner | image_url: width: 120 }}"
+                    alt="Award Badge">
+                </div>
+              {%- endif -%}
           {%- when 'description' -%}
             {%- liquid
               if product == blank
