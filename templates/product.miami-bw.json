@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -42,14 +51,18 @@
         "text_n6eEdY": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"
+            "text": "<p>{{ product.metafields.custom.short_description | metafield_tag }}</p>"
           }
         },
         "text_Q9p7T8": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.size.value }}<\/p>"
+            "text": "<p>{{ product.metafields.custom.size.value }}</p>"
           }
+        },
+        "recharge_subscriptions_subscription_widget_v2_wqJHw6": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -91,7 +104,7 @@
           "type": "accordion",
           "settings": {
             "title": "Product Details",
-            "content": "<p>{{ product.metafields.custom.long_description | metafield_tag }}<br\/><br\/><strong>BENEFITS<\/strong><br\/>{{ product.metafields.custom.benefits | metafield_tag }}<\/p><p><strong>CLINICAL CLAIMS<\/strong><br\/>{{ product.metafields.custom.clinical_claims | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.long_description | metafield_tag }}<br/><br/><strong>BENEFITS</strong><br/>{{ product.metafields.custom.benefits | metafield_tag }}</p><p><strong>CLINICAL CLAIMS</strong><br/>{{ product.metafields.custom.clinical_claims | metafield_tag }}</p>",
             "uppercase_title": false,
             "icon": "picto-happy",
             "page": ""
@@ -101,7 +114,7 @@
           "type": "accordion",
           "settings": {
             "title": "Scent",
-            "content": "<p><strong>Smells Like<\/strong>: Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt.<br\/><br\/><strong>Personality<\/strong>: Uplifting and bright.<br\/><br\/><strong>Top Notes<\/strong>: Salty air accord, lemon peel, pineapple nectar.<br\/><br\/><strong>Mid Notes<\/strong>: Shredded coconut, plumeria, ylang-ylang.<br\/><br\/><strong>Base Notes<\/strong>: Tonka bean, creamy sandalwood, solar musk.<br\/><br\/><strong>Fragrance Family<\/strong>: Fruity and floral.<\/p>",
+            "content": "<p><strong>Smells Like</strong>: Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt.<br/><br/><strong>Personality</strong>: Uplifting and bright.<br/><br/><strong>Top Notes</strong>: Salty air accord, lemon peel, pineapple nectar.<br/><br/><strong>Mid Notes</strong>: Shredded coconut, plumeria, ylang-ylang.<br/><br/><strong>Base Notes</strong>: Tonka bean, creamy sandalwood, solar musk.<br/><br/><strong>Fragrance Family</strong>: Fruity and floral.</p>",
             "uppercase_title": false,
             "icon": "picto-drop-of-water",
             "page": ""
@@ -111,7 +124,7 @@
           "type": "accordion",
           "settings": {
             "title": "Ingredients",
-            "content": "<p><strong>KEY INGREDIENTS<\/strong><\/p>{{ product.metafields.custom.key_ingredients | metafield_tag }}<p><strong>FULL INGREDIENTS<\/strong><\/p><p>{{ product.metafields.custom.full_ingredient_list | metafield_tag }}<\/p><p>*<em>ingredients listed may vary slightly from products received. please refer to your packaging for the most up-to-date ingredient information and any warnings or instructions.<\/em><\/p>",
+            "content": "<p><strong>KEY INGREDIENTS</strong></p>{{ product.metafields.custom.key_ingredients | metafield_tag }}<p><strong>FULL INGREDIENTS</strong></p><p>{{ product.metafields.custom.full_ingredient_list | metafield_tag }}</p><p>*<em>ingredients listed may vary slightly from products received. please refer to your packaging for the most up-to-date ingredient information and any warnings or instructions.</em></p>",
             "uppercase_title": false,
             "icon": "picto-science",
             "page": ""
@@ -121,7 +134,7 @@
           "type": "accordion",
           "settings": {
             "title": "How to Use",
-            "content": "<p>{{ product.metafields.custom.how_to_use | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.how_to_use | metafield_tag }}</p>",
             "uppercase_title": false,
             "icon": "picto-ai-spark",
             "page": ""
@@ -145,6 +158,7 @@
         "separator",
         "text_n6eEdY",
         "text_Q9p7T8",
+        "recharge_subscriptions_subscription_widget_v2_wqJHw6",
         "description",
         "variant_picker",
         "buy_buttons",
@@ -181,7 +195,7 @@
           "type": "text",
           "settings": {
             "text": "PARABEN-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
+            "custom_icon": "shopify://shop_images/Asset_33_RENDER_3524fc7e-79cc-43af-8258-42e125bf24ec.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -192,7 +206,7 @@
           "type": "text",
           "settings": {
             "text": "MINERAL OIL-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
+            "custom_icon": "shopify://shop_images/Asset_34_RENDER_7d8a558c-5a6d-49bb-9590-706698732b9f.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -203,7 +217,7 @@
           "type": "text",
           "settings": {
             "text": "NO HARMFUL SULFATES",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
+            "custom_icon": "shopify://shop_images/Asset_35_RENDER_38f154b5-9132-4819-9570-72856c9f1cad.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -214,7 +228,7 @@
           "type": "text",
           "settings": {
             "text": "VEGAN",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_43_RENDER.png",
+            "custom_icon": "shopify://shop_images/Asset_43_RENDER.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -225,7 +239,7 @@
           "type": "text",
           "settings": {
             "text": "CRUELTY-FREE",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_44_RENDER.png",
+            "custom_icon": "shopify://shop_images/Asset_44_RENDER.png",
             "icon_position": "before_text",
             "highlight_effect": "default",
             "highlight_accent_color": "",
@@ -291,7 +305,7 @@
             "rich_text_UzUnfh": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>{{ closest.product.metafields.custom.scent_type.value }}<\/p>",
+                "text": "<p>{{ closest.product.metafields.custom.scent_type.value }}</p>",
                 "content_width": "sm"
               },
               "blocks": {}
@@ -335,7 +349,7 @@
             "rich_text_j3PMxm": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>{{ closest.product.metafields.custom.who_its_for.value }}<\/p>",
+                "text": "<p>{{ closest.product.metafields.custom.who_its_for.value }}</p>",
                 "content_width": "sm"
               },
               "blocks": {}
@@ -379,7 +393,7 @@
             "rich_text_UhFTiV": {
               "type": "rich-text",
               "settings": {
-                "text": "<p>{{ closest.product.metafields.custom.how_to_use | metafield_tag }}<\/p>",
+                "text": "<p>{{ closest.product.metafields.custom.how_to_use | metafield_tag }}</p>",
                 "content_width": "sm"
               },
               "blocks": {}
@@ -398,7 +412,7 @@
           "settings": {
             "subheading": "",
             "title": "Multi-column",
-            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "content": "<p>Use this content to share information about your store and products.</p>",
             "button_text": "",
             "button_link": "",
             "button_style": "outline",
@@ -429,11 +443,71 @@
         "row_spacing": "md"
       }
     },
+    "17720712294d7903da": {
+      "type": "apps",
+      "blocks": {
+        "spark_spotlight_carousal_qWwaLx": {
+          "type": "shopify://apps/spark/blocks/spotlight-carousal/3eb8b961-42bd-4d42-a091-9b8e4c877d96",
+          "settings": {
+            "feed_id": "",
+            "show_videos_dynamically": true,
+            "show_play_button": true,
+            "show_views": false,
+            "show_video_title": false,
+            "show_compare_at_price": false,
+            "show_arrow_buttons": true,
+            "auto_play_video_next_video": true,
+            "feed_title": "",
+            "title_alignment": "center",
+            "product_card_status": "hidden",
+            "product_card_btn_actn": "product_details",
+            "product_card_btn_background_color": "#000000",
+            "product_card_btn_text_color": "#ffffff",
+            "product_card_btn_text": "Shop",
+            "border_radius": 16,
+            "product_card_border_radius": 12,
+            "product_card_image_border_radius": 8,
+            "product_card_btn_border_radius": 24,
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "show_on_desktop": true,
+            "show_on_tablet": true,
+            "show_on_mobile": true
+          }
+        },
+        "section-header": {
+          "type": "_section-header",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "subheading": "",
+            "title": "Header",
+            "content": "<p>Use this content to share information about your store and products.</p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "outline",
+            "text_alignment": "left",
+            "heading_size": "h3",
+            "title_icon": "none",
+            "show_scrolling_title": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "spark_spotlight_carousal_qWwaLx"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "add_vertical_spacing": false,
+        "add_horizontal_spacing": false
+      }
+    },
     "apps_W3TmMD": {
       "type": "apps",
       "blocks": {
         "yotpo_product_reviews_reviews_PAkPPB": {
-          "type": "shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
@@ -469,81 +543,22 @@
         "add_horizontal_spacing": false
       }
     },
-    "17720712294d7903da": {
-      "type": "apps",
-      "blocks": {
-        "spark_spotlight_carousal_qWwaLx": {
-          "type": "shopify:\/\/apps\/spark\/blocks\/spotlight-carousal\/3eb8b961-42bd-4d42-a091-9b8e4c877d96",
-          "settings": {
-            "show_videos_dynamically": true,
-            "show_play_button": true,
-            "show_views": false,
-            "show_video_title": false,
-            "show_compare_at_price": false,
-            "show_arrow_buttons": true,
-            "auto_play_video_next_video": true,
-            "feed_title": "",
-            "title_alignment": "center",
-            "product_card_status": "hidden",
-            "product_card_btn_actn": "product_details",
-            "product_card_btn_background_color": "#000000",
-            "product_card_btn_text_color": "#ffffff",
-            "product_card_btn_text": "Shop",
-            "border_radius": 16,
-            "product_card_border_radius": 12,
-            "product_card_image_border_radius": 8,
-            "product_card_btn_border_radius": 24,
-            "padding_top": 20,
-            "padding_bottom": 20,
-            "show_on_desktop": true,
-            "show_on_tablet": true,
-            "show_on_mobile": true
-          }
-        },
-        "section-header": {
-          "type": "_section-header",
-          "disabled": true,
-          "static": true,
-          "settings": {
-            "subheading": "",
-            "title": "Header",
-            "content": "<p>Use this content to share information about your store and products.<\/p>",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "outline",
-            "text_alignment": "left",
-            "heading_size": "h3",
-            "title_icon": "none",
-            "show_scrolling_title": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "spark_spotlight_carousal_qWwaLx"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "add_vertical_spacing": false,
-        "add_horizontal_spacing": false
-      }
-    },
     "blocks_QLL6QA": {
       "type": "_blocks",
       "blocks": {
         "ai_gen_block_5cdcdbe_AKEDzF": {
           "type": "ai_gen_block_5cdcdbe",
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/ugc_01.mp4",
-            "video_2": "shopify:\/\/files\/videos\/ugc_02.mp4",
-            "video_3": "shopify:\/\/files\/videos\/ugc_03.mp4",
-            "video_4": "shopify:\/\/files\/videos\/ugc_04.mp4",
-            "video_5": "shopify:\/\/files\/videos\/ugc_06.mp4",
-            "video_6": "shopify:\/\/files\/videos\/ugc_07.mp4",
-            "video_7": "shopify:\/\/files\/videos\/ugc_08.mp4",
-            "video_8": "shopify:\/\/files\/videos\/ugc_05.mp4",
-            "video_9": "shopify:\/\/files\/videos\/ugc_02.mp4",
-            "video_10": "shopify:\/\/files\/videos\/ugc_03.mp4",
+            "video_1": "shopify://files/videos/ugc_01.mp4",
+            "video_2": "shopify://files/videos/ugc_02.mp4",
+            "video_3": "shopify://files/videos/ugc_03.mp4",
+            "video_4": "shopify://files/videos/ugc_04.mp4",
+            "video_5": "shopify://files/videos/ugc_06.mp4",
+            "video_6": "shopify://files/videos/ugc_07.mp4",
+            "video_7": "shopify://files/videos/ugc_08.mp4",
+            "video_8": "shopify://files/videos/ugc_05.mp4",
+            "video_9": "shopify://files/videos/ugc_02.mp4",
+            "video_10": "shopify://files/videos/ugc_03.mp4",
             "desktop_width_percent": 100,
             "slide_width": 30,
             "slide_width_mobile": 70,
@@ -567,7 +582,7 @@
           "settings": {
             "subheading": "",
             "title": "Header",
-            "content": "<p>Use this content to share information about your store and products.<\/p>",
+            "content": "<p>Use this content to share information about your store and products.</p>",
             "button_text": "",
             "button_link": "",
             "button_style": "outline",
