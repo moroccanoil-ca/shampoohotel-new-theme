@@ -74,7 +74,8 @@
       "type": "main-collection",
       "custom_css": [
         ".price-list {padding-bottom: 10px;}",
-        "img {border-radius: 20px;}"
+        "img {border-radius: 20px;}",
+        ".product-card__figure {margin: 1rem;}"
       ],
       "settings": {
         "color_scheme": "scheme-1",
