@@ -72,32 +72,6 @@
     },
     "main": {
       "type": "main-collection",
-      "blocks": {
-        "video_BQ7KUn": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "color_scheme": "scheme-3",
-            "position": 1,
-            "size": "2_1",
-            "video": "shopify://files/videos/HotelCamp_MIAMI_HighRes.mp4",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "content_position": "place-self-center",
-            "subheading": "<strong>Scent Notes </strong> Lemon Peel, Patchouli and Sea Salt. A zesty citrus blend with earthy patchouli, hydrating like a dip in the ocean.",
-            "heading": "",
-            "heading_size": "h2",
-            "content": "",
-            "button_text": "",
-            "url": "",
-            "open_in_new_tab": false,
-            "style": "solid"
-          }
-        }
-      },
-      "block_order": [
-        "video_BQ7KUn"
-      ],
       "custom_css": [
         ".price-list {padding-bottom: 10px;}"
       ],
