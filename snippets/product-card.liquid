@@ -31,7 +31,7 @@
   * show_swatches: show or not the swatches. The swatch type is inferred from setting, and will default to true if nothing is set. 
   * force_no_border: if set to true, no border will be added around cards, even if the global setting ask to 
   * sizes: the value of the sizes attribute (because it depends of the context, it should be calculated outside) 
-  * prefix_id: an optional prefix being used to prefix all the inputs. This is useful when we have to output multiple 
+  * prefix_id: an optional prefix being used to prefix all the inputs. This is useful when we have to output multiple
   product card on the same page, to avoid any ID conflicts. 
 {%- endcomment -%}
 
@@ -425,20 +425,26 @@
               {%- endform -%}
             </product-form>
           {%- else -%}
-            {%- capture quick_buy_id -%}product-quick-buy-{{ section.id }}-{{ block.id }}-{{ quick_buy_context }}-{{ product.id }}{%- endcapture -%}
+            {%- capture quick_buy_id -%}
+  product-quick-buy-{{ section.id }}-{{ block.id }}-{{ quick_buy_context }}-{{ product.id }}
+{%- endcapture -%}
+            <product-form>
+              {%- form 'product'
+                , product -%}
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ product.selected_or_first_available_variant.id }}">
+                <input
+                  type="hidden"
+                  name="quantity"
+                  value="1">
 
-            <button
-              type="button"
-              aria-controls="{{ quick_buy_id }}"
-              class="product-card__quick-add-button">
-              <span class="sr-only">{{ 'product.general.choose_options' | t }}</span>
-              {%- render 'icon' with 'plus' -%}
-            </button>
-
-            <quick-buy-modal
-              handle="{{ product.handle }}?variant={{ product.selected_or_first_available_variant.id }}"
-              class="quick-buy-modal modal"
-              id="{{ quick_buy_id }}"></quick-buy-modal>
+                <button type="submit" class="button product-card__quick-add-button">
+                  {{ 'product.general.add_to_cart_button' | t }}
+                </button>
+              {%- endform -%}
+            </product-form>
           {%- endif -%}
         {%- endif -%}
       {% comment %} end quick add {% endcomment %}
