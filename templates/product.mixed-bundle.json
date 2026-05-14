@@ -114,7 +114,7 @@
           "type": "accordion",
           "settings": {
             "title": "Scent",
-            "content": "<p><strong>Smells Like</strong>: Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt.<br/><br/><strong>Personality</strong>: Uplifting and bright.<br/><br/><strong>Top Notes</strong>: Salty air accord, lemon peel, pineapple nectar.<br/><br/><strong>Mid Notes</strong>: Shredded coconut, plumeria, ylang-ylang.<br/><br/><strong>Base Notes</strong>: Tonka bean, creamy sandalwood, solar musk.<br/><br/><strong>Fragrance Family</strong>: Fruity and floral.</p>",
+            "content": "<p><strong>Miami</strong></p><p><strong>Smells Like</strong>: Sunshine sparkling on the surf. Lemon peel, patchouli, sea salt.</p><p><strong>Personality: </strong>Uplifting and bright.</p><p><strong>Top Notes:</strong> Salty air accord, lemon peel, pineapple nectar.</p><p><strong>Mid Notes:</strong> Shredded coconut, plumeria, ylang-ylang.</p><p><strong>Base Notes</strong>: Tonka bean, creamy sandalwood, solar musk.</p><p><strong>Fragrance Family:</strong> Fruity and floral.</p><p><strong>Marrakesh</strong></p><p><strong>Smells Like:</strong> A bonfire under the desert stars. Sweet orange, cardamom, night-blooming jasmine.</p><p><strong>Personality:</strong> Sultry and striking.</p><p><strong>Top Notes:</strong> Sweet orange, green mandarin, juicy lemon.</p><p><strong>Mid Notes:</strong> Night-blooming jasmine, black pepper, blonde cedar.</p><p><strong>Base Notes:</strong> Amberwood, sweet sandalwood, ethereal musk.</p><p><strong>Fragrance Family: </strong>Warm and woody.</p>",
             "uppercase_title": false,
             "icon": "picto-drop-of-water",
             "page": ""
@@ -287,6 +287,8 @@
             "feed_title": "",
             "title_alignment": "center",
             "product_card_status": "hidden",
+            "product_name_text_style_preset": "default",
+            "price_text_style_preset": "default",
             "product_card_btn_actn": "product_details",
             "product_card_btn_background_color": "#000000",
             "product_card_btn_text_color": "#ffffff",
