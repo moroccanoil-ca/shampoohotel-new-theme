@@ -94,6 +94,11 @@
           "cards_background": "#FFFFFF",
           "cards_border_color": "rgba(0,0,0,0)"
         }
+      },
+      "4705145147225299685": {
+        "type": "shopify://apps/tolstoy-ads-image-video/blocks/widget-block/06fa8282-42ff-403e-b67c-1936776aed11",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
