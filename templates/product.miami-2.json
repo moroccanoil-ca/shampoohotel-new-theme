@@ -447,10 +447,10 @@
     "17720712294d7903da": {
       "type": "apps",
       "blocks": {
-        "tolstoy_ads_image_video_stories_block_eMqDwn": {
-          "type": "shopify://apps/tolstoy-ads-image-video/blocks/stories-block/06fa8282-42ff-403e-b67c-1936776aed11",
+        "tolstoy_ads_image_video_tolstoy_builder_qfCfQB": {
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/tolstoy-builder/06fa8282-42ff-403e-b67c-1936776aed11",
           "settings": {
-            "publishId": "01KRP1NHYNVKR5TQ4G8WQMT18N"
+            "custom_code": "<tolstoy-widget\n  data-tolstoy-widget-id=\"01KRP1NHYNVKR5TQ4G8WQMT18N\"\n  data-product-id=\"{{ product.id }}\"\n></tolstoy-widget>"
           }
         },
         "section-header": {
@@ -473,52 +473,12 @@
         }
       },
       "block_order": [
-        "tolstoy_ads_image_video_stories_block_eMqDwn"
+        "tolstoy_ads_image_video_tolstoy_builder_qfCfQB"
       ],
       "settings": {
         "color_scheme": "",
         "add_vertical_spacing": false,
         "add_horizontal_spacing": false
-      }
-    },
-    "apps_W3TmMD": {
-      "type": "apps",
-      "blocks": {
-        "yotpo_product_reviews_reviews_PAkPPB": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
-        "section-header": {
-          "type": "_section-header",
-          "static": true,
-          "settings": {
-            "subheading": "YOTPO WIDGET WILL APPEAR HERE ONCE WE LAUNCH",
-            "title": "",
-            "content": "",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "outline",
-            "text_alignment": "center",
-            "heading_size": "h3",
-            "title_icon": "none",
-            "show_scrolling_title": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "yotpo_product_reviews_reviews_PAkPPB"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".card-container,.yotpo-header-container {background-color: transparent;}"
-      ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "add_vertical_spacing": true,
-        "add_horizontal_spacing": true
       }
     },
     "apps_zh8JkE": {
@@ -561,68 +521,6 @@
         "add_horizontal_spacing": false
       }
     },
-    "blocks_QLL6QA": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_5cdcdbe_AKEDzF": {
-          "type": "ai_gen_block_5cdcdbe",
-          "settings": {
-            "video_1": "shopify://files/videos/ugc_01.mp4",
-            "video_2": "shopify://files/videos/ugc_02.mp4",
-            "video_3": "shopify://files/videos/ugc_03.mp4",
-            "video_4": "shopify://files/videos/ugc_04.mp4",
-            "video_5": "shopify://files/videos/ugc_06.mp4",
-            "video_6": "shopify://files/videos/ugc_07.mp4",
-            "video_7": "shopify://files/videos/ugc_08.mp4",
-            "video_8": "shopify://files/videos/ugc_05.mp4",
-            "video_9": "shopify://files/videos/ugc_02.mp4",
-            "video_10": "shopify://files/videos/ugc_03.mp4",
-            "desktop_width_percent": 100,
-            "slide_width": 30,
-            "slide_width_mobile": 70,
-            "gap": 20,
-            "aspect_ratio": "177.78",
-            "border_radius": 16,
-            "show_controls": true,
-            "controls_spacing": 20,
-            "button_background": "#321e1e",
-            "button_hover_background": "#000000",
-            "button_color": "#ffffff",
-            "dot_color": "#321e1e",
-            "video_background": "#000000"
-          },
-          "blocks": {}
-        },
-        "section-header": {
-          "type": "_section-header",
-          "disabled": true,
-          "static": true,
-          "settings": {
-            "subheading": "",
-            "title": "Header",
-            "content": "<p>Use this content to share information about your store and products.</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "outline",
-            "text_alignment": "left",
-            "heading_size": "h3",
-            "title_icon": "none",
-            "show_scrolling_title": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_5cdcdbe_AKEDzF"
-      ],
-      "disabled": true,
-      "name": "Video carousel",
-      "settings": {
-        "color_scheme": "",
-        "add_vertical_spacing": true,
-        "add_horizontal_spacing": true
-      }
-    },
     "related-products": {
       "type": "related-products",
       "blocks": {
@@ -660,9 +558,7 @@
     "scrolling_content_DYtcmp",
     "multi_column_FgfMYc",
     "17720712294d7903da",
-    "apps_W3TmMD",
     "apps_zh8JkE",
-    "blocks_QLL6QA",
     "related-products"
   ]
 }
