@@ -101,12 +101,6 @@
             "payment_button_text_color": ""
           }
         },
-        "tolstoy_ads_image_video_tolstoy_builder_kU9LgX": {
-          "type": "shopify://apps/tolstoy-ads-image-video/blocks/tolstoy-builder/06fa8282-42ff-403e-b67c-1936776aed11",
-          "settings": {
-            "custom_code": "<tolstoy-widget data-tolstoy-widget-id=\"01KRP1NHYNVKR5TQ4G8WQMT18N\" data-product-id=\"{{ product.id }}\" data-tags=\"{%- for tag in product.tags -%}{{ tag | escape }},{%- endfor -%}\"></tolstoy-widget>\n<script src=\"https://ai-widgets.gotolstoy.com/5cf4b493-7c1f-401a-bace-baf0b5da9a05/01KRP1NHYNVKR5TQ4G8WQMT18N/latest/dist/widget.iife.js\" defer></script>"
-          }
-        },
         "accordion_DHwUmx": {
           "type": "accordion",
           "settings": {
@@ -169,7 +163,6 @@
         "description",
         "variant_picker",
         "buy_buttons",
-        "tolstoy_ads_image_video_tolstoy_builder_kU9LgX",
         "accordion_DHwUmx",
         "accordion_4VCCi3",
         "accordion_dJEdkt",
@@ -457,7 +450,7 @@
         "tolstoy_ads_image_video_tolstoy_builder_cBgM8e": {
           "type": "shopify://apps/tolstoy-ads-image-video/blocks/tolstoy-builder/06fa8282-42ff-403e-b67c-1936776aed11",
           "settings": {
-            "custom_code": "<tolstoy-widget data-tolstoy-widget-id=\"01KRP6YEV5RK3R3YWC8WC9YKHT\" data-product-id=\"{{ product.id }}\" data-tags=\"{%- for tag in product.tags -%}{{ tag | escape }},{%- endfor -%}\"></tolstoy-widget>\n<script src=\"https://ai-widgets.gotolstoy.com/5cf4b493-7c1f-401a-bace-baf0b5da9a05/01KRP6YEV5RK3R3YWC8WC9YKHT/latest/dist/widget.iife.js\" defer></script>"
+            "custom_code": "<tolstoy-widget data-tolstoy-widget-id=\"01KRPBHBPF31N5MFZA6B1C8XPV\" data-product-id=\"{{ product.id }}\" data-tags=\"{%- for tag in product.tags -%}{{ tag | escape }},{%- endfor -%}\"></tolstoy-widget>\n<script src=\"https://ai-widgets.gotolstoy.com/5cf4b493-7c1f-401a-bace-baf0b5da9a05/01KRPBHBPF31N5MFZA6B1C8XPV/latest/dist/widget.iife.js\" defer></script>"
           }
         },
         "yotpo_product_reviews_reviews_xcWrdf": {
