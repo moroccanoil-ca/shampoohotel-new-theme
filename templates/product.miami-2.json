@@ -447,16 +447,10 @@
     "apps_zh8JkE": {
       "type": "apps",
       "blocks": {
-        "tolstoy_ads_image_video_stories_block_VLCePD": {
-          "type": "shopify://apps/tolstoy-ads-image-video/blocks/stories-block/06fa8282-42ff-403e-b67c-1936776aed11",
+        "tolstoy_ads_image_video_tolstoy_builder_cBgM8e": {
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/tolstoy-builder/06fa8282-42ff-403e-b67c-1936776aed11",
           "settings": {
-            "publishId": "01KRP1NHYNVKR5TQ4G8WQMT18N"
-          }
-        },
-        "tolstoy_ads_image_video_carousel_block_tXWbJz": {
-          "type": "shopify://apps/tolstoy-ads-image-video/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
-          "settings": {
-            "publishId": "01KRP1NHYNVKR5TQ4G8WQMT18N"
+            "custom_code": "<tolstoy-widget data-tolstoy-widget-id=\"01KRP4YVGS373TSD572X5WESXS\" data-product-id=\"{{ product.id }}\" data-tags=\"{%- for tag in product.tags -%}{{ tag | escape }},{%- endfor -%}\"></tolstoy-widget>\n<script src=\"https://ai-widgets.gotolstoy.com/5cf4b493-7c1f-401a-bace-baf0b5da9a05/01KRP4YVGS373TSD572X5WESXS/latest/dist/widget.iife.js\" defer></script>"
           }
         },
         "yotpo_product_reviews_reviews_xcWrdf": {
@@ -485,8 +479,7 @@
         }
       },
       "block_order": [
-        "tolstoy_ads_image_video_stories_block_VLCePD",
-        "tolstoy_ads_image_video_carousel_block_tXWbJz",
+        "tolstoy_ads_image_video_tolstoy_builder_cBgM8e",
         "yotpo_product_reviews_reviews_xcWrdf"
       ],
       "custom_css": [
