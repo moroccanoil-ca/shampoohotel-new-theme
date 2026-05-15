@@ -132,6 +132,10 @@
                     </button>
                   </carousel-prev-button>
                 {%- endunless -%}
+<tolstoy-widget
+  data-tolstoy-widget-id="01KRP1NHYNVKR5TQ4G8WQMT18N"
+  data-product-id="{{ product.id }}"
+></tolstoy-widget>
 
                 <product-list id="{{ product_list_id }}" class="product-list product-list--padded {% if section.settings.tabs_alignment == 'center' %}justify-center{% endif %} full-bleed {{ product_list_class }}">
                   {%- capture sizes -%}(max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }} - 40px), (max-width: 999px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop }} - 64px), calc((100vw - 96px) / {{ section.settings.products_per_row_desktop }}){%- endcapture -%}
