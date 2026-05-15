@@ -444,46 +444,21 @@
         "row_spacing": "md"
       }
     },
-    "17720712294d7903da": {
-      "type": "apps",
-      "blocks": {
-        "tolstoy_ads_image_video_tolstoy_builder_qfCfQB": {
-          "type": "shopify://apps/tolstoy-ads-image-video/blocks/tolstoy-builder/06fa8282-42ff-403e-b67c-1936776aed11",
-          "settings": {
-            "custom_code": "<tolstoy-widget\n  data-tolstoy-widget-id=\"01KRP1NHYNVKR5TQ4G8WQMT18N\"\n  data-product-id=\"{{ product.id }}\"\n></tolstoy-widget>"
-          }
-        },
-        "section-header": {
-          "type": "_section-header",
-          "disabled": true,
-          "static": true,
-          "settings": {
-            "subheading": "",
-            "title": "Header",
-            "content": "<p>Use this content to share information about your store and products.</p>",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "outline",
-            "text_alignment": "left",
-            "heading_size": "h3",
-            "title_icon": "none",
-            "show_scrolling_title": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "tolstoy_ads_image_video_tolstoy_builder_qfCfQB"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "add_vertical_spacing": false,
-        "add_horizontal_spacing": false
-      }
-    },
     "apps_zh8JkE": {
       "type": "apps",
       "blocks": {
+        "tolstoy_ads_image_video_stories_block_VLCePD": {
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/stories-block/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "publishId": "01KRP1NHYNVKR5TQ4G8WQMT18N"
+          }
+        },
+        "tolstoy_ads_image_video_carousel_block_tXWbJz": {
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "publishId": "01KRP1NHYNVKR5TQ4G8WQMT18N"
+          }
+        },
         "yotpo_product_reviews_reviews_xcWrdf": {
           "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
@@ -510,6 +485,8 @@
         }
       },
       "block_order": [
+        "tolstoy_ads_image_video_stories_block_VLCePD",
+        "tolstoy_ads_image_video_carousel_block_tXWbJz",
         "yotpo_product_reviews_reviews_xcWrdf"
       ],
       "custom_css": [
@@ -557,7 +534,6 @@
     "main",
     "scrolling_content_DYtcmp",
     "multi_column_FgfMYc",
-    "17720712294d7903da",
     "apps_zh8JkE",
     "related-products"
   ]
